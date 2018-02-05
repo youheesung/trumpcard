@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbs>
+    <db>
+        <mt20id>PF141606</mt20id>
+        <prfnm>크레이지투 [포항]</prfnm>
+        <prfpdfrom>2018.05.25</prfpdfrom>
+        <prfpdto>2018.05.27</prfpdto>
+        <fcltynm>포항문화예술회관</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141606_180202_131629.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141603</mt20id>
+        <prfnm>S다이어리 [강남]</prfnm>
+        <prfpdfrom>2018.01.12</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>강남아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141603_180202_113952.png</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141601</mt20id>
+        <prfnm>나의라임오렌지나무</prfnm>
+        <prfpdfrom>2018.02.22</prfpdfrom>
+        <prfpdto>2018.02.22</prfpdto>
+        <fcltynm>공간심</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141601_180202_113053.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141598</mt20id>
+        <prfnm>유나를 구하라!</prfnm>
+        <prfpdfrom>2018.02.14</prfpdfrom>
+        <prfpdto>2018.02.25</prfpdto>
+        <fcltynm>여행자극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141598_180202_110951.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141597</mt20id>
+        <prfnm>수(獸)</prfnm>
+        <prfpdfrom>2018.02.28</prfpdfrom>
+        <prfpdto>2018.03.11</prfpdto>
+        <fcltynm>드림시어터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141597_180202_110518.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141592</mt20id>
+        <prfnm>러브액츄얼리 오리지날 [마산]</prfnm>
+        <prfpdfrom>2018.03.10</prfpdfrom>
+        <prfpdto>2018.03.14</prfpdto>
+        <fcltynm>3.15아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141592_180202_102240.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141591</mt20id>
+        <prfnm>조지국함락기</prfnm>
+        <prfpdfrom>2018.02.14</prfpdfrom>
+        <prfpdto>2018.02.25</prfpdto>
+        <fcltynm>지즐소극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141591_180202_102018.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141588</mt20id>
+        <prfnm>낭떠러지의 착각</prfnm>
+        <prfpdfrom>2018.02.06</prfpdfrom>
+        <prfpdto>2018.02.11</prfpdto>
+        <fcltynm>아름다운극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141588_180202_100548.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141580</mt20id>
+        <prfnm>창작산실, 고래가 산다</prfnm>
+        <prfpdfrom>2018.03.02</prfpdfrom>
+        <prfpdto>2018.03.10</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201801/포스터_수정_298_13.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141581</mt20id>
+        <prfnm>창작산실, 모래시계</prfnm>
+        <prfpdfrom>2018.03.15</prfpdfrom>
+        <prfpdto>2018.03.25</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201801/홈페이지_이미지_298_6.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141579</mt20id>
+        <prfnm>창작산실, 최서림, 야화순례기행전</prfnm>
+        <prfpdfrom>2018.03.03</prfpdfrom>
+        <prfpdto>2018.03.11</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201710/연극_극단백수광부_최서림.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141555</mt20id>
+        <prfnm>엔통이의 동요나라</prfnm>
+        <prfpdfrom>2018.05.02</prfpdfrom>
+        <prfpdto>2018.05.12</prfpdto>
+        <fcltynm>국립극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141555_180130_112540.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141534</mt20id>
+        <prfnm>2018 시리즈 연극만원, 로미오와 줄리엣</prfnm>
+        <prfpdfrom>2018.06.22</prfpdfrom>
+        <prfpdto>2018.06.24</prfpdto>
+        <fcltynm>성남아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141534_180129_145940.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141531</mt20id>
+        <prfnm>앙리할아버지와 나 [성남]</prfnm>
+        <prfpdfrom>2018.03.16</prfpdfrom>
+        <prfpdto>2018.03.17</prfpdto>
+        <fcltynm>성남아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141531_180129_144332.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141527</mt20id>
+        <prfnm>트라우마</prfnm>
+        <prfpdfrom>2018.02.22</prfpdfrom>
+        <prfpdto>2018.03.03</prfpdto>
+        <fcltynm>일터 소극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141527_180131_094702.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141525</mt20id>
+        <prfnm>임대인생</prfnm>
+        <prfpdfrom>2018.02.03</prfpdfrom>
+        <prfpdto>2018.03.16</prfpdto>
+        <fcltynm>나루아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141525_180129_134428.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141514</mt20id>
+        <prfnm>연극만원, 에어콘 없는 방</prfnm>
+        <prfpdfrom>2018.04.20</prfpdfrom>
+        <prfpdto>2018.04.22</prfpdto>
+        <fcltynm>성남아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141514_180126_171538.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141513</mt20id>
+        <prfnm>연극만원, 홍시 열리는 집</prfnm>
+        <prfpdfrom>2018.02.23</prfpdfrom>
+        <prfpdto>2018.02.25</prfpdto>
+        <fcltynm>성남아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141513_180126_171326.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141511</mt20id>
+        <prfnm>열정과 냉정사이 [부산]</prfnm>
+        <prfpdfrom>2018.02.09</prfpdfrom>
+        <prfpdto>2018.02.14</prfpdto>
+        <fcltynm>가온아트홀 [부산]</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141511_180126_145958.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141506</mt20id>
+        <prfnm>그곳</prfnm>
+        <prfpdfrom>2018.02.06</prfpdfrom>
+        <prfpdto>2018.02.11</prfpdto>
+        <fcltynm>민송아트홀 (구. 브로드웨이아트홀)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141506_180126_135744.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141502</mt20id>
+        <prfnm>아버지</prfnm>
+        <prfpdfrom>2018.01.25</prfpdfrom>
+        <prfpdto>2018.01.28</prfpdto>
+        <fcltynm>동숭아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141502_180126_110039.png</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141485</mt20id>
+        <prfnm>앙리할아버지와 나 [대전]</prfnm>
+        <prfpdfrom>2018.05.04</prfpdfrom>
+        <prfpdto>2018.05.05</prfpdto>
+        <fcltynm>대전예술의전당</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141485_180125_163441.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141464</mt20id>
+        <prfnm>수요극장1, 단편소설극장</prfnm>
+        <prfpdfrom>2018.03.21</prfpdfrom>
+        <prfpdto>2018.03.21</prfpdto>
+        <fcltynm>대전예술의전당</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141464_180124_151305.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141448</mt20id>
+        <prfnm>가지</prfnm>
+        <prfpdfrom>2018.02.21</prfpdfrom>
+        <prfpdto>2018.03.18</prfpdto>
+        <fcltynm>국립극단 [용산]</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141448_180123_110527.png</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141440</mt20id>
+        <prfnm>잉여인간 이바노프</prfnm>
+        <prfpdfrom>2018.02.01</prfpdfrom>
+        <prfpdto>2018.02.04</prfpdto>
+        <fcltynm>유니플렉스</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141440_180122_151116.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141431</mt20id>
+        <prfnm>돌연변이</prfnm>
+        <prfpdfrom>2018.01.19</prfpdfrom>
+        <prfpdto>2018.02.12</prfpdto>
+        <fcltynm>사랑하니까 이야기다</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141431_180122_141651.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141418</mt20id>
+        <prfnm>스물</prfnm>
+        <prfpdfrom>2017.12.22</prfpdfrom>
+        <prfpdto>2018.01.28</prfpdto>
+        <fcltynm>효천아트센터 그라운드씬</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141418_180119_110608.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141376</mt20id>
+        <prfnm>그녀들의 첫날밤</prfnm>
+        <prfpdfrom>2018.02.08</prfpdfrom>
+        <prfpdto>2018.02.25</prfpdto>
+        <fcltynm>선돌극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141376_180118_142100.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141368</mt20id>
+        <prfnm>S다이어리 [대전]</prfnm>
+        <prfpdfrom>2018.01.04</prfpdfrom>
+        <prfpdto>2018.02.04</prfpdto>
+        <fcltynm>아신아트컴퍼니</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141368_180118_103931.png</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141340</mt20id>
+        <prfnm>수업</prfnm>
+        <prfpdfrom>2018.02.10</prfpdfrom>
+        <prfpdto>2018.02.25</prfpdto>
+        <fcltynm>30스튜디오</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141340_180117_093800.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141330</mt20id>
+        <prfnm>나와 할아버지</prfnm>
+        <prfpdfrom>2018.02.24</prfpdfrom>
+        <prfpdto>2018.02.24</prfpdto>
+        <fcltynm>구리아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141330_180116_105410.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141324</mt20id>
+        <prfnm>토끼전</prfnm>
+        <prfpdfrom>2018.01.20</prfpdfrom>
+        <prfpdto>2018.01.20</prfpdto>
+        <fcltynm>과천시민회관</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141324_180116_094923.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141317</mt20id>
+        <prfnm>내눈에 콩깍지</prfnm>
+        <prfpdfrom>2018.01.02</prfpdfrom>
+        <prfpdto>2018.03.31</prfpdto>
+        <fcltynm>한옥마을아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141317_180115_165733.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141313</mt20id>
+        <prfnm>마포아트센터 플레이맥 재개관 페스타, 브라보 마이 라이프</prfnm>
+        <prfpdfrom>2018.04.13</prfpdfrom>
+        <prfpdto>2018.04.15</prfpdto>
+        <fcltynm>마포아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141313_180115_161705.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141310</mt20id>
+        <prfnm>마포아트센터 플레이맥 재개관 페스타, 개미집</prfnm>
+        <prfpdfrom>2018.03.30</prfpdfrom>
+        <prfpdto>2018.03.31</prfpdto>
+        <fcltynm>마포아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141310_180115_160247.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141306</mt20id>
+        <prfnm>마포아트센터 플레이맥 재개관 페스타, 서편제</prfnm>
+        <prfpdfrom>2018.03.09</prfpdfrom>
+        <prfpdto>2018.03.10</prfpdto>
+        <fcltynm>마포아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141306_180115_154220.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141301</mt20id>
+        <prfnm>서툰살인</prfnm>
+        <prfpdfrom>2018.01.30</prfpdfrom>
+        <prfpdto>2018.09.26</prfpdto>
+        <fcltynm>대학로 스카이씨어터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141301_180115_150932.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141300</mt20id>
+        <prfnm>나빌레라</prfnm>
+        <prfpdfrom>2018.01.12</prfpdfrom>
+        <prfpdto>2018.01.14</prfpdto>
+        <fcltynm>MHN STAGE</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141300_180115_150015.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141299</mt20id>
+        <prfnm>소설시장 페스티벌</prfnm>
+        <prfpdfrom>2018.01.17</prfpdfrom>
+        <prfpdto>2018.02.11</prfpdto>
+        <fcltynm>소극장 혜화당(구. 까망소극장), 문래예술공장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141299_180115_144310.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141298</mt20id>
+        <prfnm>지상 최후의 농담</prfnm>
+        <prfpdfrom>2018.01.23</prfpdfrom>
+        <prfpdto>2018.02.04</prfpdto>
+        <fcltynm>선돌극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141298_180115_140810.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141276</mt20id>
+        <prfnm>춘향실록</prfnm>
+        <prfpdfrom>2018.02.08</prfpdfrom>
+        <prfpdto>2018.02.09</prfpdto>
+        <fcltynm>국립국악원</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141276_180115_132306.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141275</mt20id>
+        <prfnm>러브액츄얼리 오리지날 [대구]</prfnm>
+        <prfpdfrom>2018.02.14</prfpdfrom>
+        <prfpdto>2018.02.15</prfpdto>
+        <fcltynm>대백프라자프라임홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141275_180111_153518.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141269</mt20id>
+        <prfnm>자메이카 헬스클럽 [대구]</prfnm>
+        <prfpdfrom>2018.02.14</prfpdfrom>
+        <prfpdto>2018.03.18</prfpdto>
+        <fcltynm>문화예술전용극장CT</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141269_180111_135646.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141249</mt20id>
+        <prfnm>나의PS파트너 [대구]</prfnm>
+        <prfpdfrom>2018.01.25</prfpdfrom>
+        <prfpdto>2018.03.04</prfpdto>
+        <fcltynm>여우별아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141249_180110_110803.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141247</mt20id>
+        <prfnm>3월의 눈</prfnm>
+        <prfpdfrom>2018.02.07</prfpdfrom>
+        <prfpdto>2018.03.11</prfpdto>
+        <fcltynm>국립극단 [명동]</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141247_180110_101249.png</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141242</mt20id>
+        <prfnm>택시안에서</prfnm>
+        <prfpdfrom>2018.01.05</prfpdfrom>
+        <prfpdto>2018.04.01</prfpdto>
+        <fcltynm>AN아트홀 [서면]</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141242_180109_163929.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141241</mt20id>
+        <prfnm>사랑일까? [파랑씨어터]</prfnm>
+        <prfpdfrom>2018.02.01</prfpdfrom>
+        <prfpdto>2018.03.04</prfpdto>
+        <fcltynm>파랑씨어터 (구. 도향아트홀, 뮤디스홀)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141241_180109_113611.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141234</mt20id>
+        <prfnm>행복</prfnm>
+        <prfpdfrom>2018.01.06</prfpdfrom>
+        <prfpdto>2018.02.25</prfpdto>
+        <fcltynm>KBS 수원아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141234_180108_140908.png</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141225</mt20id>
+        <prfnm>하루</prfnm>
+        <prfpdfrom>2018.01.06</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>낙산씨어터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141225_180108_112750.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141214</mt20id>
+        <prfnm>오백에삼십 [전주]</prfnm>
+        <prfpdfrom>2018.01.12</prfpdfrom>
+        <prfpdto>2018.02.18</prfpdto>
+        <fcltynm>한해랑아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141214_180105_142950.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141209</mt20id>
+        <prfnm>빗소리 몽환도</prfnm>
+        <prfpdfrom>2018.01.10</prfpdfrom>
+        <prfpdto>2018.02.04</prfpdto>
+        <fcltynm>드림시어터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141209_180105_114458.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141207</mt20id>
+        <prfnm>지금도 가슴설렌다</prfnm>
+        <prfpdfrom>2017.12.20</prfpdfrom>
+        <prfpdto>2018.01.14</prfpdto>
+        <fcltynm>선돌극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141207_180105_112546.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141206</mt20id>
+        <prfnm>더 쉐도우</prfnm>
+        <prfpdfrom>2018.01.12</prfpdfrom>
+        <prfpdto>2018.02.02</prfpdto>
+        <fcltynm>성수아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141206_180105_105037.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141201</mt20id>
+        <prfnm>수상한 흥신소 2탄</prfnm>
+        <prfpdfrom>2017.12.28</prfpdfrom>
+        <prfpdto>9999.12.31</prfpdto>
+        <fcltynm>강남아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141201_180104_101209.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF141191</mt20id>
+        <prfnm>와일드패밀리</prfnm>
+        <prfpdfrom>2018.02.02</prfpdfrom>
+        <prfpdto>2018.05.31</prfpdto>
+        <fcltynm>미마지아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141191_180103_131525.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF141176</mt20id>
+        <prfnm>하늘로 간 청춘팥</prfnm>
+        <prfpdfrom>2018.01.18</prfpdfrom>
+        <prfpdto>2018.01.28</prfpdto>
+        <fcltynm>CKL스테이지</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141176_180103_095808.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141172</mt20id>
+        <prfnm>창작산실, 암전</prfnm>
+        <prfpdfrom>2018.02.23</prfpdfrom>
+        <prfpdto>2018.03.04</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201710/연극_극단두_암전.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141174</mt20id>
+        <prfnm>창작산실, 깨비가 잃어버린 도깨비 방망이</prfnm>
+        <prfpdfrom>2018.02.02</prfpdfrom>
+        <prfpdto>2018.02.11</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201710/연극_극단하땅세_깨비가잃어버린도깨비.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141162</mt20id>
+        <prfnm>약속</prfnm>
+        <prfpdfrom>2018.01.16</prfpdfrom>
+        <prfpdto>2018.01.21</prfpdto>
+        <fcltynm>공간아울</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141162_180102_141555.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141154</mt20id>
+        <prfnm>윤문식의 마당놀이 싸가지 흥보전 [제주]</prfnm>
+        <prfpdfrom>2018.01.28</prfpdfrom>
+        <prfpdto>2018.01.28</prfpdto>
+        <fcltynm>쇼킹 공연장 (구 제주 아트리움)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141154_171229_103648.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141137</mt20id>
+        <prfnm>룸넘버13 [부산]</prfnm>
+        <prfpdfrom>2018.01.04</prfpdfrom>
+        <prfpdto>2018.03.04</prfpdto>
+        <fcltynm>BNK부산은행 조은극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141137_171227_161730.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141133</mt20id>
+        <prfnm>셜록홈즈</prfnm>
+        <prfpdfrom>2018.01.05</prfpdfrom>
+        <prfpdto>2018.02.11</prfpdto>
+        <fcltynm>문화예술전용극장CT</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141133_171227_114949.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141132</mt20id>
+        <prfnm>벚꽃동산</prfnm>
+        <prfpdfrom>2018.01.31</prfpdfrom>
+        <prfpdto>2018.02.04</prfpdto>
+        <fcltynm>나온씨어터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141132_171227_114352.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141118</mt20id>
+        <prfnm>차세대열전 2017!, 난민의 노래</prfnm>
+        <prfpdfrom>2018.01.26</prfpdfrom>
+        <prfpdto>2018.01.28</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201712/홈페이지_수정_298_2.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141119</mt20id>
+        <prfnm>차세대열전 2017!, 인간의 가장 오래된 외부</prfnm>
+        <prfpdfrom>2018.02.02</prfpdfrom>
+        <prfpdto>2018.02.04</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201712/[창작아카데미연극]홈페이지배너_234_7.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141114</mt20id>
+        <prfnm>극적인하룻밤 [대구]</prfnm>
+        <prfpdfrom>2018.01.19</prfpdfrom>
+        <prfpdto>2018.02.18</prfpdto>
+        <fcltynm>송죽씨어터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141114_171226_151338.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141111</mt20id>
+        <prfnm>분장실</prfnm>
+        <prfpdfrom>2017.12.25</prfpdfrom>
+        <prfpdto>2018.01.28</prfpdto>
+        <fcltynm>스튜디오76(구 이랑씨어터)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141111_171226_145724.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141104</mt20id>
+        <prfnm>정동진</prfnm>
+        <prfpdfrom>2018.01.12</prfpdfrom>
+        <prfpdto>2018.02.04</prfpdto>
+        <fcltynm>마당세실극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141104_171226_135649.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141091</mt20id>
+        <prfnm>차세대열전 2017!, 이것은 셰익스피어가 아니다</prfnm>
+        <prfpdfrom>2018.02.09</prfpdfrom>
+        <prfpdto>2018.02.11</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141091_180118_085226.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141069</mt20id>
+        <prfnm>차세대열전 2017!, 모던타임즈</prfnm>
+        <prfpdfrom>2018.01.19</prfpdfrom>
+        <prfpdto>2018.01.21</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201712/[창작아카데미연극]홈페이지배너_234_3.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141067</mt20id>
+        <prfnm>차세대열전 2017!, 감정의 몰락</prfnm>
+        <prfpdfrom>2018.02.02</prfpdfrom>
+        <prfpdto>2018.02.02</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201712/[창작아카데미연극]홈페이지배너_234.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141068</mt20id>
+        <prfnm>차세대열전 2017!, 노스체</prfnm>
+        <prfpdfrom>2018.02.04</prfpdfrom>
+        <prfpdto>2018.02.04</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201712/[창작아카데미연극]홈페이지배너_234_2.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141062</mt20id>
+        <prfnm>차세대열전 2017!, 나에게는 얼굴을 쓰다듬을 손이 없다</prfnm>
+        <prfpdfrom>2018.02.07</prfpdfrom>
+        <prfpdto>2018.02.07</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201712/[창작아카데미연극]홈페이지배너_234_1.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141063</mt20id>
+        <prfnm>차세대열전 2017!, 물고기도 고통을 느끼는가</prfnm>
+        <prfpdfrom>2018.01.31</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201712/[창작아카데미연극]홈페이지배너_234_4.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141064</mt20id>
+        <prfnm>차세대열전 2017!, 한 밤의 사람들</prfnm>
+        <prfpdfrom>2018.02.09</prfpdfrom>
+        <prfpdto>2018.02.09</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201712/[창작아카데미연극]홈페이지배너_234_6.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141065</mt20id>
+        <prfnm>차세대열전 2017!, 체액</prfnm>
+        <prfpdfrom>2018.02.11</prfpdfrom>
+        <prfpdto>2018.02.11</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201712/[창작아카데미연극]홈페이지배너_234_8.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141066</mt20id>
+        <prfnm>차세대열전 2017!, 무순 6년</prfnm>
+        <prfpdfrom>2018.02.23</prfpdfrom>
+        <prfpdto>2018.02.25</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Perf/201712/[창작아카데미연극]홈페이지배너_234_9.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141061</mt20id>
+        <prfnm>경기공연예술페스타, 그의 하루</prfnm>
+        <prfpdfrom>2018.01.25</prfpdfrom>
+        <prfpdto>2018.01.25</prfpdto>
+        <fcltynm>안산문화예술의전당</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141061_171222_110214.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141057</mt20id>
+        <prfnm>고양이라서 괜찮아</prfnm>
+        <prfpdfrom>2018.01.04</prfpdfrom>
+        <prfpdto>2018.03.11</prfpdto>
+        <fcltynm>BNK부산은행 조은극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141057_171222_103157.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141049</mt20id>
+        <prfnm>사랑일까 [광주]</prfnm>
+        <prfpdfrom>2018.01.25</prfpdfrom>
+        <prfpdto>2018.03.04</prfpdto>
+        <fcltynm>기분좋은극장 [상무지구]</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141049_171221_114236.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141045</mt20id>
+        <prfnm>대따 큰 별똥별</prfnm>
+        <prfpdfrom>2017.12.15</prfpdfrom>
+        <prfpdto>2018.01.15</prfpdto>
+        <fcltynm>사랑하니까 이야기다</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141045_171221_112110.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141039</mt20id>
+        <prfnm>오즈를 찾아서</prfnm>
+        <prfpdfrom>2018.01.04</prfpdfrom>
+        <prfpdto>2018.04.01</prfpdto>
+        <fcltynm>코엑스</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141039_171221_102202.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141025</mt20id>
+        <prfnm>로풍찬 유랑극장</prfnm>
+        <prfpdfrom>2018.02.08</prfpdfrom>
+        <prfpdto>2018.02.25</prfpdto>
+        <fcltynm>CKL스테이지</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141025_171220_101949.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141014</mt20id>
+        <prfnm>크레이지투 [광주]</prfnm>
+        <prfpdfrom>2018.04.20</prfpdfrom>
+        <prfpdto>2018.04.22</prfpdto>
+        <fcltynm>광주문화예술회관</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141014_171218_150911.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF141005</mt20id>
+        <prfnm>네버 더 시너</prfnm>
+        <prfpdfrom>2018.01.30</prfpdfrom>
+        <prfpdto>2018.04.15</prfpdto>
+        <fcltynm>DCF대명문화공장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF141005_171218_141312.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140938</mt20id>
+        <prfnm>레일을 따라 붉은 칸나의 바다로</prfnm>
+        <prfpdfrom>2017.12.29</prfpdfrom>
+        <prfpdto>2018.01.06</prfpdto>
+        <fcltynm>홍익대 대학로 아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140938_171228_113654.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140935</mt20id>
+        <prfnm>어바웃 머니</prfnm>
+        <prfpdfrom>2017.11.21</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>아루또소극장(구. 소담소극장, 구. 코메디컬센터)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140935_171211_161508.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF140859</mt20id>
+        <prfnm>로맨틱 크리스마스</prfnm>
+        <prfpdfrom>2017.12.15</prfpdfrom>
+        <prfpdto>2018.02.04</prfpdto>
+        <fcltynm>지즐소극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140859_171205_091150.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF140839</mt20id>
+        <prfnm>사랑일까?</prfnm>
+        <prfpdfrom>2017.12.08</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>여우별씨어터(구. 내여페 The Stage)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140839_171204_115208.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF140836</mt20id>
+        <prfnm>러브액츄얼리 오리지날 [부산]</prfnm>
+        <prfpdfrom>2017.12.15</prfpdfrom>
+        <prfpdto>2018.03.31</prfpdto>
+        <fcltynm>부산메트로홀 (구. AN아트홀 광안)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140836_171204_112626.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140803</mt20id>
+        <prfnm>원맨쇼: 엄마를 사랑하는 아들의 원맨쇼</prfnm>
+        <prfpdfrom>2017.12.01</prfpdfrom>
+        <prfpdto>2018.01.21</prfpdto>
+        <fcltynm>소극장공유(구. 키작은소나무극장)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140803_171201_112148.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140778</mt20id>
+        <prfnm>라이어 1탄</prfnm>
+        <prfpdfrom>2017.12.01</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>아트포레스트 아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140778_171130_105807.png</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140777</mt20id>
+        <prfnm>가벼운 스님들</prfnm>
+        <prfpdfrom>2018.01.11</prfpdfrom>
+        <prfpdto>2018.02.04</prfpdto>
+        <fcltynm>소극장 알과핵, 문래예술공장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140777_171130_104017.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140747</mt20id>
+        <prfnm>발렌타인 데이</prfnm>
+        <prfpdfrom>2017.12.23</prfpdfrom>
+        <prfpdto>2018.01.14</prfpdto>
+        <fcltynm>예술의전당</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140747_171129_100227.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140733</mt20id>
+        <prfnm>나의PS파트너</prfnm>
+        <prfpdfrom>2017.12.15</prfpdfrom>
+        <prfpdto>2018.03.31</prfpdto>
+        <fcltynm>아티스탄홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140733_171128_142413.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF140729</mt20id>
+        <prfnm>안네프랑크</prfnm>
+        <prfpdfrom>2017.12.20</prfpdfrom>
+        <prfpdto>2018.01.07</prfpdto>
+        <fcltynm>정동세실극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140729_171128_111242.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140646</mt20id>
+        <prfnm>잇츠유 [대전]</prfnm>
+        <prfpdfrom>2017.11.21</prfpdfrom>
+        <prfpdto>2018.02.25</prfpdto>
+        <fcltynm>드림아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140646_171124_134611.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140573</mt20id>
+        <prfnm>더 헬멧: Room‘s Vol.1</prfnm>
+        <prfpdfrom>2017.12.19</prfpdfrom>
+        <prfpdto>2018.03.04</prfpdto>
+        <fcltynm>대학로아트원씨어터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140573_171122_103531.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140551</mt20id>
+        <prfnm>뉴보잉보잉 [대구]</prfnm>
+        <prfpdfrom>2017.11.16</prfpdfrom>
+        <prfpdto>2018.01.01</prfpdto>
+        <fcltynm>문화예술전용극장CT</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140551_171121_091651.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140504</mt20id>
+        <prfnm>찌질하지만 로맨틱하게 [광주]</prfnm>
+        <prfpdfrom>2017.11.30</prfpdfrom>
+        <prfpdto>2018.01.07</prfpdto>
+        <fcltynm>충장아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140504_171117_154519.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140502</mt20id>
+        <prfnm>그남자 그여자 [전주]</prfnm>
+        <prfpdfrom>2017.12.01</prfpdfrom>
+        <prfpdto>2018.01.01</prfpdto>
+        <fcltynm>한해랑아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140502_171117_154132.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140499</mt20id>
+        <prfnm>그남자그여자 [광주]</prfnm>
+        <prfpdfrom>2017.12.07</prfpdfrom>
+        <prfpdto>2018.01.21</prfpdto>
+        <fcltynm>기분좋은극장 [상무지구]</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140499_171117_152251.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140468</mt20id>
+        <prfnm>제14회 서울 아시테지 겨울축제, 제랄다와 거인</prfnm>
+        <prfpdfrom>2018.01.17</prfpdfrom>
+        <prfpdto>2018.01.18</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Rent/201710/24812e9a-2a20-4902-88f9-3dcb9584ede6.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140462</mt20id>
+        <prfnm>제14회 서울 아시테지 겨울축제: 거인 이야기</prfnm>
+        <prfpdfrom>2018.01.27</prfpdfrom>
+        <prfpdto>2018.01.28</prfpdto>
+        <fcltynm>공연예술센터</fcltynm>
+        <poster>http://www.koreapac.kr/Down/Rent/201710/7aa6190a-f973-4985-b36e-2175bab8b94e.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140396</mt20id>
+        <prfnm>뉴보잉보잉 [대전]</prfnm>
+        <prfpdfrom>2017.11.24</prfpdfrom>
+        <prfpdto>2018.01.01</prfpdto>
+        <fcltynm>이수아트홀 [대전]</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140396_171114_134254.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140389</mt20id>
+        <prfnm>작업의정석 [대전]</prfnm>
+        <prfpdfrom>2017.12.02</prfpdfrom>
+        <prfpdto>2018.01.01</prfpdto>
+        <fcltynm>대전서구문화원</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140389_171114_113909.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140303</mt20id>
+        <prfnm>톡톡</prfnm>
+        <prfpdfrom>2017.10.20</prfpdfrom>
+        <prfpdto>2018.01.28</prfpdto>
+        <fcltynm>티오엠씨어터(구. 문화공간필링)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140303_171109_103253.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140243</mt20id>
+        <prfnm>경식아 사랑해</prfnm>
+        <prfpdfrom>2017.11.09</prfpdfrom>
+        <prfpdto>2018.02.11</prfpdto>
+        <fcltynm>JTN 아트홀(구. 대학로예술마당)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140243_171106_115900.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140150</mt20id>
+        <prfnm>사랑일까? [대구]</prfnm>
+        <prfpdfrom>2017.11.16</prfpdfrom>
+        <prfpdto>2018.01.21</prfpdto>
+        <fcltynm>여우별아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140150_171031_104652.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140146</mt20id>
+        <prfnm>수상한 흥신소 [수원]</prfnm>
+        <prfpdfrom>2017.11.25</prfpdfrom>
+        <prfpdto>2018.01.01</prfpdto>
+        <fcltynm>KBS 수원아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140146_171031_102029.png</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF140136</mt20id>
+        <prfnm>자메이카 헬스클럽</prfnm>
+        <prfpdfrom>2017.11.17</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>익스트림씨어터 3관, 익스트림씨어터 1관</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF140136_171030_145414.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF139952</mt20id>
+        <prfnm>시간을 파는 상점 [대구]</prfnm>
+        <prfpdfrom>2017.11.03</prfpdfrom>
+        <prfpdto>2018.01.21</prfpdto>
+        <fcltynm>여우별아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF139952_171023_130417.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF139777</mt20id>
+        <prfnm>경남 창녕군 길곡면</prfnm>
+        <prfpdfrom>2017.12.15</prfpdfrom>
+        <prfpdto>2018.01.21</prfpdto>
+        <fcltynm>동숭아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF139777_171208_165446.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF139707</mt20id>
+        <prfnm>수상한흥신소 2탄 [부산]</prfnm>
+        <prfpdfrom>2017.09.28</prfpdfrom>
+        <prfpdto>2018.01.01</prfpdto>
+        <fcltynm>BNK부산은행 조은극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF139707_171010_141010.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF139660</mt20id>
+        <prfnm>트러블메이트</prfnm>
+        <prfpdfrom>2017.09.26</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>대학로 위로홀(구. 몬스터홀)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF139660_170928_092831.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF139537</mt20id>
+        <prfnm>만화방 미숙이</prfnm>
+        <prfpdfrom>2017.10.06</prfpdfrom>
+        <prfpdto>2018.06.03</prfpdto>
+        <fcltynm>해오름 예술극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF139537_170918_164417.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF139488</mt20id>
+        <prfnm>찌질하지만 로맨틱하게</prfnm>
+        <prfpdfrom>2017.09.15</prfpdfrom>
+        <prfpdto>2018.02.25</prfpdto>
+        <fcltynm>대학로단막극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF139488_170914_100600.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF139460</mt20id>
+        <prfnm>맞짱연인</prfnm>
+        <prfpdfrom>2017.09.14</prfpdfrom>
+        <prfpdto>2018.01.01</prfpdto>
+        <fcltynm>BNK부산은행 조은극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF139460_170912_105213.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF139453</mt20id>
+        <prfnm>어쩌다 안드로메다</prfnm>
+        <prfpdfrom>2017.09.15</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>동화소극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF139453_170912_095825.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF139276</mt20id>
+        <prfnm>당신이주인공</prfnm>
+        <prfpdfrom>2017.09.05</prfpdfrom>
+        <prfpdto>2018.01.01</prfpdto>
+        <fcltynm>홍대 김대범소극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF139276_170831_112929.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF139115</mt20id>
+        <prfnm>오백에삼십 [대구]</prfnm>
+        <prfpdfrom>2017.09.01</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>아트플러스씨어터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF139115_170818_142058.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF138853</mt20id>
+        <prfnm>어쩌면로맨스</prfnm>
+        <prfpdfrom>2017.08.04</prfpdfrom>
+        <prfpdto>2018.03.31</prfpdto>
+        <fcltynm>하모니아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138853_170801_133624.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF138776</mt20id>
+        <prfnm>그남자 그여자</prfnm>
+        <prfpdfrom>2017.07.07</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>파랑씨어터 (구. 도향아트홀, 뮤디스홀)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138776_170726_110350.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF138629</mt20id>
+        <prfnm>NT Live, 헤다 가블러</prfnm>
+        <prfpdfrom>2018.05.20</prfpdfrom>
+        <prfpdto>2018.05.27</prfpdto>
+        <fcltynm>국립극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138629_170719_133551.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF138628</mt20id>
+        <prfnm>NT Live, 예르마</prfnm>
+        <prfpdfrom>2018.03.27</prfpdfrom>
+        <prfpdto>2018.03.30</prfpdto>
+        <fcltynm>국립극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138628_170719_133130.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF138627</mt20id>
+        <prfnm>NT Live, 로젠크란츠와 길덴스턴은 죽었다</prfnm>
+        <prfpdfrom>2018.03.31</prfpdfrom>
+        <prfpdto>2018.04.01</prfpdto>
+        <fcltynm>국립극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138627_170719_132905.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF138624</mt20id>
+        <prfnm>NT Live, 강박관념</prfnm>
+        <prfpdfrom>2018.05.18</prfpdfrom>
+        <prfpdto>2018.05.25</prfpdto>
+        <fcltynm>국립극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138624_170719_132113.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF138622</mt20id>
+        <prfnm>신 창극 시리즈 1 - 이자람(가제)</prfnm>
+        <prfpdfrom>2018.02.28</prfpdfrom>
+        <prfpdto>2018.03.04</prfpdto>
+        <fcltynm>예술의전당</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138622_170719_113646.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF138616</mt20id>
+        <prfnm>진채선 (가제)</prfnm>
+        <prfpdfrom>2018.04.25</prfpdfrom>
+        <prfpdto>2018.05.06</prfpdto>
+        <fcltynm>국립극단 [명동]</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138616_170719_114723.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF138615</mt20id>
+        <prfnm>흥보씨</prfnm>
+        <prfpdfrom>2018.06.27</prfpdfrom>
+        <prfpdto>2018.07.08</prfpdto>
+        <fcltynm>국립극단 [명동]</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138615_170719_103359.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연예정</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF138393</mt20id>
+        <prfnm>오마이갓</prfnm>
+        <prfpdfrom>2017.07.01</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>봄날아트홀(구. 아리랑소극장)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138393_170711_134433.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF138278</mt20id>
+        <prfnm>스위치</prfnm>
+        <prfpdfrom>2017.07.18</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>아루또소극장(구. 소담소극장, 구. 코메디컬센터)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138278_170710_145552.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF138268</mt20id>
+        <prfnm>시간을 파는 상점</prfnm>
+        <prfpdfrom>2017.07.01</prfpdfrom>
+        <prfpdto>2018.02.25</prfpdto>
+        <fcltynm>파랑씨어터 (구. 도향아트홀, 뮤디스홀)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138268_170710_141252.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF138204</mt20id>
+        <prfnm>동성애</prfnm>
+        <prfpdfrom>2017.06.15</prfpdfrom>
+        <prfpdto>9999.12.31</prfpdto>
+        <fcltynm>랑씨어터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138204_170707_100803.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF138090</mt20id>
+        <prfnm>에스 (S)</prfnm>
+        <prfpdfrom>2017.07.04</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>호은아트홀(구 키득키득아트홀)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138090_170726_091359.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF138080</mt20id>
+        <prfnm>최면</prfnm>
+        <prfpdfrom>2017.07.08</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>피가로아트홀(구. 훈아트홀)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138080_170703_163949.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF138045</mt20id>
+        <prfnm>하루</prfnm>
+        <prfpdfrom>2017.06.13</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>피가로아트홀(구. 훈아트홀)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF138045_170630_132713.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF137569</mt20id>
+        <prfnm>그녀를 믿지마세요</prfnm>
+        <prfpdfrom>2015.10.30</prfpdfrom>
+        <prfpdto>9999.12.31</prfpdto>
+        <fcltynm>JH아트홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF137569_170524_104817.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF136878</mt20id>
+        <prfnm>오버코트</prfnm>
+        <prfpdfrom>2017.02.25</prfpdfrom>
+        <prfpdto>2018.04.14</prfpdto>
+        <fcltynm>라이트씨어터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF136878_170407_163424.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF136155</mt20id>
+        <prfnm>루나틱 [대학로]</prfnm>
+        <prfpdfrom>2017.03.15</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>문씨어터 (구. 지구인씨어터)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF136155_170303_142512.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF135968</mt20id>
+        <prfnm>한뼘사이</prfnm>
+        <prfpdfrom>2017.03.01</prfpdfrom>
+        <prfpdto>2018.03.31</prfpdto>
+        <fcltynm>서연아트홀(구. 인아소극장)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF135968_170224_101442.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF135178</mt20id>
+        <prfnm>안나라수마나라</prfnm>
+        <prfpdfrom>2017.02.01</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>대학로 위로홀(구. 몬스터홀)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF135178_170123_144537.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF134834</mt20id>
+        <prfnm>뷰티풀라이프</prfnm>
+        <prfpdfrom>2016.10.02</prfpdfrom>
+        <prfpdto>2018.03.31</prfpdto>
+        <fcltynm>샘터파랑새극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF134834_171024_093943.png</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF134682</mt20id>
+        <prfnm>운빨로맨스</prfnm>
+        <prfpdfrom>2017.01.13</prfpdfrom>
+        <prfpdto>2018.03.31</prfpdto>
+        <fcltynm>올래홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF134682_180117_152438.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF134516</mt20id>
+        <prfnm>한 여름 밤의 꿈</prfnm>
+        <prfpdfrom>2018.01.05</prfpdfrom>
+        <prfpdto>2018.01.28</prfpdto>
+        <fcltynm>세종문화회관</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF134516_171213_133607.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>N</openrun>
+    </db>
+    <db>
+        <mt20id>PF134346</mt20id>
+        <prfnm>술래잡기</prfnm>
+        <prfpdfrom>2016.11.25</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>댕로홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF134346_161125_143846.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF134308</mt20id>
+        <prfnm>조각: 사라진 기억</prfnm>
+        <prfpdfrom>2016.11.20</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>댕로홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF134308_161121_165109.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF134302</mt20id>
+        <prfnm>그놈은 예뻤다</prfnm>
+        <prfpdfrom>2016.11.17</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>정태호소극장 play</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF134302_170518_163334.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF134093</mt20id>
+        <prfnm>수상한 흥신소 3탄: 웨딩브레이커</prfnm>
+        <prfpdfrom>2016.11.04</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>익스트림씨어터 2관, 익스트림씨어터 1관</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF134093_161103_132304.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF133641</mt20id>
+        <prfnm>한번더</prfnm>
+        <prfpdfrom>2016.04.01</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>호은아트홀(구 키득키득아트홀)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF133641_161007_154223.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF133479</mt20id>
+        <prfnm>거울인형</prfnm>
+        <prfpdfrom>2016.10.01</prfpdfrom>
+        <prfpdto>2018.12.31</prfpdto>
+        <fcltynm>한얼소극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF133479_160926_132835.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF133478</mt20id>
+        <prfnm>기억해봐</prfnm>
+        <prfpdfrom>2016.10.01</prfpdfrom>
+        <prfpdto>2018.12.31</prfpdto>
+        <fcltynm>한얼소극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF133478_160926_132630.JPG</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF132812</mt20id>
+        <prfnm>위저드베이커리</prfnm>
+        <prfpdfrom>2016.09.06</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>울씨어터(구. 미아트홀)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF132812_161012_104752.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF132810</mt20id>
+        <prfnm>더하우스: 죽은 아이의 속삭임</prfnm>
+        <prfpdfrom>2014.08.01</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>호은아트홀(구 키득키득아트홀)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF132810_160808_104040.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF132744</mt20id>
+        <prfnm>행쇼</prfnm>
+        <prfpdfrom>2016.02.23</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>호은아트홀(구 키득키득아트홀)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF132744_160803_113443.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF132676</mt20id>
+        <prfnm>뉴보잉보잉 1탄 [대학로]</prfnm>
+        <prfpdfrom>2013.10.01</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>대학로 두레홀 3관</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF132676_161102_143736.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF132171</mt20id>
+        <prfnm>크리미널</prfnm>
+        <prfpdfrom>2016.07.01</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>봄날아트홀(구. 아리랑소극장)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF132171_161021_142352.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF130893</mt20id>
+        <prfnm>룸넘버13 [서울]</prfnm>
+        <prfpdfrom>2016.04.05</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>대학로스타시티</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF130893_160406_102123.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF130891</mt20id>
+        <prfnm>쉬어매드니스 [대학로]</prfnm>
+        <prfpdfrom>2016.04.05</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>콘텐츠박스(구. 르메이에르 씨어터)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF130891_160406_100622.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF130623</mt20id>
+        <prfnm>행오버: 게임의 시작</prfnm>
+        <prfpdfrom>2016.03.18</prfpdfrom>
+        <prfpdto>2018.12.31</prfpdto>
+        <fcltynm>휴먼시어터(구. 극장가자), 강릉아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF130623_170517_165135.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF130358</mt20id>
+        <prfnm>연애하기 좋은 날</prfnm>
+        <prfpdfrom>2016.03.01</prfpdfrom>
+        <prfpdto>2018.03.31</prfpdto>
+        <fcltynm>대학로 아트홀 1관(구. 서울문화예술대학교 대학로 극장)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF130358_160919_101728.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF130357</mt20id>
+        <prfnm>사춘기메들리</prfnm>
+        <prfpdfrom>2016.03.01</prfpdfrom>
+        <prfpdto>2018.03.31</prfpdto>
+        <fcltynm>대학로 아트홀 1관(구. 서울문화예술대학교 대학로 극장)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF130357_160229_112525.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF129101</mt20id>
+        <prfnm>오백에 삼십</prfnm>
+        <prfpdfrom>2015.12.01</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>미마지아트센터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF129101_170421_153136.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF121856</mt20id>
+        <prfnm>두 여자 [대학로]</prfnm>
+        <prfpdfrom>2015.01.09</prfpdfrom>
+        <prfpdto>2018.01.31</prfpdto>
+        <fcltynm>라이프 씨어터</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF121856_150130_162652.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연완료</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF121930</mt20id>
+        <prfnm>죽여주는 이야기</prfnm>
+        <prfpdfrom>2008.10.01</prfpdfrom>
+        <prfpdto>2018.03.31</prfpdto>
+        <fcltynm>삼형제극장(환상극장)</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF121930_160202_114713.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF121978</mt20id>
+        <prfnm>꽃보다 슈퍼스타</prfnm>
+        <prfpdfrom>2014.04.22</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>대학로 마로니에소극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF121978_170228_104837.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF121682</mt20id>
+        <prfnm>옥탑방 고양이 [대학로]</prfnm>
+        <prfpdfrom>2010.04.06</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>틴틴홀</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF121682_180117_155944.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF121749</mt20id>
+        <prfnm>극적인 하룻밤</prfnm>
+        <prfpdfrom>2014.09.26</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>바탕골소극장</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF121749_160202_133331.jpg</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF122341</mt20id>
+        <prfnm>연극 작업의 정석 1탄</prfnm>
+        <prfpdfrom>2015.01.01</prfpdfrom>
+        <prfpdto>2018.02.28</prfpdto>
+        <fcltynm>순위아트홀1관 [대학로]</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF122341_170530_180431.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+    <db>
+        <mt20id>PF122231</mt20id>
+        <prfnm>수상한 흥신소 1탄 [대학로]</prfnm>
+        <prfpdfrom>2015.03.01</prfpdfrom>
+        <prfpdto>2018.03.31</prfpdto>
+        <fcltynm>익스트림씨어터 1관</fcltynm>
+        <poster>http://www.kopis.or.kr/upload/pfmPoster/PF_PF122231_170517_140923.gif</poster>
+        <genrenm>연극</genrenm>
+        <prfstate>공연중</prfstate>
+        <openrun>Y</openrun>
+    </db>
+</dbs>
