@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block accounts %}
+<div class="login_box">
+{% if request.user.is_authenticated %}
+
+<h1>{{ request.user.username }}</h1>
+<form action="{% url 'accounts:logout' %}" method="POST">
+  {% csrf_token %}
+<button>Log out</button>
+</form>
+
+{% else %}
+<h2>Log In</h2>
+<form method="POST">
+  {% csrf_token %}
+{{ form.as_p }}
+
+  <button type="submit" class="waves-effect waves-light btn" style="margin: auto;">로그인</button>
+
+</form>
+
+{% endif %}
+</div>
+{% endblock %}

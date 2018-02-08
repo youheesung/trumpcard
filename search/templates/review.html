@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block search %}
+{% if review.count %}
+{% for a in review %}
+  <div class="col s12 m7">
+
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="https://lorempixel.com/100/190/nature/6">
+      </div>
+      <div class="card-stacked">
+        <br>
+        <div class="card-content">
+          <p><h3>{{ a.title|safe }}</h3></p>
+          <p>{{ a.author.username }}</p>
+        </div>
+        <div class="card-action">
+          <a href="{% url 'search:review_detail' a.pk %}">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+{% else %}
+<p>작성된 리뷰가 없습니다.</p>
+
+{% endif %}
+
+{% endblock %}

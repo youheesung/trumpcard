@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block search %}
+<div class="card horizontal">
+<div class="search_input row">
+  <form method="POST" action="{% url 'search:result' %}" class="col s12">
+    {% csrf_token %}
+    <div class="input-field col s2" >
+        <input type="text" name="name" placeholder="작품명">
+    </div>
+    <div class="input-field col s2" >
+        <input type="text" name="actor" placeholder="배우">
+        </div>
+    <div class="input-field col s2" >
+        <input type="text" name="staff" placeholder="연출">
+        </div>
+    <div class="input-field col s2" >
+        <input type="text" name="place" placeholder="장소">
+        </div>
+    <div class="input-field col s2" >
+        <input type="text" name="minprice" placeholder="가격(원)">
+        </div>
+    <div class="input-field col s2" >
+        <input type="date" name="date" placeholder="날짜">
+        </div>
+        <button type="submit" class="waves-effect waves-light btn" >검색</button>
+  </form>
+</div>
+</div>
+
+<div class="box">
+<h3>박스오피스</h3>
+{% for a in box %}
+{% if a.grade > 0 and a.grade < 6 %}
+
+{% if a.grade == 1 %}
+<div class="row" style="display: inline-block; float:left; margin: 0 auto;">
+    <div class="col" >
+    <div class="col s2 m7" >
+      <div class="card large" style="width:500px; height:625px;">
+        <div class="card-image">
+          <img src="{{ a.poster }}" >
+          <span class="card-title"><h1>{{ a.grade }}위</h1></span>
+        </div>
+        <div class="card-content">
+          <p><h3>{{ a.name }}</h3></p>
+          <p>{{ a.actor }}</p>
+        </div>
+        <div class="card-action">
+          <a href="{% url 'search:detail' a.playid %}">This is a link</a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+{% else %}
+<div class="row" style="display: inline-block;">
+    <div class="col">
+    <div class="col s1 m7" style="width:250px; height:300px;">
+      <div class="card small">
+        <div class="card-image" class="poster">
+          <img src="{{ a.poster }}" >
+          <span class="card-title">{{ a.grade }}위</span>
+        </div>
+        <div class="card-content">
+          <p><h5 style="margin-top:0;">{{ a.name }}</h5></p>
+
+        </div>
+        <div class="card-action">
+          <a href="{% url 'search:detail' a.playid %}">This is a link</a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+{% endif %}
+{% endif %}
+{% endfor %}
+</div>
+{% endblock %}

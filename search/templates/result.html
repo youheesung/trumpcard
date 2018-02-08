@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block search %}
+{% for a in result %}
+
+
+
+  <div class="col s12 m7">
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="{{ a.poster }}" class="poster">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p><h4 style="margin-top: 0;">{{ a.name }}</h4></p>
+          <p>{{ a.actor }}</p>
+          <p>{{ a.staff }}</p>
+          <p>{{ a.start_date }}</p>
+          <p>{{ a.end_date }}</p>
+          <p>{{ a.price }}</p>
+        </div>
+        <div class="card-action">
+          <a href="{% url 'search:detail' a.playid %}">자세히 보기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+{% endblock %}
+
+
+
+

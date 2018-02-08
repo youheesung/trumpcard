@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block search %}
+<div style="text-align:center;">
+  <h1>{{ play.name }}</h1>
+  <h3>{{ play.start_date }}</h3>
+  <h3>{{ play.end_date }}</h3>
+  <h3>{{ play.actor }}</h3>
+  <h3>{{ play.staff }}</h3>
+  <h3>{{ play.price }}</h3>
+
+  {% if play.styurl1|length > 4 %}
+  <img src="{{ play.styurl1 }}">
+  {% endif %}
+  <br>
+  {% if play.styurl2|length > 4 %}
+  <img src="{{ play.styurl2 }}">
+  {% endif %}
+  <br>
+  {% if play.styurl3|length > 4 %}
+  <img src="{{ play.styurl3 }}">
+  {% endif %}
+  <br>
+  {% if play.styurl4|length > 4 %}
+  <img src="{{ play.styurl4 }}">
+  {% endif %}
+
+<br>
+<script language="javascript">
+function winOpen1()
+
+{
+        window.open("{% url 'search:review' play.playid %}", "newWin", "width=300, height=200, toolbar=no, scroll=no");
+}
+function winOpen2()
+{
+        window.open("{% url 'search:review_create' play.playid %}", "newWin", "width=300, height=200, toolbar=no, scroll=no");
+}
+</script>
+
+
+<a href="javascript:winOpen1();" class="btn btn-block" style="width:70%; margin: 0 auto;" >리뷰 보러가기</a>
+<a href="javascript:winOpen2();" class="btn btn-block" style="width:70%; margin: 10px auto;">리뷰 작성하기</a>
+<a href="{% url 'search:search' %}" class="btn btn-block" style="width:70%; margin: 10px auto;">검색화면</a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!-- Compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/theatre.css' %}">
+  <script type="text/javascript" src="{% static 'js/ajax_settings.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/event.js' %}"></script>
+  <style type="text/css">
+    body {
+      background-image: url("{% static 'body.png' %}");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: top;
+      background-size: cover;
+    }
+
+    i {
+      color: yellow;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="{% url 'search:search' %}" class="brand-logo" style="margin-left: 160px;">야!극장고?<i class="material-icons">star</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 160px;">
+        {% if request.user.is_authenticated %}
+        <li><a href="#">{{ request.user }}</a></li>
+        <li><a href="{% url 'accounts:login' %}">Log Out</a></li>
+        {% else %}
+        <li><a href="{% url 'accounts:login' %}">
+        Log In
+        </a></li>
+      {% endif %}
+      </ul>
+    </div>
+  </nav>
+  </div>
+<main>
+{% block search %}{% endblock %}
+{% block accounts %}{% endblock %}
+</main>
+        <footer class="page-footer" style="background-color: cyan;">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+</body>
+</html>

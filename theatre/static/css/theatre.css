@@ -1,0 +1,37 @@
+    body {
+
+    }
+
+    main {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .poster {
+      display: inline-block;
+      /*float: left;*/
+      width: 200px;
+      height: 250px;
+    }
+    .nav {
+      display: inline-block;
+      float:right;
+    }
+    .search_input {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .login_box {
+      width: 60%;
+      margin: 100px auto;
+    }
+
+    nav {
+      background-color: cyan;
+    }
+
+    .box {
+      margin: 20px auto;
+    }
+

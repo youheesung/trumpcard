@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block search %}
+<div class="create" style="text-align:center;">
+<form method="POST" id="review_form">
+{% csrf_token %}
+{{ form }}
+  <br>
+  <div class="star_box">
+    <i class="material-icons first star">star_border</i>
+    <i class="material-icons star">star_border</i>
+    <i class="material-icons star">star_border</i>
+    <i class="material-icons star">star_border</i>
+    <i class="material-icons star">star_border</i>
+  </div>
+  <span class="rate" style="color: white; text-align:center;"></span>
+  <br>
+<button type="submit">리뷰 작성하기</button>
+
+<script type="text/javascript">
+
+  $('#review_form').submit(function(e) {
+    e.preventDefault();
+    var review = $('#')
+    $.post('{% url "search:review_create" play.playid %}', {
+      review: $('#review_form').serialize(),
+      rate: parseInt($('.rate').html())
+    });
+  });
+  $('.star').mouseover(function(){
+    var star = $('.first');
+    $(this).html('star');
+    $(this).prevAll().html('star');
+
+    console.log($(this).prevAll().length+1);
+  });
+
+  $('.star').mouseout(function(){
+    $('.star').html('star_border');
+  });
+
+  $('.star').click(function(){
+    var star = $('.first');
+    if($(this).hasClass('star')){
+      $(this).html('star');
+      $(this).prevAll().html('star');
+      $(this).nextAll().html('star_border');
+      var rate = $(this).prevAll().length+1;
+      $('.rate').html(rate);
+      $(this).removeClass('star');
+      $(this).prevAll().removeClass('star');
+    }else {
+      $(this).html('star');
+      $(this).prevAll().html('star');
+      $(this).nextAll().html('star_border');
+      var rate = $(this).prevAll().length+1;
+      $('.rate').html(rate);
+      $(this).nextAll().addClass('star');
+    }
+  });
+</script>
+</form>
+</div>
+{% endblock %}
