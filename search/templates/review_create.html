@@ -21,11 +21,17 @@
 
   $('#review_form').submit(function(e) {
     e.preventDefault();
-    var review = $('#')
+    var title = $('#id_title').val();
+    var content = $('#id_content').val();
+
     $.post('{% url "search:review_create" play.playid %}', {
-      review: $('#review_form').serialize(),
+      title: title,
+      content: content,
       rate: parseInt($('.rate').html())
-    });
+    }).done(function(){
+    console.log('ok');
+    location.href = '{% url "search:review" play.playid %}';
+  });
   });
   $('.star').mouseover(function(){
     var star = $('.first');

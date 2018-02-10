@@ -15,7 +15,8 @@ class PlayForm(forms.ModelForm):
 class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
-        fields = ['title', 'content']
+        fields = ['title', 'content', 'rate']
         widgets = {
             'content': SummernoteWidget(),
+            'rate': forms.HiddenInput(),
           }

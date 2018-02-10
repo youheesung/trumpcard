@@ -2,7 +2,7 @@ from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
 from .models import (
     Play,
-    Review
+    Review,
     )
 # Register your models here.
 
@@ -13,3 +13,4 @@ class PostAdmin(SummernoteModelAdmin):
 
 admin.site.register(Review, PostAdmin)
 admin.site.register(Play)
+

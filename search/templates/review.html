@@ -6,17 +6,31 @@
   <div class="col s12 m7">
 
     <div class="card horizontal">
-      <div class="card-image">
+ <!--     <div class="card-image">
         <img src="https://lorempixel.com/100/190/nature/6">
-      </div>
+      </div>  -->
       <div class="card-stacked">
-        <br>
+
         <div class="card-content">
-          <p><h3>{{ a.title|safe }}</h3></p>
+          <a href="{% url 'search:review_detail' a.pk %}"><p><h3>{{ a.title|safe }}</h3></p></a>
           <p>{{ a.author.username }}</p>
         </div>
         <div class="card-action">
-          <a href="{% url 'search:review_detail' a.pk %}">This is a link</a>
+          <div class="star_box">
+                <i class="material-icons first star {{ a.title }}">star_border</i>
+                <i class="material-icons star {{ a.title }}">star_border</i>
+                <i class="material-icons star {{ a.title }}">star_border</i>
+                <i class="material-icons star {{ a.title }}">star_border</i>
+                <i class="material-icons star {{ a.title }}">star_border</i>
+                <span><h5 style="display: inline-block;">{{ a.rate }}</h5></span>
+            <script type="text/javascript">
+              var rate = parseInt("{{ a.rate }}");
+              var star = document.getElementsByClassName("star {{ a.title }}");
+              for(var i=0; i<rate; i++) {
+                star[i].innerHTML = "star";
+              }
+            </script>
+          </div>
         </div>
       </div>
     </div>

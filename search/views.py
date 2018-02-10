@@ -59,6 +59,7 @@ def review(request, pk=None, playid=None):
         review = Review.objects.filter(play__playid=playid)
     elif pk is not None and playid is None:
         review = Review.objects.filter(author__pk=pk)
+
     ctx = {
         'review': review,
         }
@@ -66,24 +67,26 @@ def review(request, pk=None, playid=None):
 
 
 def review_create(request, playid):
-    print(request.POST)
-    form = ReviewForm(request.POST or None)
-    print(form)
-    play = Play.objects.get(playid=playid)
-    if request.method == 'POST' and form.is_valid():
-        print(request.POST['rate'])
-        review = form.save(commit=False)
-        review.rate = request.POST.get('rate')
-        review.author = request.user
-        review.play = Play.objects.get(playid=playid)
-        review.save()
-        return redirect(reverse(
-            'search:review',
-            kwargs={'playid': review.play.playid}
-            ))
+
+    form = ReviewForm()
+    play = Play.objects.filter(playid=playid)
+    if request.method == 'POST' and request.is_ajax():
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            new_review = form.save(commit=False)
+            new_review.author = request.user
+            new_review.play = play.get(playid=playid)
+            new_review.save()
+        review = Review.objects.filter(play__playid=playid)
+        review_count = review.count()
+        rateSum = 0
+        for i in review:
+            rateSum += i.rate
+        rateSum /= review_count
+        play.update(rate=rateSum)
     ctx = {
         'form': form,
-        'play': play
+        'play': play.get(playid=playid)
     }
     return render(request, 'review_create.html', ctx)
 

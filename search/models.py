@@ -65,10 +65,11 @@ class Play(models.Model):
 
     rate = models.DecimalField(
         max_digits=10,
-        decimal_places=9,
+        decimal_places=1,
         default=0,
         verbose_name='평점'
         )
+
 
     def __str__(self):
         return '{0}'.format(self.name)

@@ -38,16 +38,25 @@
     <div class="col" >
     <div class="col s2 m7" >
       <div class="card large" style="width:500px; height:625px;">
+
         <div class="card-image">
           <img src="{{ a.poster }}" >
           <span class="card-title"><h1>{{ a.grade }}위</h1></span>
         </div>
         <div class="card-content">
-          <p><h3>{{ a.name }}</h3></p>
+          <a href="{% url 'search:detail' a.playid %}"><p><h3>{{ a.name }}</h3></p></a>
           <p>{{ a.actor }}</p>
         </div>
         <div class="card-action">
-          <a href="{% url 'search:detail' a.playid %}">This is a link</a>
+                <div class="star_box">
+                <i class="material-icons first star {{ a.name }}">star_border</i>
+                <i class="material-icons star {{ a.name }}">star_border</i>
+                <i class="material-icons star {{ a.name }}">star_border</i>
+                <i class="material-icons star {{ a.name }}">star_border</i>
+                <i class="material-icons star {{ a.name }}">star_border</i>
+                <span><h5 style="display: inline-block;">{{ a.rate }}</h5></span>
+
+          </div>
         </div>
       </div>
     </div>
@@ -57,18 +66,25 @@
 {% else %}
 <div class="row" style="display: inline-block;">
     <div class="col">
-    <div class="col s1 m7" style="width:250px; height:300px;">
+    <div class="col s2 m7" style="width:250px; height:300px;">
       <div class="card small">
         <div class="card-image" class="poster">
           <img src="{{ a.poster }}" >
           <span class="card-title">{{ a.grade }}위</span>
         </div>
         <div class="card-content">
-          <p><h5 style="margin-top:0;">{{ a.name }}</h5></p>
+          <a href="{% url 'search:detail' a.playid %}"><p><h5 style="margin-top:0;">{{ a.name }}</h5></p></a>
 
         </div>
         <div class="card-action">
-          <a href="{% url 'search:detail' a.playid %}">This is a link</a>
+          <div class="star_box">
+                <i class="material-icons first star {{ a.name }}">star_border</i>
+                <i class="material-icons star {{ a.name }}">star_border</i>
+                <i class="material-icons star {{ a.name }}">star_border</i>
+                <i class="material-icons star {{ a.name }}">star_border</i>
+                <i class="material-icons star {{ a.name }}">star_border</i>
+                <span>{{ a.rate }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -76,6 +92,16 @@
 </div>
 {% endif %}
 {% endif %}
+            <script type="text/javascript">
+              var rate = "{{ a.rate }}";
+              var star = document.getElementsByClassName("star {{ a.name }}");
+              for(var i=0; i<parseInt(rate); i++) {
+                star[i].innerHTML = "star";
+              }
+              if((rate%1) >= 0.5){
+                star[i].innerHTML = "star_half";
+              }
+            </script>
 {% endfor %}
 </div>
 {% endblock %}
