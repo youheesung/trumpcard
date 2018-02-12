@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block accounts %}
+
+<div class="login_start">
+  {% if request.user.is_authenticated %}
+  <h3> 이미 로그인을 하셨어요!! 로그아웃 하고 싶어요??</h3>
+  <form method="POST">
+  <button type="submit" action="{% url 'accounts:logout' %}">
+    로그아웃
+  </button>
+  </form>
+  {% else %}
+
+    <button class="normal btn">
+      일반회원
+    </button>
+
+    <button class="theater btn">
+      극단회원
+    </button>
+
+    <form method="POST" id="signup">
+      {% csrf_token %}
+      {{ signup_form.as_p }}
+      {{ profile_form.as_p }}
+      <button class="btn" type="submit">회원가입하기</button>
+
+    </form>
+    <script type="text/javascript">
+      $('.normal').click(function(e) {
+        url = "{% url 'accounts:signup' %}";
+        $.post(url,
+          { theater: false })
+        .done(function(r) {
+          $('#signup').html(r);
+        });
+      });
+      $('.theater').click(function(e) {
+        url = "{% url 'accounts:signup' %}";
+        $.post(url,
+          { theater: true })
+        .done(function(r) {
+          $('#signup').html(r);
+        });
+      });
+    </script>
+  {% endif %}
+</div>
+{% endblock %}

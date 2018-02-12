@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 
 {% block accounts %}
-<div class="login_box">
+<div class="row">
+<div class="login_img col l8">
+
+</div>
+<div class="login_box col l3">
 {% if request.user.is_authenticated %}
 
 <h1>{{ request.user.username }}</h1>
@@ -11,6 +15,7 @@
 </form>
 
 {% else %}
+
 <h2>Log In</h2>
 <form method="POST">
   {% csrf_token %}
@@ -21,5 +26,6 @@
 </form>
 
 {% endif %}
+</div>
 </div>
 {% endblock %}

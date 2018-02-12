@@ -17,3 +17,4 @@ class Migration(migrations.Migration):
             field=django_summernote.fields.SummernoteTextField(default=''),
         ),
     ]
+

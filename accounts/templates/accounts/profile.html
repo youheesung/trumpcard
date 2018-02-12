@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block accounts %}
+<h3>{{ profile.user }}</h3>
+ <img src="{{ profile.image_url }}">
+ <p> 좋아하는 극  :{{ profile.liebe_t|default:"아직 없어용 "}}</p>
+ <p> 자기소개 : {{ profile.recommand_t|default:"몰라용, 더 알고 싶으세요??"}}</p>
+
+ {% if request.user.profile == profile %}
+ <a href="{% url 'accounts:profile_update' %}" type="button"> 프로필 수정할래요 </a>
+ {% endif %}
+{% endblock %}
