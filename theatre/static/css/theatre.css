@@ -3,8 +3,7 @@
     }
 
     main {
-      width: 80%;
-      margin: 0 auto;
+
     }
 
     .poster {
@@ -33,5 +32,10 @@
 
     .box {
       margin: 20px auto;
+      width: 80%;
+      margin: 0 auto;
     }
 
+    #sidenav-overlay {
+      z-index: 996;
+    }

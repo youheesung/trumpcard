@@ -42,14 +42,27 @@
   <nav>
     <div class="nav-wrapper">
       <a href="{% url 'search:search' %}" class="brand-logo" style="margin-left: 160px;">야!극장고?<i class="material-icons">star</i></a>
+
       <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 160px;">
         {% if request.user.is_authenticated %}
         <li><a href="#">{{ request.user }}</a></li>
         <li><a href="{% url 'accounts:login' %}">Log Out</a></li>
         {% else %}
-        <li><a href="{% url 'accounts:login' %}">
+
+    <ul id="slide-out" class="side-nav">
+
+      <li><a href="#!">First Sidebar Link</a></li>
+      <li><a href="#!">Second Sidebar Link</a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse show-on-large">로그인</a>
+    <script type="text/javascript">
+      $('.button-collapse').sideNav({
+        edge: 'right'
+    });
+    </script>
+<!--        <li><a href="{% url 'accounts:login' %}">
         Log In
-        </a></li>
+        </a></li> -->
       {% endif %}
       </ul>
     </div>
