@@ -1,29 +1,26 @@
-    body {
-
-    }
-
-    main {
-
-    }
-
     .poster {
       display: inline-block;
       /*float: left;*/
       width: 200px;
       height: 250px;
     }
+
     .nav {
       display: inline-block;
       float:right;
     }
+
     .search_input {
       text-align: center;
       margin-top: 30px;
     }
 
     .login_box {
-      width: 60%;
-      margin: 100px auto;
+      width: 70%;
+      margin: 0 auto;
+      background-color: white;
+      height: 899px;
+      position: relative;
     }
 
     nav {
@@ -36,6 +33,16 @@
       margin: 0 auto;
     }
 
-    #sidenav-overlay {
-      z-index: 996;
+    .row .col {
+      padding: 0;
+    }
+
+    .login_img img {
+      width: 100%;
+      height: 893px;
+    }
+
+    .login {
+      width: 80%;
+      margin: 100px auto;
     }
