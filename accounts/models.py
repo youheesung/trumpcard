@@ -25,7 +25,6 @@ class Profile(models.Model):
         verbose_name='좋아하는 배우는요? 딱 한사람만 말하셔야 되용ㅎㅎ 프로그램을 그따구로 해서 ㅋㅋㅋ',
         max_length=100
         )
-
     recommand_t = models.CharField(
         blank=True,
         null=True,
@@ -55,6 +54,7 @@ class GroupProfile(models.Model):
     is_groupuser = models.BooleanField(
         default=True,
         )
+
 
     def group_image_url(self):
         if self.group_image:

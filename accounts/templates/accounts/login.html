@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block accounts %}
+<script type="text/javascript">
+  $('.navbar-fixed').css('display', 'none');
+</script>
 <div class="row">
 <div class="login_img col l8">
-
+  <img src="{% static 'login_img.jpeg' %}">
 </div>
-<div class="login_box col l3">
+<div class="login_box col l4">
 {% if request.user.is_authenticated %}
 
 <h1>{{ request.user.username }}</h1>
@@ -15,16 +18,16 @@
 </form>
 
 {% else %}
-
+<div class="login">
 <h2>Log In</h2>
 <form method="POST">
   {% csrf_token %}
 {{ form.as_p }}
-
-  <button type="submit" class="waves-effect waves-light btn" style="margin: auto;">로그인</button>
+<br>
+  <button type="submit" class="waves-effect waves-light btn" style="margin:50px auto;">로그인</button>
 
 </form>
-
+</div>
 {% endif %}
 </div>
 </div>
