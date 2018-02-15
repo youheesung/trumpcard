@@ -28,20 +28,23 @@
 
     </form>
     <script type="text/javascript">
+    $('#id_is_groupuser').prevAll().css('display', 'none');
       $('.normal').click(function(e) {
-        url = "{% url 'accounts:signup' %}";
+        var url = "{% url 'accounts:signup' %}";
         $.post(url,
           { theater: false })
         .done(function(r) {
           $('#signup').html(r);
+          $('#id_is_groupuser').prevAll().css('display', 'none');
         });
       });
       $('.theater').click(function(e) {
-        url = "{% url 'accounts:signup' %}";
-        $.post(url,
-          { theater: true })
+        var url = "{% url 'accounts:signup' %}";
+        var theatre = { theater: true };
+        $.post(url, theatre)
         .done(function(r) {
           $('#signup').html(r);
+          $('#id_is_groupuser').attr('checked', 'true').prevAll().css('display', 'none');
         });
       });
     </script>

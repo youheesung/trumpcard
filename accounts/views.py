@@ -8,7 +8,6 @@ from .forms import (
     AuthForm,
     SignupForm,
     SignupProfileForm,
-    GroupSignup,
     GroupProfileForm
     )
 
@@ -41,7 +40,7 @@ def logout(request):
 
 def profile_detail(request, pk):
     ctx = {
-        'profile': Profile.objects.get(user__pk=request.user.pk)
+        'profile': Profile.objects.get(user__pk=pk)
     }
     return render(request, 'accounts/profile.html', ctx)
 
@@ -59,18 +58,21 @@ def signup(request):
     if request.method == 'POST':
         if request.is_ajax():
             if request.POST['theater'] == 'true':
-                signup_form = GroupSignup()
                 profile_form = GroupProfileForm()
             return render(request, 'accounts/form.html', {
                 'signup_form': signup_form,
                 'profile_form': profile_form,
                 })
-        if signup_form.is_valid() and profile_form.is_valid():
-            user = signup_form.save()
-            profile_form.save(commit=False)
-            profile_form.user = user
-            profile_form.save()
-        return login_and_redirect_next(request, user)
+        if signup_form.is_valid():
+            if request.POST.get('is_groupuser'):
+                print(request.POST.get('is_groupuser'))
+                profile_form = GroupProfileForm(request.POST)
+            if profile_form.is_valid():
+                user = signup_form.save()
+                profile = profile_form.save(commit=False)
+                profile.user = user
+                profile.save()
+                return login_and_redirect_next(request, user)
     ctx = {
         'signup_form': signup_form,
         'profile_form': profile_form,

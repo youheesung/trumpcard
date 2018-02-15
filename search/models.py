@@ -93,3 +93,36 @@ class Review(models.Model):
         default=0,
         verbose_name='평점'
         )
+
+class Theater(models.Model):
+    placeid = models.CharField(max_length=15,
+        verbose_name='공연장ID')
+    name = models.CharField(
+        max_length=30,
+        verbose_name='공연장이름')
+    theater_count = models.IntegerField(
+        null=True,
+        blank=True,
+        verbose_name='공연장수')
+    tel = models.CharField(
+        max_length=20,
+        null=True,
+        blank=True,
+        verbose_name='전화번호')
+    page = models.URLField(
+        null=True,
+        blank=True)
+    address = models.CharField(
+        max_length=50,
+        null=True,
+        blank=True,
+        verbose_name='주소')
+    latitude = models.FloatField(
+        null=True,
+        blank=True)
+    longitude = models.FloatField(
+        null=True,
+        blank=True)
+
+    def __str__(self):
+        return '{0}.{1}'.format(self.pk, self.name)
