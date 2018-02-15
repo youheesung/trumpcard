@@ -1,3 +1,8 @@
+    main {
+      position: relative;
+    }
+
+
     .poster {
       display: inline-block;
       /*float: left;*/
@@ -45,4 +50,9 @@
     .login {
       width: 80%;
       margin: 100px auto;
+    }
+
+    .login_start {
+      width: 80%;
+      margin: 0 auto;
     }

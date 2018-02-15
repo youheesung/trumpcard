@@ -2,11 +2,17 @@
 
 {% block accounts %}
 <h3>{{ profile.user }}</h3>
+
+ {% if profile.is_groupuser %}
+ <img src="{{ profile.group_img_url">
+ <p>극단이름 : {{ profile.user }}</p>
+ <p></p>
+ {% else %}
  <img src="{{ profile.image_url }}">
  <p> 좋아하는 극  :{{ profile.liebe_t|default:"아직 없어용 "}}</p>
  <p> 자기소개 : {{ profile.recommand_t|default:"몰라용, 더 알고 싶으세요??"}}</p>
-
+{% endif %}
  {% if request.user.profile == profile %}
- <a href="{% url 'accounts:profile_update' %}" type="button"> 프로필 수정할래요 </a>
+ <a href="#" type="button"> 프로필 수정할래요 </a>
  {% endif %}
 {% endblock %}

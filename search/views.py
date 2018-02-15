@@ -18,7 +18,7 @@ def search(request):
     box = Play.objects.order_by('grade')
     ctx = {
         'form': form,
-        'box': box
+        'box': box,
     }
     return render(request, 'search.html', ctx)
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbs>
+    <db>
+        <fcltynm>힐크레스트(구. 허브힐즈)</fcltynm>
+        <mt10id>FC001695</mt10id>
+        <mt13cnt>1</mt13cnt>
+        <fcltychartr>민간(대학로 외)</fcltychartr>
+        <opende> </opende>
+        <seatscale>100</seatscale>
+        <telno>053-767-6300</telno>
+        <relateurl>http://hillcrest.co.kr/park/07.html</relateurl>
+        <adres>대구광역시 달성군 가창면 가창로 1003 허브힐즈</adres>
+        <la>35.7948866</la>
+        <lo>128.62514499999997</lo>
+    </db>
+</dbs>

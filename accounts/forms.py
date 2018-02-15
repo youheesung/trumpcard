@@ -6,7 +6,6 @@ from django.contrib.auth.forms import (
     )
 from .models import (
     Profile,
-    GroupProfile,
     )
 # from .models import Profile
 
@@ -43,7 +42,7 @@ class SignupForm(UserCreationForm):
 class SignupProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
-        exclude = ('user', 'image',)
+        exclude = ('user', 'image', 'group_image')
 
 
 # 프로 필 form
@@ -55,28 +54,11 @@ class ProfileForm(forms.ModelForm):
 # 극단 회원가입
 
 
-class GroupSignup(UserCreationForm):
-    error_message = {
-        'password_mismatch': '패스워드가 일치하지 않습니다.'
-    }
-    email = forms.EmailField()
-
-    def clean_mail(self):
-        email = self.cleaned_data.get('email')
-        if email is not None:
-            return email
-
-    def save(self, commit=True):
-        groupuser = super().save(commit=False)
-        groupuser.email = self.cleaned_data['email']
-        if commit:
-            groupuser.save()
-        return groupuser
-
-
 class GroupProfileForm(forms.ModelForm):
     class Meta:
-        model = GroupProfile
-        exclude = ('groupuser',)
+        model = Profile
+        exclude = ('user', 'birth_date', 'liebe_t', 'liebe_a', 'recommand_t', 'image')
+
+
 
 # 프로필 수정하는 공간 만들기

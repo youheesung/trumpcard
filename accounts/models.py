@@ -12,7 +12,10 @@ class Profile(models.Model):
         blank=True,
         null=True,
         )
-    birth_date = models.DateField(blank=True)
+    birth_date = models.DateField(
+        null=True,
+        blank=True)
+
     liebe_t = models.CharField(
         blank=True,
         null=True,
@@ -38,12 +41,6 @@ class Profile(models.Model):
         else:
             image_url = '/static/img/default_profile_image.jpg'
 
-class GroupProfile(models.Model):
-    groupuser = models.OneToOneField(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        )
-
     group_image = models.ImageField(
         upload_to='profile/%Y/%m/%d',
         blank=True,
@@ -52,7 +49,7 @@ class GroupProfile(models.Model):
         )
 
     is_groupuser = models.BooleanField(
-        default=True,
+        default=False
         )
 
 
