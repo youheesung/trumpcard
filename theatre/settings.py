@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'search',
     'review',
     'django_summernote',
-
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [

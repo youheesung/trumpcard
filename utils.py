@@ -1,5 +1,6 @@
 import urllib.request
 import xml.etree.ElementTree as etree
+from search.models import Play
 from search.models import Theater
 
 url = 'http://www.kopis.or.kr/openApi/restful/prfplc?service=2bb0854b244b4b6e853de44c0a34cc16&cpage=1&rows=2000'

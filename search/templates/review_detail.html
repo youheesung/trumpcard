@@ -7,4 +7,6 @@
   <p>{{ review.content|safe }}</p>
 </div>
 
+<a href="{% url 'search:review' review.play.playid %}" class="btn">목록으로 가기</a>
+
 {% endblock %}

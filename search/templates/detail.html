@@ -25,19 +25,34 @@
   <img src="{{ play.styurl4 }}">
   {% endif %}
 
+  <div id="map"></div>
 <br>
 <script language="javascript">
-function winOpen1()
+function initMap() {
+        var uluru = {lat: parseFloat("{{ theater.latitude }}"), lng: parseFloat("{{ theater.longitude }}")};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
 
+
+function winOpen1()
 {
-        window.open("{% url 'search:review' play.playid %}", "newWin", "width=300, height=200, toolbar=no, scroll=no");
+        window.open("{% url 'search:review' play.playid %}", "newWin", "width=1000px, height=1000px, toolbar=no, scroll=no");
 }
 function winOpen2()
 {
-        window.open("{% url 'search:review_create' play.playid %}", "newWin", "width=300, height=200, toolbar=no, scroll=no");
+        window.open("{% url 'search:review_create' play.playid %}", "newWin", "width=1000px, height=1000px, toolbar=no, scroll=no");
 }
 </script>
-
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeZY_e4UJ_3tJa_TPqgHdjB-DztK2TYtw&callback=initMap">
+    </script>
 
 <a href="javascript:winOpen1();" class="btn btn-block" style="width:70%; margin: 0 auto;" >리뷰 보러가기</a>
 <a href="javascript:winOpen2();" class="btn btn-block" style="width:70%; margin: 10px auto;">리뷰 작성하기</a>

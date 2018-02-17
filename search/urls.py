@@ -10,5 +10,6 @@ urlpatterns = [
     path('review/<int:pk>/', views.review, name='review'),
     path('review/<str:playid>/', views.review, name='review'),
     path('review_create/<str:playid>/', views.review_create, name="review_create"),
-    path('review_detail/<int:pk>/', views.review_detail, name='review_detail')
+    path('review_detail/<int:pk>/', views.review_detail, name='review_detail'),
+
 ]
