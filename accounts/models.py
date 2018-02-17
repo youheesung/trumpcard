@@ -40,6 +40,7 @@ class Profile(models.Model):
             image_url = self.image.url
         else:
             image_url = '/static/img/default_profile_image.jpg'
+        return image_url
 
     group_image = models.ImageField(
         upload_to='profile/%Y/%m/%d',
@@ -57,4 +58,5 @@ class Profile(models.Model):
         if self.group_image:
             group_image_url = self.image.url
         else:
-            group_image_url = '/static/img/delfault_group_image.jpg'
+            group_image_url = '/static/img/default_profile_image.jpg'
+        return group_image_url

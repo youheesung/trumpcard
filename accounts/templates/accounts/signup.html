@@ -20,7 +20,7 @@
       극단회원
     </button>
 
-    <form method="POST" id="signup">
+    <form method="POST" id="signup" enctype="multipart/form-data">
       {% csrf_token %}
       {{ signup_form.as_p }}
       {{ profile_form.as_p }}

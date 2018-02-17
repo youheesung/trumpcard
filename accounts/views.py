@@ -4,6 +4,7 @@ from django.contrib.auth import (
     login as auth_login,
     logout as auth_logout,
     )
+from django.contrib.auth.decorators import login_required
 from .forms import (
     AuthForm,
     SignupForm,
@@ -38,9 +39,9 @@ def logout(request):
     return redirect(reverse('accounts:login'))
 
 
-def profile_detail(request, pk):
+def profile_detail(request, username):
     ctx = {
-        'profile': Profile.objects.get(user__pk=pk)
+        'profile': Profile.objects.get(user__username=username)
     }
     return render(request, 'accounts/profile.html', ctx)
 
@@ -78,3 +79,21 @@ def signup(request):
         'profile_form': profile_form,
     }
     return render(request, 'accounts/signup.html', ctx)
+
+
+@login_required
+def profile_update(request, username):
+    if request.user.profile.is_groupuser:
+        form = GroupProfileForm(request.POST or None, request.FILES or None, instance=request.user.profile)
+    else:
+        form = SignupProfileForm(request.POST or None, request.FILES or None, instance=request.user.profile)
+    if request.method == "POST" and form.is_valid():
+        form.save()
+        return redirect(reverse('accounts:profile_detail', kwargs={
+            'username': username,
+            }))
+
+    ctx = {
+        'form': form
+    }
+    return render(request, 'accounts/profile_create.html', ctx)

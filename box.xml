@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<boxofs>
+    <basedate>2018-02-14</basedate>
+    <boxof>
+        <area>서울</area>
+        <prfdtcnt>20</prfdtcnt>
+        <prfpd>2018.02.07~2018.03.11</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>국립극단 [명동] 명동예술극장</prfplcnm>
+        <prfnm>3월의 눈</prfnm>
+        <rnum>1</rnum>
+        <seatcnt>558</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141247_180110_101249.png</poster>
+        <mt20id>PF141247</mt20id>
+    </boxof>
+    <boxof>
+        <area>서울</area>
+        <prfdtcnt>32</prfdtcnt>
+        <prfpd>2017.12.19~2018.03.04</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>대학로아트원씨어터 3관</prfplcnm>
+        <prfnm>더 헬멧: Room‘s Vol.1</prfnm>
+        <rnum>2</rnum>
+        <seatcnt>158</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF140573_171122_103531.gif</poster>
+        <mt20id>PF140573</mt20id>
+    </boxof>
+    <boxof>
+        <area>서울</area>
+        <prfdtcnt>15</prfdtcnt>
+        <prfpd>2018.02.21~2018.03.18</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>국립극단 [용산] 백성희장민호극장</prfplcnm>
+        <prfnm>가지</prfnm>
+        <rnum>3</rnum>
+        <seatcnt>190</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141448_180123_110527.png</poster>
+        <mt20id>PF141448</mt20id>
+    </boxof>
+    <boxof>
+        <area>서울</area>
+        <prfdtcnt>0</prfdtcnt>
+        <prfpd>2018.01.30~2018.04.15</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>DCF대명문화공장 2관 라이프웨이홀</prfplcnm>
+        <prfnm>네버 더 시너</prfnm>
+        <rnum>4</rnum>
+        <seatcnt>301</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141005_171218_141312.jpg</poster>
+        <mt20id>PF141005</mt20id>
+    </boxof>
+    <boxof>
+        <area>서울</area>
+        <prfdtcnt>5</prfdtcnt>
+        <prfpd>2018.01.30~2018.09.26</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>대학로 스카이씨어터 대학로 스카이씨어터</prfplcnm>
+        <prfnm>서툰살인</prfnm>
+        <rnum>5</rnum>
+        <seatcnt>160</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141301_180115_150932.gif</poster>
+        <mt20id>PF141301</mt20id>
+    </boxof>
+    <boxof>
+        <area>서울</area>
+        <prfdtcnt>5</prfdtcnt>
+        <prfpd>2018.02.08~2018.02.25</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>CKL스테이지 CKL스테이지</prfplcnm>
+        <prfnm>로풍찬 유랑극장</prfnm>
+        <rnum>6</rnum>
+        <seatcnt>171</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141025_171220_101949.gif</poster>
+        <mt20id>PF141025</mt20id>
+    </boxof>
+    <boxof>
+        <prfdtcnt>3</prfdtcnt>
+        <prfpd>2018.05.04~2018.05.05</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>대전예술의전당 앙상블홀</prfplcnm>
+        <prfnm>앙리할아버지와 나 [대전]</prfnm>
+        <rnum>7</rnum>
+        <seatcnt>643</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141485_180125_163441.jpg</poster>
+        <mt20id>PF141485</mt20id>
+    </boxof>
+    <boxof>
+        <area>서울</area>
+        <prfdtcnt>0</prfdtcnt>
+        <prfpd>2018.03.09~2018.03.10</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>마포아트센터 플레이맥</prfplcnm>
+        <prfnm>마포아트센터 플레이맥 재개관 페스타, 서편제</prfnm>
+        <rnum>8</rnum>
+        <seatcnt>170</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141306_180115_154220.gif</poster>
+        <mt20id>PF141306</mt20id>
+    </boxof>
+    <boxof>
+        <area>경기</area>
+        <prfdtcnt>0</prfdtcnt>
+        <prfpd>2018.02.24~2018.02.24</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>구리아트홀 유채꽃소극장</prfplcnm>
+        <prfnm>나와 할아버지</prfnm>
+        <rnum>9</rnum>
+        <seatcnt>280</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141330_180116_105410.gif</poster>
+        <mt20id>PF141330</mt20id>
+    </boxof>
+    <boxof>
+        <area>부산</area>
+        <prfdtcnt>0</prfdtcnt>
+        <prfpd>2018.01.04~2018.03.04</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>BNK부산은행 조은극장 1관</prfplcnm>
+        <prfnm>룸넘버13 [부산]</prfnm>
+        <rnum>10</rnum>
+        <seatcnt>245</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141137_171227_161730.jpg</poster>
+        <mt20id>PF141137</mt20id>
+    </boxof>
+    <boxof>
+        <area>경기</area>
+        <prfdtcnt>0</prfdtcnt>
+        <prfpd>2018.03.16~2018.03.17</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>성남아트센터 앙상블씨어터</prfplcnm>
+        <prfnm>앙리할아버지와 나 [성남]</prfnm>
+        <rnum>11</rnum>
+        <seatcnt>378</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141531_180129_144332.jpg</poster>
+        <mt20id>PF141531</mt20id>
+    </boxof>
+    <boxof>
+        <area>대구</area>
+        <prfdtcnt>2</prfdtcnt>
+        <prfpd>2018.02.14~2018.03.18</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>문화예술전용극장CT 문화예술전용극장CT</prfplcnm>
+        <prfnm>자메이카 헬스클럽 [대구]</prfnm>
+        <rnum>12</rnum>
+        <seatcnt>300</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141269_180111_135646.gif</poster>
+        <mt20id>PF141269</mt20id>
+    </boxof>
+    <boxof>
+        <area>부산</area>
+        <prfdtcnt>1</prfdtcnt>
+        <prfpd>2018.02.22~2018.03.03</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>일터 소극장 일터 소극장</prfplcnm>
+        <prfnm>트라우마</prfnm>
+        <rnum>13</rnum>
+        <seatcnt>100</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141527_180131_094702.jpg</poster>
+        <mt20id>PF141527</mt20id>
+    </boxof>
+    <boxof>
+        <area>서울</area>
+        <prfdtcnt>2</prfdtcnt>
+        <prfpd>2018.02.08~2018.02.25</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>선돌극장 선돌극장</prfplcnm>
+        <prfnm>그녀들의 첫날밤</prfnm>
+        <rnum>14</rnum>
+        <seatcnt>130</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141376_180118_142100.gif</poster>
+        <mt20id>PF141376</mt20id>
+    </boxof>
+    <boxof>
+        <prfdtcnt>0</prfdtcnt>
+        <prfpd>2018.03.21~2018.03.21</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>대전예술의전당 앙상블홀</prfplcnm>
+        <prfnm>수요극장1, 단편소설극장</prfnm>
+        <rnum>15</rnum>
+        <seatcnt>643</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141464_180124_151305.jpg</poster>
+        <mt20id>PF141464</mt20id>
+    </boxof>
+    <boxof>
+        <area>서울</area>
+        <prfdtcnt>2</prfdtcnt>
+        <prfpd>2018.02.28~2018.03.04</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>예술의전당 자유소극장</prfplcnm>
+        <prfnm>신 창극 시리즈 1 - 이자람(가제)</prfnm>
+        <rnum>16</rnum>
+        <seatcnt>241</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF138622_170719_113646.gif</poster>
+        <mt20id>PF138622</mt20id>
+    </boxof>
+    <boxof>
+        <area>서울</area>
+        <prfdtcnt>1</prfdtcnt>
+        <prfpd>2018.02.23~2018.02.25</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>공연예술센터 대학로예술극장 대극장</prfplcnm>
+        <prfnm>차세대열전 2017!, 무순 6년</prfnm>
+        <rnum>17</rnum>
+        <seatcnt>504</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF141066_180212_103642.jpg</poster>
+        <mt20id>PF141066</mt20id>
+    </boxof>
+    <boxof>
+        <area>서울</area>
+        <prfdtcnt>0</prfdtcnt>
+        <prfpd>2018.05.18~2018.05.25</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>국립극장 달오름극장</prfplcnm>
+        <prfnm>NT Live, 강박관념</prfnm>
+        <rnum>18</rnum>
+        <seatcnt>512</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF138624_170719_132113.gif</poster>
+        <mt20id>PF138624</mt20id>
+    </boxof>
+    <boxof>
+        <area>서울</area>
+        <prfdtcnt>0</prfdtcnt>
+        <prfpd>2018.03.31~2018.04.01</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>국립극장 달오름극장</prfplcnm>
+        <prfnm>NT Live, 로젠크란츠와 길덴스턴은 죽었다</prfnm>
+        <rnum>19</rnum>
+        <seatcnt>512</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF138627_170719_132905.gif</poster>
+        <mt20id>PF138627</mt20id>
+    </boxof>
+    <boxof>
+        <area>서울</area>
+        <prfdtcnt>0</prfdtcnt>
+        <prfpd>2018.03.27~2018.03.30</prfpd>
+        <cate>연극</cate>
+        <prfplcnm>국립극장 달오름극장</prfplcnm>
+        <prfnm>NT Live, 예르마</prfnm>
+        <rnum>20</rnum>
+        <seatcnt>512</seatcnt>
+        <poster>/upload/pfmPoster/PF_PF138628_170719_133130.gif</poster>
+        <mt20id>PF138628</mt20id>
+    </boxof>
+</boxofs>

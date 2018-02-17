@@ -1,9 +1,33 @@
 from django.db import models
 from django.conf import settings
-
+from multiselectfield import MultiSelectField
 
 
 # Create your models here.
+
+
+gerne_name = (
+        (1, '비극 '),
+        (2, '희극 '),
+        (3, '비희극 '),
+        (4, '소극 '),
+        (5, '통속극 '),
+        (6, '공포 '),
+        (7, '스릴러 '),
+        (8, '추리극 '),
+        (9, '로맨틱 '))
+
+character = (
+        (1, '예술적'),
+        (2,  '실험적'),
+        (3,  '대중적'),
+        (4,  'NTLIVE/해외생중계공연'),
+        (5,  '감동적'),
+        (6,  '웃음만발'),
+        (7,  '아이와 함께'),
+        (8,  '어머! 눈감아'))
+
+
 class Play(models.Model):
     playid = models.CharField(
         max_length=15,
@@ -70,6 +94,26 @@ class Play(models.Model):
         verbose_name='평점'
         )
 
+    genre_select = MultiSelectField(
+        max_length=250,
+        blank=True,
+        null=True,
+        choices=gerne_name,
+        verbose_name='극의 장르 '
+        )
+
+    Text_base = models.BooleanField(
+        default=False,
+        verbose_name='희곡 기반',
+        )
+
+    play_char = MultiSelectField(
+        max_length=250,
+        blank=True,
+        null=True,
+        choices=character,
+        verbose_name='극의 특징',
+        )
 
     def __str__(self):
         return '{0}'.format(self.name)

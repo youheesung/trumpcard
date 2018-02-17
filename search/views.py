@@ -5,6 +5,7 @@ from django.urls import reverse
 from .models import (
     Play,
     Review,
+    Theater
     )
 from .forms import (
     PlayForm,
@@ -48,8 +49,10 @@ def result(request):
 
 def detail(request, playid):
     play = Play.objects.get(playid=playid)
+    theater = Theater.objects.get(placeid=play.placeid)
     ctx = {
-        'play': play
+        'play': play,
+        'theater': theater
     }
     return render(request, 'detail.html', ctx)
 
