@@ -29,6 +29,11 @@ character = (
 
 
 class Play(models.Model):
+    to_my_heart = models.ManyToManyField(
+        settings.AUTH_USER_MODEL,
+        related_name='play_to_my_heart',
+        )
+
     playid = models.CharField(
         max_length=15,
         verbose_name='연극ID')
@@ -117,6 +122,7 @@ class Play(models.Model):
 
     def __str__(self):
         return '{0}'.format(self.name)
+
 
 
 class Review(models.Model):

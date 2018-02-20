@@ -16,7 +16,6 @@ class AuthForm(AuthenticationForm):
         'inactive': '탈퇴한 계정임',
     }
 
-
 # 회원가입하는 곳
 class SignupForm(UserCreationForm):
     error_message = {
@@ -53,12 +52,9 @@ class ProfileForm(forms.ModelForm):
 
 # 극단 회원가입
 
-
 class GroupProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
         exclude = ('user', 'birth_date', 'liebe_t', 'liebe_a', 'recommand_t', 'image')
-
-
 
 # 프로필 수정하는 공간 만들기

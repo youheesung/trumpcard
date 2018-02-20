@@ -9,6 +9,28 @@
   <h3>{{ play.staff }}</h3>
   <h3>{{ play.price }}</h3>
 
+    <a id= "to_my_heart_button" href="{% url 'search:to_my_heart' play.playid %}">
+      {% include 'to_my_heart_button.html'%}
+    </a>
+    <script>
+                $('#to_my_heart_button').click(function(e) {
+                    var self = $(this);
+                    var url = $(this).attr('href');
+
+                    $.post(url)
+                        .done(function(r) {
+                            self.html(r);
+                        })
+                        .fail(function() {
+                            alert('오류가 발생했습니다 ')
+                        });
+                        return false;
+                    });
+
+          </script>
+
+
+
   {% if play.styurl1|length > 4 %}
   <img src="{{ play.styurl1 }}">
   {% endif %}

@@ -11,6 +11,8 @@ from .forms import (
     PlayForm,
     ReviewForm
     )
+
+from django.http import HttpResponse
 # Create your views here.
 
 
@@ -100,3 +102,18 @@ def review_detail(request, pk):
         'review': review
     }
     return render(request, 'review_detail.html', ctx)
+
+def to_my_heart(request, playid):
+    if request.method == "POST":
+        play = Play.objects.get(playid=playid)
+        if request.user.play_to_my_heart.filter(playid=playid).exists():
+            play.to_my_heart.remove(request.user)
+        else:
+            play.to_my_heart.add(request.user)
+        ctx = {
+            'did_to_my_heart':request.user.play_to_my_heart.filter(playid=playid).exists(),
+            'play': play
+            }
+        return render(request, 'to_my_heart_button.html', ctx)
+    else:
+        return HttpResponse(status=400)
