@@ -9,7 +9,7 @@ from django_summernote.widgets import SummernoteWidget
 class PlayForm(forms.ModelForm):
     class Meta:
         model = Play
-        fields = '__all__'
+        exclude = ['playid', 'placeid', 'minprice', 'grade', 'rate']
 
 
 class ReviewForm(forms.ModelForm):

@@ -4,8 +4,6 @@ from multiselectfield import MultiSelectField
 
 
 # Create your models here.
-
-
 gerne_name = (
         (1, '비극 '),
         (2, '희극 '),
@@ -15,17 +13,19 @@ gerne_name = (
         (6, '공포 '),
         (7, '스릴러 '),
         (8, '추리극 '),
-        (9, '로맨틱 '))
+        (9, '로맨틱 '),
+        )
 
 character = (
         (1, '예술적'),
-        (2,  '실험적'),
-        (3,  '대중적'),
-        (4,  'NTLIVE/해외생중계공연'),
-        (5,  '감동적'),
-        (6,  '웃음만발'),
-        (7,  '아이와 함께'),
-        (8,  '어머! 눈감아'))
+        (2, '실험적'),
+        (3, '대중적'),
+        (4, 'NTLIVE/해외생중계공연'),
+        (5, '감동적'),
+        (6, '웃음만발'),
+        (7, '아이와 함께'),
+        (8, '어머! 눈감아'),
+        )
 
 
 class Play(models.Model):
@@ -138,8 +138,10 @@ class Review(models.Model):
         verbose_name='평점'
         )
 
+
 class Theater(models.Model):
-    placeid = models.CharField(max_length=15,
+    placeid = models.CharField(
+        max_length=15,
         verbose_name='공연장ID')
     name = models.CharField(
         max_length=30,

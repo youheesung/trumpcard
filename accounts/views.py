@@ -5,6 +5,7 @@ from django.contrib.auth import (
     logout as auth_logout,
     )
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse
 from .forms import (
     AuthForm,
     SignupForm,
@@ -97,3 +98,19 @@ def profile_update(request, username):
         'form': form
     }
     return render(request, 'accounts/profile_create.html', ctx)
+
+
+def follow(request, pk):
+    if request.method == "POST":
+        follow = Profile.objects.get(user__pk=pk)
+        if request.user.profile.follow.filter(user__pk=pk).exists():
+            request.user.profile.follow.remove(follow)
+        else:
+            request.user.profile.follow.add(follow)
+        ctx = {
+            'did_follow': request.user.profile.follow.filter(user__pk=pk).exists(),
+        }
+        return render(request, 'accounts/follow_button.html', ctx)
+    else:
+        return HttpResponse(status=404)
+

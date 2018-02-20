@@ -97,6 +97,14 @@ def review_create(request, playid):
 def review_detail(request, pk):
     review = Review.objects.get(pk=pk)
     ctx = {
-        'review': review
+        'review': review,
     }
     return render(request, 'review_detail.html', ctx)
+
+
+def play_create(request):
+    form = PlayForm(request.POST or None)
+    ctx = {
+        'form': form,
+    }
+    return render(request, 'play_create.html', ctx)
