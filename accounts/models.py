@@ -16,24 +16,24 @@ class Profile(models.Model):
         null=True,
         blank=True)
 
-    liebe_t = models.CharField(
-        blank=True,
-        null=True,
-        verbose_name='당신의 가장 좋아하는 연극 하나만!! 알려주세욯ㅎ??',
-        max_length=30,
-        )
-    liebe_a = models.CharField(
-        blank=True,
-        null=True,
-        verbose_name='좋아하는 배우는요? 딱 한사람만 말하셔야 되용ㅎㅎ 프로그램을 그따구로 해서 ㅋㅋㅋ',
-        max_length=100
-        )
-    recommand_t = models.CharField(
-        blank=True,
-        null=True,
-        verbose_name='짧은 자기 소개!',
-        max_length=100,
-        )
+    # liebe_t = models.CharField(
+    #     blank=True,
+    #     null=True,
+    #     verbose_name='당신의 가장 좋아하는 연극 하나만!! 알려주세욯ㅎ??',
+    #     max_length=30,
+    #     )
+    # liebe_a = models.CharField(
+    #     blank=True,
+    #     null=True,
+    #     verbose_name='좋아하는 배우는요? 딱 한사람만 말하셔야 되용ㅎㅎ 프로그램을 그따구로 해서 ㅋㅋㅋ',
+    #     max_length=100
+    #     )
+    # recommand_t = models.CharField(
+    #     blank=True,
+    #     null=True,
+    #     verbose_name='짧은 자기 소개!',
+    #     max_length=100,
+    #     )
 
     def image_url(self):
         if self.image:
