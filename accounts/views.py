@@ -95,7 +95,7 @@ def profile_update(request, username):
             }))
 
     ctx = {
-        'form': form
+        'form': form,
     }
     return render(request, 'accounts/profile_create.html', ctx)
 
