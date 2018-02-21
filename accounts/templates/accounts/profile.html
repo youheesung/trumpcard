@@ -16,6 +16,26 @@
  <p> 자기소개 : {{ profile.recommand_t|default:"몰라용, 더 알고 싶으세요??"}}</p>
 {% endif %}
  {% if request.user.profile == profile %}
- <a href="{% url 'accounts:profile_update' request.user.username %}" type="button"> 프로필 수정할래요 </a>
+ <a href="{% url 'accounts:profile_update' request.user.username %}" class="btn"> 프로필 수정할래요 </a>
+ {% else %}
+  <a href="{% url 'accounts:follow' profile.user.pk %}" id="follow_button">
+    {% include 'accounts/follow_button.html' %}
+  </a>
+  <script type="text/javascript">
+    $('#follow_button').click(function(e) {
+        var self = $(this);
+        var url = $(this).attr('href');
+
+        $.post(url)
+        .done(function(r){
+            self.html(r);
+        }).fail(function() {
+            alert('다시한번 시도해주세요');
+        });
+      return false;
+    });
+  </script>
  {% endif %}
+ <a href="{% url 'search:review' profile.user.pk %}" class="btn">공연 다이어리</a>
+
 {% endblock %}

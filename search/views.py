@@ -103,9 +103,18 @@ def review_create(request, playid):
 def review_detail(request, pk):
     review = Review.objects.get(pk=pk)
     ctx = {
-        'review': review
+        'review': review,
     }
     return render(request, 'review_detail.html', ctx)
+
+
+
+def play_create(request):
+    form = PlayForm(request.POST or None)
+    ctx = {
+        'form': form,
+    }
+    return render(request, 'play_create.html', ctx)
 
 def to_my_heart(request, playid):
     if request.method == "POST":
@@ -115,7 +124,7 @@ def to_my_heart(request, playid):
         else:
             play.to_my_heart.add(request.user)
         ctx = {
-            'did_to_my_heart':request.user.play_to_my_heart.filter(playid=playid).exists(),
+            'did_to_my_heart': request.user.play_to_my_heart.filter(playid=playid).exists(),
             'play': play
             }
         return render(request, 'to_my_heart_button.html', ctx)

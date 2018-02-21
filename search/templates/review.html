@@ -40,5 +40,7 @@
 <p>작성된 리뷰가 없습니다.</p>
 
 {% endif %}
+{% if review.count %}
 <a href="{% url 'search:review_create' review.first.play.playid %}" class="btn">리뷰 작성하기</a>
+{% endif %}
 {% endblock %}

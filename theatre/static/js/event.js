@@ -2,3 +2,6 @@
     Materialize.updateTextFields();
   });
 
+  $(document).ready(function() {
+    $('select').material_select();
+  });

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block search %}
+<form method="POST" enctype="multipart/form-data">
+{% csrf_token %}
+
+{{ form.as_p }}
+
+<button type="submit" class="btn">작성</button>
+</form>
+
+{% endblock %}

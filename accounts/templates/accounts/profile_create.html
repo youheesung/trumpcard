@@ -5,6 +5,10 @@
 <form method="POST" enctype="multipart/form-data">
   {% csrf_token %}
   {{ form.as_p }}
+
   <button type="submit" class="btn">프로필 수정</button>
 </form>
+<script type="text/javascript">
+  $('#id_is_groupuser').prevAll().css('display', 'none');
+</script>
 {% endblock %}
