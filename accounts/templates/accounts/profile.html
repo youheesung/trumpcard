@@ -9,6 +9,9 @@
  <p></p>
  {% else %}
  <img src="{{ profile.image_url }}" style="width:200px; height: 250px;">
+
+ <p> 내 마음속에 저장 : {% for i in play_to_my_heart %}<img src="{{ i.poster }}" alt="" /> {% endfor %}</p>
+
  <p> 좋아하는 극  :{{ profile.liebe_t|default:"아직 없어용 "}}</p>
  <p> 자기소개 : {{ profile.recommand_t|default:"몰라용, 더 알고 싶으세요??"}}</p>
 {% endif %}

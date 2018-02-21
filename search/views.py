@@ -70,6 +70,8 @@ def review(request, pk=None, playid=None):
         }
     return render(request, 'review.html', ctx)
 
+## review_ form에 태그를 넣는 부분을 추가해야 하는가??
+##
 
 def review_create(request, playid):
 
@@ -95,6 +97,8 @@ def review_create(request, playid):
     }
     return render(request, 'review_create.html', ctx)
 
+##
+
 
 def review_detail(request, pk):
     review = Review.objects.get(pk=pk)
@@ -117,3 +121,5 @@ def to_my_heart(request, playid):
         return render(request, 'to_my_heart_button.html', ctx)
     else:
         return HttpResponse(status=400)
+
+

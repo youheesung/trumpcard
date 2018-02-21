@@ -123,6 +123,11 @@ class Play(models.Model):
     def __str__(self):
         return '{0}'.format(self.name)
 
+class Tag(models.Model):
+    name = models.CharField(max_length=15)
+
+    def __str__(self):
+        return self.name
 
 
 class Review(models.Model):
@@ -142,6 +147,12 @@ class Review(models.Model):
     rate = models.IntegerField(
         default=0,
         verbose_name='평점'
+        )
+
+    tag = models.ManyToManyField(
+        Tag,
+        blank=True,
+        related_name='tag_comment',
         )
 
 class Theater(models.Model):

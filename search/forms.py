@@ -1,6 +1,6 @@
 from .models import (
     Play,
-    Review
+    Review,
     )
 from django import forms
 from django_summernote.widgets import SummernoteWidget
@@ -15,8 +15,8 @@ class PlayForm(forms.ModelForm):
 class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
-        fields = ['title', 'content', 'rate']
+        fields = ['title', 'content','rate','tag']
         widgets = {
             'content': SummernoteWidget(),
             'rate': forms.HiddenInput(),
-          }
+            }

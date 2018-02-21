@@ -15,6 +15,7 @@ from .forms import (
 from django.urls import reverse
 from django.conf import settings
 from .models import Profile
+from search.models import Play
 
 # Create your views here.
 
@@ -38,10 +39,16 @@ def logout(request):
     auth_logout(request)
     return redirect(reverse('accounts:login'))
 
-
+## 여기서 내가 좋아요 한  파일을 가져올 수 있어야 함
+## 유저를 가져와야 하는구나
 def profile_detail(request, username):
+    play = Play.objects.all()
+    play_to_my_heart = play.filter(to_my_heart__username=username)
+    # play_to_select = play_to_my_heart.get('name')
+
     ctx = {
-        'profile': Profile.objects.get(user__username=username)
+        'play_to_my_heart':play_to_my_heart.all(),
+        'profile': Profile.objects.get(user__username=username),
     }
     return render(request, 'accounts/profile.html', ctx)
 
