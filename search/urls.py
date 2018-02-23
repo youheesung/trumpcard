@@ -16,5 +16,4 @@ urlpatterns = [
 
     path('<str:playid>/like', views.to_my_heart, name='to_my_heart'),
 
-
 ]

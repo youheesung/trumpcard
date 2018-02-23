@@ -54,10 +54,16 @@ class Profile(models.Model):
         verbose_name='좋아하는 배우는요? 딱 한사람만 말하셔야 되용ㅎㅎ 프로그램을 그따구로 해서 ㅋㅋㅋ',
         max_length=100
         )
+
     recommand_t = models.TextField(
         blank=True,
         null=True,
         verbose_name='짧은 자기 소개!',
+        )
+    price = models.IntegerField(
+        blank=True,
+        null=True,
+        verbose_name='선호가격'
         )
 
     def image_url(self):

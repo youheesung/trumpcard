@@ -131,6 +131,7 @@ def profile_update(request, username):
     return render(request, 'accounts/profile_create.html', ctx)
 
 
+@login_required
 def follow(request, pk):
     if request.method == "POST":
         follow = Profile.objects.get(user__pk=pk)
@@ -147,3 +148,28 @@ def follow(request, pk):
     else:
         return HttpResponse(status=404)
 
+
+@login_required
+def recommend(request):
+    if request.method == "POST":
+        print(request.POST)
+        profile = Profile.objects.filter(user=request.user)
+        genre = request.POST.getlist('genre[]')
+        character = request.POST.getlist('character[]')
+        profile.update(genre_select=genre, play_char=character)
+        print(genre)
+        print(character)
+
+
+    return render(request, 'accounts/cardnews.html')
+
+@login_required
+def recommend_2(request):
+    if request.method == "POST":
+        actor = request.POST.get('actor')
+        theater = request.POST.get('theater')
+        price = int(request.POST.get('price'))
+        profile = Profile.objects.filter(user=request.user)
+        profile.update(liebe_t=theater, liebe_a=actor, price=price)
+        return redirect(reverse('search:search'))
+    return render(request, 'accounts/cardnews2.html')

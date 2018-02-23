@@ -13,7 +13,7 @@
 
         <div class="card-content">
           <a href="{% url 'search:review_detail' a.pk %}"><p><h3>{{ a.title|safe }}</h3></p></a>
-          <p>{{ a.author.username }}</p>
+          <p><a href="{% url 'accounts:profile_detail' a.author.username %}">{{ a.author.username }}</a></p>
         </div>
         <div class="card-action">
           <div class="star_box">

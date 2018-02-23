@@ -1,0 +1,45 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block search %}
+
+<div class="container">
+  <div class="form">
+    <div class="">
+    <form method="POST">
+      {% csrf_token %}
+      <label for="actor">내가 관심 있는 배우 또는 연출은?</label>
+      <input type="text" class="input-field" name="actor">
+      <label for="theater">내가 좋아하는 제작사 또는 극단은?</label>
+      <input type="text" class="input-field" name="theater">
+      <div class="input-field col s12">
+        <select name="price">
+          <option value="" selected>나는 (가격)의 공연이 좋아요!(가격)</option>
+          <option value="50000">5만원 이하</option>
+          <option value="40000">4만원 이하</option>
+          <option value="30000">3만원 이하</option>
+          <option value="20000">2만원 이하</option>
+        </select>
+        <label>가격</label>
+      </div>
+      <button type="submit" class="btn">제출</button>
+    </form>
+</div>
+</div>
+</div>
+<link rel="stylesheet" type="text/css" href="{% static 'css/cardnews.css' %}">
+<!--
+<p class="">
+ 1. 내가 관심 있는 배우 또는 연출은?
+</p>
+<p class="">
+ 2.내가 좋아하는 제작사 또는 극단은?
+</p>
+<p class="">
+3.  나는 (가격) 의 공연이 좋아요!(가격 )
+-- 스피너
+*5만원 이하
+* 4만원 이하
+*3만원 이하
+*2만원 이하
+-->
+{% endblock %}

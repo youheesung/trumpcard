@@ -44,6 +44,7 @@
   <nav>
     <div class="nav-wrapper">
       <a href="{% url 'search:search' %}" class="brand-logo" style="margin-left: 160px;">야!극장고?<i class="material-icons">star</i></a>
+      <a href="{% url 'accounts:recommend' %}">추천서비스</a>
 
       <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 160px;">
         {% if request.user.is_authenticated %}
