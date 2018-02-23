@@ -63,6 +63,11 @@
         margin: 10px auto;
        }
 
-    .followed {
-      color: red;
+  .btn.followed, .btn.followed:hover, .btn.followed:focus {
+      font-weight: bold;
+      background-color: red;
+    }
+    .col .selection:hover {
+      opacity: 0.5;
+      margin: 0;
     }

@@ -52,9 +52,11 @@ def result(request):
 def detail(request, playid):
     play = Play.objects.get(playid=playid)
     theater = Theater.objects.get(placeid=play.placeid)
+    review = Review.objects.filter(play__playid=playid)
     ctx = {
         'play': play,
-        'theater': theater
+        'theater': theater,
+        'review': review,
     }
     return render(request, 'detail.html', ctx)
 
@@ -104,13 +106,13 @@ def review_detail(request, pk):
     return render(request, 'review_detail.html', ctx)
 
 
-
 def play_create(request):
     form = PlayForm(request.POST or None)
     ctx = {
         'form': form,
     }
     return render(request, 'play_create.html', ctx)
+
 
 def to_my_heart(request, playid):
     if request.method == "POST":
@@ -126,3 +128,7 @@ def to_my_heart(request, playid):
         return render(request, 'to_my_heart_button.html', ctx)
     else:
         return HttpResponse(status=400)
+
+
+def recommend(request):
+    return render(request, 'cardnews.html')

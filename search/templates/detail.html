@@ -2,6 +2,7 @@
 
 {% block search %}
 <div style="text-align:center;">
+  <img src="{{ play.poster }}">
   <h1>{{ play.name }}</h1>
   <h3>{{ play.start_date }}</h3>
   <h3>{{ play.end_date }}</h3>
@@ -13,25 +14,31 @@
       {% include 'to_my_heart_button.html'%}
     </a>
     <script>
-                $('#to_my_heart_button').click(function(e) {
-                    var self = $(this);
-                    var url = $(this).attr('href');
+        $('#to_my_heart_button').click(function(e) {
+            var self = $(this);
+            var url = $(this).attr('href');
 
-                    $.post(url)
-                        .done(function(r) {
-                            self.html(r);
-                        })
-                        .fail(function() {
-                            alert('오류가 발생했습니다 ')
-                        });
-                        return false;
-                    });
+            $.post(url)
+                .done(function(r) {
+                    self.html(r);
+                })
+                .fail(function() {
+                    alert('오류가 발생했습니다 ')
+                });
+                return false;
+            });
 
           </script>
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s6 l6"><a href="#test1">Test 1</a></li>
+        <li class="tab col s6 l6"><a class="active" href="#test2">Test 2</a></li>
 
-
-
-  {% if play.styurl1|length > 4 %}
+      </ul>
+    </div>
+    <div id="test1" class="col s12">
+        {% if play.styurl1|length > 4 %}
   <img src="{{ play.styurl1 }}">
   {% endif %}
   <br>
@@ -75,6 +82,60 @@ function winOpen2()
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeZY_e4UJ_3tJa_TPqgHdjB-DztK2TYtw&callback=initMap">
     </script>
+    </div>
+
+    <div id="test2" class="col s12">
+      {% if review.count %}
+{% for a in review %}
+
+  <div class="col s12 m7 rev">
+
+    <div class="card horizontal">
+ <!--     <div class="card-image">
+        <img src="https://lorempixel.com/100/190/nature/6">
+      </div>  -->
+      <div class="card-stacked">
+
+        <div class="card-content">
+          <a href="{% url 'search:review_detail' a.pk %}"><p><h3>{{ a.title|safe }}</h3></p></a>
+          <p><a href="{% url 'accounts:profile_detail' a.author.username %}">{{ a.author.username }}</a></p>
+        </div>
+        <div class="card-action">
+          <div class="star_box">
+                <i class="material-icons first star {{ a.title }}">star_border</i>
+                <i class="material-icons star {{ a.title }}">star_border</i>
+                <i class="material-icons star {{ a.title }}">star_border</i>
+                <i class="material-icons star {{ a.title }}">star_border</i>
+                <i class="material-icons star {{ a.title }}">star_border</i>
+                <span><h5 style="display: inline-block;">{{ a.rate }}</h5></span>
+            <script type="text/javascript">
+              var rate = parseInt("{{ a.rate }}");
+              var star = document.getElementsByClassName("star {{ a.title }}");
+              for(var i=0; i<rate; i++) {
+                star[i].innerHTML = "star";
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endfor %}
+{% else %}
+<p>작성된 리뷰가 없습니다.</p>
+
+{% endif %}
+{% if review.count %}
+<br>
+<a href="{% url 'search:review_create' review.first.play.playid %}" class="btn">리뷰 작성하기</a>
+{% endif %}
+    </div>
+</div>
+
+
+
+
 
 <a href="javascript:winOpen1();" class="btn btn-block" style="width:70%; margin: 0 auto;" >리뷰 보러가기</a>
 <a href="javascript:winOpen2();" class="btn btn-block" style="width:70%; margin: 10px auto;">리뷰 작성하기</a>
