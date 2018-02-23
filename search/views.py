@@ -16,6 +16,13 @@ from django.http import HttpResponse
 # Create your views here.
 
 
+def counter(a, b, c):
+    count = c
+    for i in a:
+        if i in b:
+            count += 1
+    return count
+
 def search(request):
     form = PlayForm()
     box = Play.objects.order_by('grade')
@@ -23,7 +30,48 @@ def search(request):
         'form': form,
         'box': box,
     }
+    if request.user.is_authenticated:
+        recommend1 = Play.objects.all()
+        recommend2 = Play.objects.all()
+        gen = list(request.user.profile.genre_select)
+        char = list(request.user.profile.play_char)
+        print(gen)
+        print(char)
+        recommend = Play.objects.none()
+        for i in range(1, 10):
+            if str(i) in gen:
+                print('\'{0}\''.format(str(i)))
+                print(str(i) in gen)
+                recommend = recommend | recommend1.filter(genre_select__contains=str(i))
+        for i in range(1, 9):
+            if str(i) in char:
+                print('\'{0}\''.format(str(i)))
+                print(str(i) in char)
+                recommend = recommend | recommend.filter(play_char__contains=str(i))
+        count = {}
+        for i in recommend:
+            count[i] = counter(gen, i.genre_select, 0)
+            print('%s: %d' % (i.name, count[i]))
+        for i in recommend:
+            count[i] = counter(char, i.play_char, count[i])
+            print('%s: %d' % (i.name, count[i]))
+        count = sorted(count.items(), key=lambda x: x[1], reverse=True)
+        counted = []
+        for i in count:
+            counted.append(i[0])
+        print(counted)
+        # count.sort(key=lambda x: x[1], reverse=True)
+
+        # recommend = recommend1 & recommend2
+        # recommend1 = recommend1.extra(select={'length': 'Length(genre_select)'}).order_by('-length')
+        # for i in recommend:
+        #     print(i.name)
+        #     print(i.genre_select)
+        #     print(i.play_char)
+        #     print('\n')
+        ctx['recommend'] = counted
     return render(request, 'search.html', ctx)
+
 
 
 def result(request):
@@ -83,18 +131,20 @@ def review_create(request, playid):
         form = ReviewForm(request.POST)
         if form.is_valid():
             new_review = form.save(commit=False)
-            print(request.POST['tag[]'])
+
             new_review.author = request.user
             new_review.play = play.get(playid=playid)
             new_review.save()
+            new_review.tag.set(request.POST.getlist('tag[]'))
             print(new_review.tag.first())
-        review = Review.objects.filter(play__playid=playid)
-        review_count = review.count()
-        rateSum = 0
-        for i in review:
-            rateSum += i.rate
-        rateSum /= review_count
-        play.update(rate=rateSum)
+            review = Review.objects.filter(play__playid=playid)
+            review_count = review.count()
+            rateSum = 0
+            for i in review:
+                rateSum += i.rate
+            rateSum /= review_count
+            play.update(rate=rateSum)
+            # return redirect(reverse('search:review_detail', kwargs={'pk':new_review.pk}))
     ctx = {
         'form': form,
         'play': play.get(playid=playid)

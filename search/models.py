@@ -123,6 +123,20 @@ class Play(models.Model):
     def __str__(self):
         return '{0}'.format(self.name)
 
+    def counter_genre(self, a):
+        count = 0
+        for i in a:
+            if i in self.genre_select:
+                count += 1
+        return count
+
+    def counter_char(self, a):
+        count = 0
+        for i in a:
+            if i in self.play_char:
+                count += 1
+        return count
+
 class Tag(models.Model):
     name = models.CharField(max_length=15)
 
