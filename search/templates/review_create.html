@@ -23,10 +23,12 @@
     e.preventDefault();
     var title = $('#id_title').val();
     var content = $('#id_content').val();
+    var tag = $('#id_tag').val();
 
     $.post('{% url "search:review_create" play.playid %}', {
       title: title,
       content: content,
+      tag: tag,
       rate: parseInt($('.rate').html())
     }).done(function(){
     console.log('ok');

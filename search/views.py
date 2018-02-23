@@ -81,9 +81,11 @@ def review_create(request, playid):
         form = ReviewForm(request.POST)
         if form.is_valid():
             new_review = form.save(commit=False)
+            print(request.POST['tag[]'])
             new_review.author = request.user
             new_review.play = play.get(playid=playid)
             new_review.save()
+            print(new_review.tag.first())
         review = Review.objects.filter(play__playid=playid)
         review_count = review.count()
         rateSum = 0
@@ -98,12 +100,13 @@ def review_create(request, playid):
     return render(request, 'review_create.html', ctx)
 
 ##
-
-
 def review_detail(request, pk):
     review = Review.objects.get(pk=pk)
+    review_tag = review.tag.all()
+
     ctx = {
         'review': review,
+        'review_tag':review_tag,
     }
     return render(request, 'review_detail.html', ctx)
 
@@ -130,5 +133,3 @@ def to_my_heart(request, playid):
         return render(request, 'to_my_heart_button.html', ctx)
     else:
         return HttpResponse(status=400)
-
-

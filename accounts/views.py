@@ -16,7 +16,7 @@ from .forms import (
 from django.urls import reverse
 from django.conf import settings
 from .models import Profile
-from search.models import Play
+from search.models import (Play, Review)
 
 # Create your views here.
 
@@ -42,15 +42,39 @@ def logout(request):
 
 ## 여기서 내가 좋아요 한  파일을 가져올 수 있어야 함
 ## 유저를 가져와야 하는구나
+
 def profile_detail(request, username):
+    profile = Profile.objects.all()
+    my_profile = profile.get(user__username=username)
+    follower = my_profile.follow.all()
+
+    review = []
+    review_play = []
+    for i in follower:
+        for j in list(Review.objects.filter(author_id=i.user.pk)):
+            if j.play.playid not in review_play:
+                review.append(j)
+                review_play.append(j.play.playid)
+
     play = Play.objects.all()
     play_to_my_heart = play.filter(to_my_heart__username=username)
-    # play_to_select = play_to_my_heart.get('name')
+
+    review_user = Review.objects.filter(author_id=request.user.pk)
+
+    tag_user = set()
+    for a in review_user:
+        tag_user |= set(a.tag.all())
+
+    # review_follower = review.filter(author_id=follower.user_id)
 
     ctx = {
+        'review_user':tag_user,
         'play_to_my_heart':play_to_my_heart.all(),
-        'profile': Profile.objects.get(user__username=username),
-    }
+        'profile': my_profile,
+        'follower_review':review,
+        }
+    # play_to_select = play_to_my_heart.get('name')
+
     return render(request, 'accounts/profile.html', ctx)
 
 
@@ -110,6 +134,7 @@ def profile_update(request, username):
 def follow(request, pk):
     if request.method == "POST":
         follow = Profile.objects.get(user__pk=pk)
+        print(follow)
         if request.user.profile.follow.filter(user__pk=pk).exists():
             request.user.profile.follow.remove(follow)
         else:
@@ -117,6 +142,7 @@ def follow(request, pk):
         ctx = {
             'did_follow': request.user.profile.follow.filter(user__pk=pk).exists(),
         }
+
         return render(request, 'accounts/follow_button.html', ctx)
     else:
         return HttpResponse(status=404)

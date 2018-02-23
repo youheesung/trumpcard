@@ -137,7 +137,8 @@ class Review(models.Model):
         )
     author = models.ForeignKey(
         settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE
+        on_delete=models.CASCADE,
+        related_name='author'
         )
     title = models.CharField(
         max_length=30,

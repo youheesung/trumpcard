@@ -1,5 +1,6 @@
     main {
       position: relative;
+      color: white;
     }
 
 
@@ -63,6 +64,6 @@
         margin: 10px auto;
        }
 
-    .followed {
-      color: red;
+    .btn.followed {
+      background-color: red;
     }

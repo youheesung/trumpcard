@@ -5,6 +5,7 @@
 <div class="detail" style="text-align:center;">
   <p><h1>{{ review.title }}</h1></p>
   <p>{{ review.content|safe }}</p>
+  <p> 이글에 달린 태그는 {% for a in review_tag %}{{ a }}{% endfor %}</p>
 </div>
 
 <a href="{% url 'search:review' review.play.playid %}" class="btn">목록으로 가기</a>

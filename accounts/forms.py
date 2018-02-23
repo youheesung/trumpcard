@@ -41,7 +41,7 @@ class SignupForm(UserCreationForm):
 class SignupProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
-        exclude = ('user', 'image', 'group_image', 'genre_select', 'play_char')
+        exclude = ('user', 'group_image', 'genre_select', 'play_char','follow',)
 
 
 # 프로 필 form
