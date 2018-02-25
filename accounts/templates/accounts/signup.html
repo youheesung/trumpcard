@@ -30,8 +30,12 @@
 
 
     <script type="text/javascript">
-    var theater = false;
 
+    var theater = false;
+        $('#id_address_lat').css('display', 'none');
+        $('#id_address_lat').prevAll().css('display', 'none');
+        $('#id_address_lng').css('display', 'none');
+        $('#id_address_lng').prevAll().css('display', 'none');
     $('#sub').click(function(){
       $('#signup').submit();
     });
@@ -43,6 +47,10 @@
         .done(function(r) {
           $('#signup').html(r);
           $('#id_is_groupuser').prevAll().css('display', 'none');
+    $('#id_address_lat').css('display', 'none');
+    $('#id_address_lat').prevAll().css('display', 'none');
+    $('#id_address_lng').css('display', 'none');
+    $('#id_address_lng').prevAll().css('display', 'none');
         });
       });
       $('.theater').click(function(e) {
@@ -52,7 +60,10 @@
         .done(function(r) {
           $('#signup').html(r);
           $('#id_is_groupuser').attr('checked', 'true').prevAll().css('display', 'none');
-
+    $('#id_address_lat').css('display', 'none');
+    $('#id_address_lat').prevAll().css('display', 'none');
+    $('#id_address_lng').css('display', 'none');
+    $('#id_address_lng').prevAll().css('display', 'none');
         });
       });
     </script>

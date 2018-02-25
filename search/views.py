@@ -25,9 +25,35 @@ def counter(a, b, c):
 
 def search(request):
     box = Play.objects.order_by('grade')
+    rate = Play.objects.order_by('rate')
+    play = Play.objects.all()
+
+    ## 리뷰 순으로 뽑아내기
+    review_count_b = []
+    review_count = {}
+    for j in play:
+        review_count_b.append(j)
+    for p in review_count_b:
+        review_count[p] = p.review_set.count()
+
+    count = sorted(review_count.items(), key=lambda x: x[1], reverse=True)
+
+    counted = []
+    for v in count:
+        counted.append(v[0])
+    print_review_count = counted[0:11]
+
+    ## 별점 순으로 뽑아내기
+    review_rate = []
+    for i in rate:
+        review_rate.append(i)
+    print_rate = review_rate[0:11]
+
     ctx = {
-        # 'form': form,
+        'rate': print_rate,
+
         'box': box,
+        'review_count': print_review_count,
     }
     if request.user.is_authenticated:
         recommend1 = Play.objects.all()
@@ -98,9 +124,17 @@ def result(request):
 def detail(request, playid):
     play = Play.objects.get(playid=playid)
     review = Review.objects.filter(play__playid=playid)
+    ##rate
+
+    review_tag =[]
+    for i in review:
+        review_tag.append(i.tag)
+
     ctx = {
         'play': play,
         'review': review,
+        'review_tag':review_tag,
+
     }
     return render(request, 'detail.html', ctx)
 
@@ -151,6 +185,7 @@ def review_create(request, playid):
 def review_detail(request, pk):
     review = Review.objects.get(pk=pk)
     review_tag = review.tag.all()
+    # box = Play.objects.order_by('grade')
 
     ctx = {
         'review': review,

@@ -90,7 +90,6 @@ class Profile(models.Model):
         "self",
         related_name='follower',
         blank=True,
-        null=True,
         symmetrical=False
         )
 

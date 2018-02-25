@@ -65,7 +65,9 @@ class SignupForm(UserCreationForm):
 class SignupProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
-        exclude = ('user', 'image', 'group_image', 'genre_select', 'play_char', 'follow', 'liebe_t', 'liebe_a', 'recommand_t')
+
+        exclude = ('user', 'group_image', 'genre_select', 'play_char', 'follow', 'recommand_t','price',)
+
 
 
 # 프로 필 form
@@ -80,7 +82,7 @@ class ProfileForm(forms.ModelForm):
 class GroupProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
-        exclude = ('user', 'birth_date', 'recommand_t', 'image', 'genre_select', 'play_char', 'follow', 'liebe_t', 'liebe_a', )
+        exclude = ('user', 'birth_date', 'recommand_t', 'image', 'genre_select', 'play_char', 'follow','liebe_a','liebe_t','price')
 
 
 # 프로필 수정하는 공간 만들기

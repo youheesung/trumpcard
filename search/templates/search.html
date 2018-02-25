@@ -111,4 +111,20 @@
   </script>
 {% endfor %}
 </div>
+
+  별점 순
+  {% for a in rate %}
+  <a href="{% url 'search:detail' a.playid %}">
+  <img style="width:100px; height: 150px;" src="{{ a.poster }}" alt=""/>
+  </a>
+  {% endfor %}
+
+<p>
+  리뷰 갯수 순 곁치는게 ... 많네 ㅠㅠ
+ {% for t in review_count %}
+ <a href="{% url 'search:detail' t.playid %}">
+  <img style="width:100px; height: 150px;" src="{{ t.poster }}" alt=""/></a>
+ {% endfor %}
+</p>
+
 {% endblock %}

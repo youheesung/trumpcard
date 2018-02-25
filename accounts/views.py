@@ -75,10 +75,12 @@ def profile_detail(request, username):
     # review_follower = review.filter(author_id=follower.user_id)
 
     ctx = {
-        'review_user': tag_user,
-        'play_to_my_heart': play_to_my_heart.all(),
-        'profile': my_profile,
-        'follower_review': review,
+        'review_profile':review_user,
+        'review_user':tag_user,
+        'play_to_my_heart':play_to_my_heart.all(),
+        'profile':my_profile,
+        'follower_review':review,
+        'play':play,
         }
     # play_to_select = play_to_my_heart.get('name')
 
@@ -125,6 +127,8 @@ def signup(request):
     }
     return render(request, 'accounts/signup.html', ctx)
 
+## 개인 유저는 왜?? 가입시에 사진  첨부가 안되는지??
+## 개인 유저는 프로필 수정시에 왜??
 
 @login_required
 def profile_update(request, username):
