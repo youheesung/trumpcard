@@ -19,9 +19,35 @@ from django.http import HttpResponse
 def search(request):
     form = PlayForm()
     box = Play.objects.order_by('grade')
+    rate = Play.objects.order_by('rate')
+    play = Play.objects.all()
+
+    ## 리뷰 순으로 뽑아내기
+    review_count_b = []
+    review_count = {}
+    for j in play:
+        review_count_b.append(j)
+    for p in review_count_b:
+        review_count[p] = p.review_set.count()
+
+    count = sorted(review_count.items(), key=lambda x: x[1], reverse=True)
+
+    counted = []
+    for v in count:
+        counted.append(v[0])
+    print_review_count = counted[0:11]
+
+    ## 별점 순으로 뽑아내기
+    review_rate = []
+    for i in rate:
+        review_rate.append(i)
+    print_rate = review_rate[0:11]
+
     ctx = {
+        'rate':print_rate,
         'form': form,
         'box': box,
+        'review_count': print_review_count,
     }
     return render(request, 'search.html', ctx)
 
