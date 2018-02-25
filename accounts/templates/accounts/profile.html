@@ -28,10 +28,19 @@
 {% endif %}
  {% if request.user.profile == profile %}
  <a href="{% url 'accounts:profile_update' request.user.username %}" class="btn"> 프로필 수정할래요 </a>
+ {% if profile.is_groupuser %}
+  <a href="{% url 'search:play_create' %}" class="btn">공연 올리기</a>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $('select').material_select();
+  });
+  </script>
+  {% endif %}
  {% else %}
   <a href="{% url 'accounts:follow' profile.user.pk %}" id="follow_button">
     {% include 'accounts/follow_button.html' %}
   </a>
+
   <script type="text/javascript">
     $('#follow_button').click(function(e) {
         var self = $(this);

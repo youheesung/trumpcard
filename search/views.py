@@ -8,7 +8,7 @@ from .models import (
     Theater
     )
 from .forms import (
-    PlayForm,
+    CreatePlayForm,
     ReviewForm
     )
 
@@ -24,15 +24,13 @@ def counter(a, b, c):
     return count
 
 def search(request):
-    form = PlayForm()
     box = Play.objects.order_by('grade')
     ctx = {
-        'form': form,
+        # 'form': form,
         'box': box,
     }
     if request.user.is_authenticated:
         recommend1 = Play.objects.all()
-        recommend2 = Play.objects.all()
         gen = list(request.user.profile.genre_select)
         char = list(request.user.profile.play_char)
         print(gen)
@@ -99,11 +97,9 @@ def result(request):
 
 def detail(request, playid):
     play = Play.objects.get(playid=playid)
-    theater = Theater.objects.get(placeid=play.placeid)
     review = Review.objects.filter(play__playid=playid)
     ctx = {
         'play': play,
-        'theater': theater,
         'review': review,
     }
     return render(request, 'detail.html', ctx)
@@ -164,7 +160,19 @@ def review_detail(request, pk):
 
 
 def play_create(request):
-    form = PlayForm(request.POST or None)
+    form = CreatePlayForm(request.POST or None, request.FILES or None)
+    genre = request.POST.getlist('genre_select[]')
+    char = request.POST.getlist('play_char[]')
+    if request.method == "POST" and form.is_valid():
+        play = form.save(commit=False)
+        id = Play.objects.last().playid
+        str_id = 'PF{0}'.format(int(id[-6:])+1)
+        play.playid = str_id
+        play.genre_select = genre
+        play.play_char = char
+        play.user_upload = True
+        play.save()
+        return redirect(reverse('search:detail', kwargs={'playid': play.playid}))
     ctx = {
         'form': form,
     }

@@ -1,6 +1,8 @@
 from django.db import models
 from django.conf import settings
 from multiselectfield import MultiSelectField
+
+from search.models import Theater
 # Create your models here.
 
 gerne_name = (
@@ -27,12 +29,12 @@ character = (
         )
 
 
-
 class Profile(models.Model):
     user = models.OneToOneField(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
         )
+    upload_path = 'profile/%Y/%m/%d'
     image = models.ImageField(
         upload_to='profile/%Y/%m/%d',
         blank=True,
@@ -92,7 +94,6 @@ class Profile(models.Model):
         symmetrical=False
         )
 
-
     genre_select = MultiSelectField(
         max_length=250,
         blank=True,
@@ -108,6 +109,20 @@ class Profile(models.Model):
             choices=character,
             verbose_name='극의 특징',
             )
+
+    address_lat = models.FloatField(
+        null=True,
+        blank=True,
+        verbose_name='위도'
+        )
+
+    address_lng = models.FloatField(
+        null=True,
+        blank=True,
+        verbose_name='경도'
+        )
+
+
 
     def __str__(self):
         return '{0}'.format(self.user.username)
