@@ -6,7 +6,7 @@
 
     .poster {
       display: inline-block;
-      /*float: left;*/
+      float: left;
       width: 200px;
       height: 250px;
     }
@@ -74,3 +74,46 @@
       margin: 0;
     }
 
+    .poster_img{
+      display: inline-block;
+      margin-left:100px;
+      margin-top: 100px;
+      margin-right: 10px;
+      margin-bottom: 100px;
+    }
+
+    .play_infor {
+      padding: 0;
+      display:inline-block;
+      width:60%;
+      height: 90px;
+      margin-top: 0px;
+      /*/font-size: 10px;/*/
+    }
+
+    #play_name {
+      margin-bottom: 100px;
+    }
+    .heart_button {
+      text-align:center;
+      margin-bottom: 15px;
+    }
+    .review_create_button {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .review_show {
+      display: inline;
+      float: center;
+    }
+
+    .card-stacked {
+      width:80%;
+      margin: 0 auto;
+    }
+
+    #poster_detail {
+      width: 90%;
+      height: 100%;
+
+    }

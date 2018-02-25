@@ -12,7 +12,7 @@
 
  <p> 내 마음속에 저장 : {% for i in play_to_my_heart %}<img src="{{ i.poster }}" alt="" /> {% endfor %}</p>
  <p>
-   나는 태그를 이렇게 달앗음 !!{% for a in review_user %}{{ a.name}}
+   나는 태그를 이렇게 달앗음 !!{% for a in review_user %}{{a.name}}
 
   {% empty %}태그가 없습니다.
    {% endfor %}

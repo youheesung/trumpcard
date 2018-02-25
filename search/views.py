@@ -53,10 +53,18 @@ def detail(request, playid):
     play = Play.objects.get(playid=playid)
     theater = Theater.objects.get(placeid=play.placeid)
     review = Review.objects.filter(play__playid=playid)
+    ##rate
+
+    review_tag =[]
+    for i in review:
+        review_tag.append(i.tag)
+
     ctx = {
         'play': play,
         'theater': theater,
         'review': review,
+        'review_tag':review_tag,
+
     }
     return render(request, 'detail.html', ctx)
 
@@ -105,6 +113,7 @@ def review_create(request, playid):
 def review_detail(request, pk):
     review = Review.objects.get(pk=pk)
     review_tag = review.tag.all()
+    # box = Play.objects.order_by('grade')
 
     ctx = {
         'review': review,
