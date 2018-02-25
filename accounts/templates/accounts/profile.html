@@ -2,8 +2,6 @@
 
 {% block accounts %}
 
-
-
   <div style="text-align:center" class="profile_top">
     <h3>{{ profile.user }}님 안녕하세요?</h3>
 
@@ -83,7 +81,7 @@
                <a href="{% url 'search:detail' i.playid %}"><img style="width:200px; height: 250px;" src="{{ i.poster }}" alt="" class="to_my_heart" /></a>
               <span class="card-title" style="font-color:white">{{ i.title }}</span>
             </div>
-            <div class="card-content">{{ i.title}}
+            <div class="card-content">{{ i.title }}
             </div>
             <div class="card-action">
               <a href="#">자세히 보기 </a>
@@ -100,7 +98,7 @@
      <div id="test3" class="col s12" style="text-align:center">
       <p>너가 팔로우 한 사람이 본 연극임  ㅋㅋㅋㅋ 참고 하삼
      {% for i in follower_review %}
-     <a href="{% url 'search:detail' i.playid %}">
+     <a href="{% url 'search:detail' i.play.playid %}">
      <img style="width:100; height: 150px;" src="{{ i.play.poster }}" alt=""/></a>{% endfor %}
       </p>
     </div>

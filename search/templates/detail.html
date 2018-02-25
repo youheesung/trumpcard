@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block search %}
+
 <div class ="poster_img"style="text-align:left;">
   <img src="{{ play.poster }}" style="width: 100%; height: 120%">
 </div>
@@ -37,6 +38,7 @@
   <div class="heart_button">
   <p>
     <a id= "to_my_heart_button" href="{% url 'search:to_my_heart' play.playid %}" >
+
       {% include 'to_my_heart_button.html'%}
     </a>
   </p>
@@ -66,7 +68,28 @@
 
       </ul>
     </div>
+
     <div id="test1" class="col s12" style="text-align:center">
+  {% if play.user_upload %}
+
+  {% if play.styurl1_self|length > 4 %}
+  <img src="{{ play.styurl1_self.url }}">
+  {% endif %}
+  <br>
+  {% if play.styurl2_self|length > 4 %}
+  <img src="{{ play.styurl2_self.url }}">
+  {% endif %}
+  <br>
+  {% if play.styurl3_self|length > 4 %}
+  <img src="{{ play.styurl3_self.url }}">
+  {% endif %}
+  <br>
+  {% if play.styurl4_self|length > 4 %}
+  <img src="{{ play.styurl4_self.url }}">
+  {% endif %}
+
+  {% else %}
+
   {% if play.styurl1|length > 4 %}
   <img src="{{ play.styurl1 }}">
   {% endif %}
@@ -83,11 +106,13 @@
   <img src="{{ play.styurl4 }}">
   {% endif %}
 
+  {% endif %}
+
   <div id="map"></div>
 <br>
 <script language="javascript">
 function initMap() {
-        var uluru = {lat: parseFloat("{{ theater.latitude }}"), lng: parseFloat("{{ theater.longitude }}")};
+        var uluru = {lat: parseFloat("{% if play.theater %} {{ play.theater.latitude }} {% else %} {{ play.lat }} {% endif %}"), lng: parseFloat("{% if play.theater %} {{ play.theater.longitude }} {% else %} {{ play.lng }} {% endif %}")};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: uluru
@@ -96,6 +121,7 @@ function initMap() {
           position: uluru,
           map: map
         });
+        console.log(uluru.lat);
       }
 
 

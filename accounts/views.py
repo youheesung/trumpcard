@@ -5,7 +5,10 @@ from django.contrib.auth import (
     logout as auth_logout,
     )
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
+from django.http import (
+    HttpResponse,
+    JsonResponse
+    )
 from .forms import (
     AuthForm,
     SignupForm,
@@ -16,7 +19,11 @@ from .forms import (
 from django.urls import reverse
 from django.conf import settings
 from .models import Profile
-from search.models import (Play, Review)
+from search.models import (
+    Play,
+    Review,
+    Theater
+    )
 
 # Create your views here.
 
@@ -90,15 +97,21 @@ def signup(request):
     signup_form = SignupForm(request.POST or None)
     profile_form = SignupProfileForm(request.POST or None)
 
-    if request.method == 'POST':
+    if request.method == 'GET':
         if request.is_ajax():
-            if request.POST['theater'] == 'true':
+            if request.GET['theater'] == 'true':
                 profile_form = GroupProfileForm()
             return render(request, 'accounts/form.html', {
                 'signup_form': signup_form,
                 'profile_form': profile_form,
                 })
-        if signup_form.is_valid():
+    else:
+        if request.is_ajax():
+            pk = int(request.POST.get('theater'))
+            theater = Theater.objects.get(pk=pk)
+            return JsonResponse({'lat': theater.latitude,
+                'lng': theater.longitude})
+        elif signup_form.is_valid():
             if request.POST.get('is_groupuser'):
                 print(request.POST.get('is_groupuser'))
                 profile_form = GroupProfileForm(request.POST)

@@ -31,6 +31,8 @@ character = (
 class Play(models.Model):
     to_my_heart = models.ManyToManyField(
         settings.AUTH_USER_MODEL,
+        null=True,
+        blank=True,
         related_name='play_to_my_heart',
         )
 
@@ -43,7 +45,7 @@ class Play(models.Model):
         verbose_name='공연장소ID')
     name = models.CharField(
         max_length=20,
-        verbose_name='이름')
+        verbose_name='제목')
     start_date = models.DateField(
         verbose_name='시작일')
     end_date = models.DateField(
@@ -62,19 +64,28 @@ class Play(models.Model):
         max_length=10,
         verbose_name='런타임')
     poster = models.URLField(
+        null=True,
+        blank=True,
         verbose_name='포스터이미지경로')
     styurl1 = models.CharField(
         max_length=100,
+        null=True,
+        blank=True,
         verbose_name='소개이미지1')
     styurl2 = models.CharField(
         max_length=100,
+        null=True,
+        blank=True,
         verbose_name='소개이미지2')
     styurl3 = models.CharField(
         max_length=100,
+        null=True,
+        blank=True,
         verbose_name='소개이미지3')
     styurl4 = models.CharField(
         max_length=100,
         null=True,
+        blank=True,
         verbose_name='소개이미지4')
     price = models.CharField(
         max_length=10,
@@ -120,8 +131,64 @@ class Play(models.Model):
         verbose_name='극의 특징',
         )
 
+    theater = models.ForeignKey(
+        'Theater',
+        null=True,
+        blank=True,
+        on_delete=models.CASCADE,
+        verbose_name='극장'
+        )
+
+    poster_self = models.ImageField(
+        upload_to='poster/%Y/%m/%d',
+        blank=True,
+        null=True,
+        verbose_name='포스터이미지')
+    styurl1_self = models.ImageField(
+        upload_to='styurl1/%Y/%m/%d',
+        null=True,
+        blank=True,
+        verbose_name='이미지1')
+    styurl2_self = models.ImageField(
+        upload_to='styurl2/%Y/%m/%d',
+        null=True,
+        blank=True,
+        verbose_name='이미지2')
+    styurl3_self = models.ImageField(
+        upload_to='styurl3/%Y/%m/%d',
+        null=True,
+        blank=True,
+        verbose_name='이미지3')
+    styurl4_self = models.ImageField(
+        upload_to='styurl4/%Y/%m/%d',
+        null=True,
+        blank=True,
+        verbose_name='이미지4')
+
+    confirmed = models.BooleanField(
+        default=False,
+        verbose_name='검증')
+
+    user_upload = models.BooleanField(
+        default=False,
+        verbose_name='유저입력')
+
+    lat = models.FloatField(
+        null=True,
+        blank=True,
+        verbose_name='위도'
+        )
+
+    lng = models.FloatField(
+        null=True,
+        blank=True,
+        verbose_name='경도'
+        )
+
+
     def __str__(self):
         return '{0}'.format(self.name)
+
 
 class Tag(models.Model):
     name = models.CharField(max_length=15)
@@ -156,6 +223,7 @@ class Review(models.Model):
         related_name='tag_comment',
         )
 
+
 class Theater(models.Model):
     placeid = models.CharField(
         max_length=15,
@@ -188,4 +256,4 @@ class Theater(models.Model):
         blank=True)
 
     def __str__(self):
-        return '{0}.{1}'.format(self.pk, self.name)
+        return '{0}'.format(self.name)
