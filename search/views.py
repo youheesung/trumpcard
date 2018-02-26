@@ -134,7 +134,6 @@ def detail(request, playid):
         'play': play,
         'review': review,
         'review_tag':review_tag,
-
     }
     return render(request, 'detail.html', ctx)
 

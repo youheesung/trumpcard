@@ -121,3 +121,23 @@
     .to_my {
       display: inline-block;
     }
+    .recommend {
+      display: inline-block;
+    }
+    #login_b {
+      display: inline-block;
+      padding: 0 auto;
+      margin: 0;
+    }
+
+    #signup {
+      display: inline-block;
+      width: 100%;
+    }
+
+    #sign {
+      display: block;
+      text-align: center;
+
+
+    }

@@ -31,7 +31,8 @@
 <div class="recommend">
   {% if request.user.is_authenticated %}
     {% for i in recommend %}
-      <img src="{{ i.poster }}" style="display: inline-block;">
+    <a href="{% url 'search:detail' i.playid %}">
+      <img src="{{ i.poster }}" style="width:250px; height:300px;"></a>
     {% endfor %}
   {% endif %}
 </div>

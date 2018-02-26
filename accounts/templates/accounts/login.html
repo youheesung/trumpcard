@@ -20,13 +20,17 @@
 {% else %}
 <div class="login">
 <h2>Log In</h2>
-<form method="POST">
-  {% csrf_token %}
-{{ form.as_p }}
-<br>
-  <button type="submit" class="waves-effect waves-light btn" style="margin:50px auto;">로그인</button>
 
+<form method="POST" >
+  {% csrf_token %}
+  {{ form.as_p }}
+<br>
+  <button type="submit" class="waves-effect waves-light btn">로그인</button>
 </form>
+<br>
+  <a href="{% url 'accounts:signup' %}" class="waves-effect waves-light btn" style="width:30% height 30%;">회원가입
+  </a>
+
 </div>
 {% endif %}
 </div>

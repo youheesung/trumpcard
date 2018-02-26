@@ -11,22 +11,23 @@
   </button>
   </form>
   {% else %}
-
-    <button class="normal btn">
+    <p style="text-align:center;"> SIGN UP </p>
+    <p style="text-align:center;">
+    <button class="normal btn" style="border-radius:10px;">
       일반회원
     </button>
-
-    <button class="theater btn">
+    <button class="theater btn" style="border-radius:10px;">
       극단회원
     </button>
-
+    </p>
+    <br>
     <form method="POST" id="signup" enctype="multipart/form-data">
       {% csrf_token %}
       {{ signup_form.as_p }}
       {{ profile_form.as_p }}
     </form>
     {% include 'accounts/map.html' %}
-    <button class="btn center-align" id="sub" type="submit">회원가입하기</button>
+    <button class="btn center-align" id="sub" type="submit" >회원가입하기</button>
 
 
     <script type="text/javascript">

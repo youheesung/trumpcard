@@ -74,8 +74,10 @@
 
   {% if play.styurl1_self|length > 4 %}
   <img src="{{ play.styurl1_self.url }}">
+  {% else %}
+  <p> i'm sorry but 상세정보가 없습니다 </p>
+
   {% endif %}
-  <br>
   {% if play.styurl2_self|length > 4 %}
   <img src="{{ play.styurl2_self.url }}">
   {% endif %}
@@ -92,6 +94,9 @@
 
   {% if play.styurl1|length > 4 %}
   <img src="{{ play.styurl1 }}">
+  {% else %}
+  <p> i'm sorry but 상세정보가 없습니다. 하지만 때론 운에 맡겨보는것도!! 좋아요  </p>
+
   {% endif %}
   <br>
   {% if play.styurl2|length > 4 %}
@@ -143,7 +148,7 @@ function winOpen2()
       {% if review.count %}
 
     <div class="review_create_button">
-      <a href="{% url 'search:review_create' review.first.play.playid %}" class="btn">리뷰 작성하기</a>
+      <a href="{% url 'search:review_create' play.playid %}" class="btn">리뷰 작성하기</a>
     </div>
 
   {% for a in review %}
@@ -192,7 +197,7 @@ function winOpen2()
 {% else %}
 <p>작성된 리뷰가 없습니다.</p>
  <div>
-    <a href="{% url 'search:review_create' review.first.play.playid %}" class="btn">리뷰 작성하기</a>
+    <a href="{% url 'search:review_create' play.playid %}" class="btn">리뷰 작성하기</a>
     </div>
 {% endif %}
 {% endblock %}
