@@ -1,0 +1,143 @@
+    main {
+      position: relative;
+      color: white;
+    }
+
+
+    .poster {
+      display: inline-block;
+      float: left;
+      width: 200px;
+      height: 250px;
+    }
+
+    .nav {
+      display: inline-block;
+      float:right;
+    }
+
+    .search_input {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .login_box {
+      width: 70%;
+      margin: 0 auto;
+      background-color: white;
+      height: 899px;
+      position: relative;
+    }
+
+    nav {
+      background-color: cyan;
+    }
+
+    .box {
+      margin: 20px auto;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .row .col {
+      padding: 0;
+    }
+
+    .login_img img {
+      width: 100%;
+      height: 893px;
+    }
+
+    .login {
+      width: 80%;
+      margin: 100px auto;
+    }
+
+    .login_start {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    #map {
+        height: 400px;
+        width: 60%;
+        margin: 10px auto;
+       }
+
+
+  .btn.followed, .btn.followed:hover, .btn.followed:focus {
+      font-weight: bold;
+      background-color: red;
+    }
+    .col .selection:hover {
+      opacity: 0.5;
+      margin: 0;
+    }
+
+    .poster_img{
+      display: inline-block;
+      margin-left:100px;
+      margin-top: 100px;
+      margin-right: 10px;
+      margin-bottom: 100px;
+    }
+
+    .play_infor {
+      padding: 0;
+      display:inline-block;
+      width:60%;
+      height: 90px;
+      margin-top: 0px;
+      /*/font-size: 10px;/*/
+    }
+
+    #play_name {
+      margin-bottom: 100px;
+    }
+    .heart_button {
+      text-align:center;
+      margin-bottom: 15px;
+    }
+    .review_create_button {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .review_show {
+      display: inline;
+      float: center;
+    }
+
+    .card-stacked {
+      width:80%;
+      margin: 0 auto;
+    }
+
+    .profile_top {
+      display: inline-block;
+      width: 100%;
+      height: 70%;
+
+    }
+    .to_my {
+      display: inline-block;
+    }
+    .recommend {
+      display: inline-block;
+    }
+    #login_b {
+      display: inline-block;
+      padding: 0 auto;
+      margin: 0;
+    }
+
+    #signup {
+      display: inline-block;
+      width: 100%;
+    }
+
+    #sign {
+      display: block;
+      text-align: center;
+
+
+    }
