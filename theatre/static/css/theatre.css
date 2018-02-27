@@ -47,7 +47,7 @@
     }
 
     nav {
-      background-color: pink;
+      background-color: #DC5F68;
     }
     nav a {
       opacity: 1;
@@ -84,11 +84,10 @@
         margin: 10px auto;
        }
 
-<<<<<<< HEAD
     .followed {
       color: red;
     }
-=======
+
 
   .btn.followed, .btn.followed:hover, .btn.followed:focus {
       font-weight: bold;
@@ -183,4 +182,3 @@
       text-align: center;
     }
 
->>>>>>> 8a898f9cb8fc374959695f79c1ce43fe6b76a68c
