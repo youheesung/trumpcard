@@ -25,10 +25,10 @@ def counter(a, b, c):
 
 def search(request):
     box = Play.objects.order_by('grade')
-    rate = Play.objects.order_by('rate')
+    rate = Play.objects.order_by('-rate')
     play = Play.objects.all()
 
-    ## 리뷰 순으로 뽑아내기
+    ## 리뷰의 갯수 순으로 뽑아내기
     review_count_b = []
     review_count = {}
     for j in play:
@@ -42,6 +42,7 @@ def search(request):
     for v in count:
         counted.append(v[0])
     print_review_count = counted[0:11]
+    ## count의 수로 나눈다??
 
     ## 별점 순으로 뽑아내기
     review_rate = []
@@ -51,7 +52,6 @@ def search(request):
 
     ctx = {
         'rate': print_rate,
-
         'box': box,
         'review_count': print_review_count,
     }

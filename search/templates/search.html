@@ -109,23 +109,49 @@
     if((rate%1) >= 0.5){
       star[i].innerHTML = "star_half";
     }
-  </script>
+</script>
 {% endfor %}
 </div>
+</script>
+</div>
 
-  별점 순
-  {% for a in rate %}
-  <a href="{% url 'search:detail' a.playid %}">
-  <img style="width:100px; height: 150px;" src="{{ a.poster }}" alt=""/>
-  </a>
-  {% endfor %}
+<div>
+<p>연극 별점 순
+
+{% for b in rate %}
+  <a href="{% url 'search:detail' b.playid %}">
+  <img style="width:100px; height: 150px;" src="{{ b.poster }}" alt=""/>
+</a>
+<div class="card-action">
+          <div class="star_box">
+                <i class="material-icons first star {{ b.name }}">star_border</i>
+                <i class="material-icons star {{ b.name }}">star_border</i>
+                <i class="material-icons star {{ b.name }}">star_border</i>
+                <i class="material-icons star {{ b.name }}">star_border</i>
+                <i class="material-icons star {{ b.name }}">star_border</i>
+                <span>{{ b.rate }}</span>
+              </div>
+            </div>
+
+    <script type="text/javascript">
+        var rate = "{{ b.rate }}";
+        var star = document.getElementsByClassName("star {{ b.name }}");
+        for(var i=0; i<parseInt(rate); i++) {
+          star[i].innerHTML = "star";
+        }
+        if((rate%1) >= 0.5){
+          star[i].innerHTML = "star_half";
+        }
+    </script>
+{% endfor %}
+</p>
+</div>
 
 <p>
-  리뷰 갯수 순 곁치는게 ... 많네 ㅠㅠ
+  리뷰의 갯수 순
  {% for t in review_count %}
  <a href="{% url 'search:detail' t.playid %}">
-  <img style="width:100px; height: 150px;" src="{{ t.poster }}" alt=""/></a>
+  <img style="width:100px; height: 150px;" src="{{ t.poster }}" alt=""/> {{t.review.count}}</a>
  {% endfor %}
 </p>
-
 {% endblock %}

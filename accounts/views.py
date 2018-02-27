@@ -68,6 +68,7 @@ def profile_detail(request, username):
 
     review_user = Review.objects.filter(author_id=request.user.pk)
 
+
     tag_user = set()
     for a in review_user:
         tag_user |= set(a.tag.all())

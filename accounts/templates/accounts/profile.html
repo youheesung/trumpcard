@@ -2,7 +2,7 @@
 
 {% block accounts %}
 
-  <div style="text-align:center" class="profile_top">
+  <div class="row" style="width:1000px; margin: 0 auto; background: #DBDBDB; text-align:center;">
     <h3>{{ profile.user }}님 안녕하세요?</h3>
 
      {% if profile.is_groupuser %}
@@ -16,9 +16,10 @@
      <p>
      {% if request.user.profile == profile %}
        <a href="{% url 'accounts:profile_update' request.user.username %}" class="btn"> 프로필 수정할래요 </a>
+     </p>
 
        <p> {{ profile.recommand_t|default:"몰라용, 더 알고 싶으세요??"}}</p>
-      <p> 좋아하는 극은 {{ profile.liebe_t|default:"아직 없어용 "}}</p>
+      <p style="margin: 0; padding: 10px;"> 좋아하는 극은 {{ profile.liebe_t|default:"아직 없어용 "}}</p>
 
        {% else %}
         <a href="{% url 'accounts:follow' profile.user.pk %}" id="follow_button">
@@ -39,49 +40,96 @@
           });
         </script>
       {% endif %}
-      </p>
     </div>
-
-<div class="row">
+<div class="row" style="width:1000px; background: #EDEDED;">
     <div class="col s12">
-      <ul class="tabs">
+      <ul class="tabs" style="background: white;">
         <li class="tab col s4 "><a href="#test1">나의 공연 diary </a></li>
         <li class="tab col s4 "><a class="active" href="#test2"> 내 마음속의 저장 </a></li>
         <li class="tab col s4 "><a class="active" href="#test3"> 컴온 마이 follower </a></li>
       </ul>
     </div>
 
-      <div id="test1" class="col s12" style="text-align:center">
-      내가 쓴 리뷰다
+      <div id="test1" class="col s12" style="text-align:center; width: 70%; margin: auto 150px;">
+        <div>
+         <br>
+         <!--ㄹ뷰 부분 -->
+         <p> 당신의 태그는 ??</p>
+        {% for a in review_user %} <div class="chip">{{ a.name }}
+        </div>
+        {% empty %} 태그가 없습니다.
+      {% endfor %}
+        </div>
+
       {% for t in review_profile %}
       <div class="card horizontal">
-      <div class="card-stacked">
+      <div class="card-stacked" style="background:white;">
         <div class="card-content" style="color:black;">
-        <p><h3>{{ t.title|safe }}</h3></p>
-        <p>{{t.content|safe}}</p>
+          <p style="text-align: left;">{{ t.play }}</p>
+          <p><h3>{{ t.title|safe }}</h3></p>
+          <p>{{t.content|safe}}</p>
+          {%for i in t.tag.all%}
+          <div class="chip">
+            {{ i.name }}
+          </div>
+          {% endfor%}
         </div>
       </div>
     </div>
     {% endfor%}
 
-      <!--<a href="{% url 'search:review' profile.user.pk %}" class="btn">공연 다이어리</a>-->
+</div>
 
-      <p> 나는 태그를 이렇게 달앗음 글자 순??!!{% for a in review_user %}{{a.name}}{% empty %}태그가 없습니다. {% endfor %}</p>
+  <div id="test2" class="col s12" style="display: none; width: 80%; margin: auto 100px;">
+      <br>
+        내 마음 속에 저장
 
-    </div>
-
-     <div id="test2" class="col s12" style="text-align:center">
-      <p>
       <div class="row">
       {% for i in play_to_my_heart %}
-
-        <div class="to_my">
+        <div class="to_my" style="display: inline-block;">
           <div class="card">
             <div class="card-image">
-               <a href="{% url 'search:detail' i.playid %}"><img style="width:200px; height: 250px;" src="{{ i.poster }}" alt="" class="to_my_heart" /></a>
-              <span class="card-title" style="font-color:white">{{ i.title }}</span>
+               <a href="{% url 'search:detail' i.playid %}"><img style="width:250px; height: 300px;" src="{{ i.poster }}" alt="" class="to_my_heart" /></a>
             </div>
-            <div class="card-content">{{ i.title }}
+            <div class="card-content" style="background: #333c4d; width:200px; height:150px;">{{ i.name }}
+              <div class="card-action">
+                <div class="star_box">
+                <i class="material-icons first star {{ a.name }}">star_border</i>
+                <i class="material-icons star {{ a.name }}">star_border</i>
+                <i class="material-icons star {{ a.name }}">star_border</i>
+                <i class="material-icons star {{ a.name }}">star_border</i>
+                <i class="material-icons star {{ a.name }}">star_border</i>
+                <span><h5 style="display: inline-block;">{{ i.rate }}</h5></span>
+                </div>
+              </div>
+            </div>
+            <script type="text/javascript">
+                var rate = "{{ i.rate }}";
+                var star = document.getElementsByClassName("star {{ i.name }}");
+                for(var i=0; i<parseInt(rate); i++) {
+                  star[i].innerHTML = "star";
+                }
+                if((rate%1) >= 0.5){
+                  star[i].innerHTML = "star_half";
+                }
+            </script>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+
+     <div id="test3" class="col s12" style="display:none; width: 80%; margin: auto 100px;">
+      <div class="row">
+      <p>다른 사람은 이런 연극을 보는구나!!
+     {% for i in follower_review %}
+      <div class="to_my" style="display: inline-block;">
+          <div class="card">
+            <div class="card-image">
+               <a href="{% url 'search:detail' i.play.playid %}"><img style="width:200px; height: 250px;" src="{{ i.play.poster }}" alt="" class="to_my_heart" /></a>
+              <span class="card-title" style="font-color:black">{{i.play.title}}</span>
+            </div>
+            <div class="card-content">{{ i.play.rate }}
             </div>
             <div class="card-action">
               <a href="#">자세히 보기 </a>
@@ -89,20 +137,6 @@
           </div>
         </div>
         {% endfor %}
-        </p>
-      </div>
-
-
-
-
-     <div id="test3" class="col s12" style="text-align:center">
-      <p>너가 팔로우 한 사람이 본 연극임  ㅋㅋㅋㅋ 참고 하삼
-     {% for i in follower_review %}
-     <a href="{% url 'search:detail' i.play.playid %}">
-     <img style="width:100; height: 150px;" src="{{ i.play.poster }}" alt=""/></a>{% endfor %}
-      </p>
-    </div>
-
-
-  {% endif %}
+        </div>
+{% endif %}
 {% endblock %}
