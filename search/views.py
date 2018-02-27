@@ -274,25 +274,30 @@ def recommend(request):
     print(counted)
 
     price = request.user.profile.price
-    recommend_price = Play.objects.filter(minprice__lte=price)
+    if price is not None:
+        recommend_price = Play.objects.filter(minprice__lte=price)
+    else:
+        recommend_price = Play.objects.none()
 
     recommend_actor = Play.objects.none()
     recommend_staff = Play.objects.none()
     actor = request.user.profile.liebe_a
     print(actor)
-    if len(actor) >= 3:
-        actor = hangul(actor)
-        for i in actor:
-            if Play.objects.filter(actor__contains=i).exists():
-                recommend_actor |= Play.objects.filter(actor__contains=i)
+    if actor is not None:
+        if len(actor) >= 3:
+            actor = hangul(actor)
+            for i in actor:
+                if Play.objects.filter(actor__contains=i).exists():
+                    recommend_actor |= Play.objects.filter(actor__contains=i)
 
     staff = request.user.profile.liebe_t
     print(staff)
-    if len(staff) >= 3:
-        staff = hangul(staff)
-        for i in staff:
-            if Play.objects.filter(staff__contains=i).exists():
-                recommend_staff |= Play.objects.filter(staff__contains=i)
+    if staff is not None:
+        if len(staff) >= 3:
+            staff = hangul(staff)
+            for i in staff:
+                if Play.objects.filter(staff__contains=i).exists():
+                    recommend_staff |= Play.objects.filter(staff__contains=i)
 
 
     ctx = {
