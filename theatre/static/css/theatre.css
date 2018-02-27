@@ -47,7 +47,7 @@
     }
 
     nav {
-      background-color: pink;
+      background-color: #DC5F68;
     }
     nav a {
       opacity: 1;
@@ -84,11 +84,10 @@
         margin: 10px auto;
        }
 
-<<<<<<< HEAD
     .followed {
       color: red;
     }
-=======
+
 
   .btn.followed, .btn.followed:hover, .btn.followed:focus {
       font-weight: bold;
@@ -101,9 +100,9 @@
 
     .poster_img{
       display: inline-block;
-      margin-left:100px;
+      margin-left:80px;
       margin-top: 100px;
-      margin-right: 10px;
+      margin-right: 20px;
       margin-bottom: 100px;
     }
 
@@ -117,7 +116,8 @@
     }
 
     #play_name {
-      margin-bottom: 100px;
+      margin-bottom: 0px;
+      margin-top: 0px;
     }
     .heart_button {
       text-align:center;
@@ -145,7 +145,6 @@
       padding: 0 auto;
       margin: 0;
     }
-
 
     .review_img {
       width: 50px;
@@ -183,4 +182,7 @@
       text-align: center;
     }
 
->>>>>>> 8a898f9cb8fc374959695f79c1ce43fe6b76a68c
+    .create {
+      width: 1000px;
+      margin: 0 auto;
+    }

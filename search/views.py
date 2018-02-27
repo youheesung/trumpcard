@@ -58,7 +58,8 @@ def search(request):
     ## 별점 순으로 뽑아내기
     review_rate = []
     for i in rate:
-        review_rate.append(i)
+        if(i.rate is not None):
+            review_rate.append(i)
     print_rate = review_rate[0:11]
 
     ctx = {
@@ -78,7 +79,7 @@ def search(request):
                 print('\'{0}\''.format(str(i)))
                 print(str(i) in gen)
                 recommend = recommend | recommend1.filter(genre_select__contains=str(i))
-        for i in range(1, 9):
+        for i in range(1, 10):
             if str(i) in char:
                 print('\'{0}\''.format(str(i)))
                 print(str(i) in char)
@@ -167,8 +168,9 @@ def review_create(request, playid):
             print(request.POST)
             new_review.author = request.user
             new_review.play = play.get(playid=playid)
-            new_review.save()
 
+            new_review.save()
+            new_review.tag.set(request.POST.getlist('tag'))
             review = Review.objects.filter(play__playid=playid)
             review_count = review.count()
             rateSum = 0
@@ -181,6 +183,36 @@ def review_create(request, playid):
     ctx = {
         'form': form,
         'play': play.get(playid=playid)
+    }
+    return render(request, 'review_create.html', ctx)
+
+
+def review_update(request, pk):
+    review = Review.objects.get(pk=pk)
+    form = ReviewForm(instance=review)
+    play = Play.objects.filter(playid=review.play.playid)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, request.FILES or None, instance=review)
+        if form.is_valid():
+            new_review = form.save(commit=False)
+            print(request.POST)
+            new_review.author = request.user
+            new_review.play = play.get(playid=review.play.playid)
+
+            new_review.save()
+            new_review.tag.set(request.POST.getlist('tag'))
+            review = Review.objects.filter(play__playid=review.play.playid)
+            review_count = review.count()
+            rateSum = 0
+            for i in review:
+                rateSum += i.rate
+            rateSum /= review_count
+            play.update(rate=rateSum)
+            # return redirect(reverse('search:review_detail', kwargs={'pk':new_review.pk}))
+            return redirect(reverse('search:detail', kwargs={'playid': play.first().playid}))
+    ctx = {
+        'form': form,
+        'play': play.get(playid=review.play.playid)
     }
     return render(request, 'review_create.html', ctx)
 
@@ -255,11 +287,12 @@ def recommend(request):
             print('\'{0}\''.format(str(i)))
             print(str(i) in gen)
             recommend = recommend | recommend1.filter(genre_select__contains=str(i))
-    for i in range(1, 9):
+    for i in range(1, 10):
         if str(i) in char:
             print('\'{0}\''.format(str(i)))
             print(str(i) in char)
-            recommend = recommend | recommend.filter(play_char__contains=str(i))
+            recommend = recommend | recommend1.filter(play_char__contains=str(i))
+            print(recommend)
     count = {}
     for i in recommend:
         count[i] = counter(gen, i.genre_select, 0)
@@ -274,25 +307,30 @@ def recommend(request):
     print(counted)
 
     price = request.user.profile.price
-    recommend_price = Play.objects.filter(minprice__lte=price)
+    if price is not None:
+        recommend_price = Play.objects.filter(minprice__lte=price)
+    else:
+        recommend_price = Play.objects.none()
 
     recommend_actor = Play.objects.none()
     recommend_staff = Play.objects.none()
     actor = request.user.profile.liebe_a
     print(actor)
-    if len(actor) >= 3:
-        actor = hangul(actor)
-        for i in actor:
-            if Play.objects.filter(actor__contains=i).exists():
-                recommend_actor |= Play.objects.filter(actor__contains=i)
+    if actor is not None:
+        if len(actor) >= 3:
+            actor = hangul(actor)
+            for i in actor:
+                if Play.objects.filter(actor__contains=i).exists():
+                    recommend_actor |= Play.objects.filter(actor__contains=i)
 
     staff = request.user.profile.liebe_t
     print(staff)
-    if len(staff) >= 3:
-        staff = hangul(staff)
-        for i in staff:
-            if Play.objects.filter(staff__contains=i).exists():
-                recommend_staff |= Play.objects.filter(staff__contains=i)
+    if staff is not None:
+        if len(staff) >= 3:
+            staff = hangul(staff)
+            for i in staff:
+                if Play.objects.filter(staff__contains=i).exists():
+                    recommend_staff |= Play.objects.filter(staff__contains=i)
 
 
     ctx = {

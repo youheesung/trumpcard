@@ -4,8 +4,8 @@
     <img src="">
   </div>
   <div class="con">
-  <p><h1>{{ review.title }}</h1></p>
-  <p>{{ review.content|safe }}</p>
+  <p><h3 style="color: black;">{{ review.title }}</h3></p>
+  <p><h5 style="color: black;">{{ review.content|safe }}</h5></p>
   {% for i in review_tag.all %}
   <div class="chip">
   {{ i.name }}
@@ -29,6 +29,9 @@
             {% endif %}
            </div>
    </div>
+   {% if request.user == review.author %}
+      <a href="{% url 'search:review_update' review.pk %}" class="btn">리뷰 수정하기</a>
+      {% endif %}
    <script type="text/javascript">
     $('.review_img').click(function(){
       $('.reviewimg img').attr('src', $(this).attr('src'));

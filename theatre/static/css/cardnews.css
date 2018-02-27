@@ -9,18 +9,16 @@ h3 {
     margin-top: 70px;
     margin-bottom: 40px;
 }
+p {
+    text-align: center;
+    color: white;
+}
 .row {
     margin-top: 100px;
-    justify-content: center;
+    overflow-y: auto;
 }
 .card {
-
     display: inline-block;
-}
-
-.img {
-    overflow: auto;
-    position: fixed;
 }
 
 span .card-title {
@@ -39,4 +37,21 @@ span .card-title {
 .form {
     width: 60%;
     margin: 250px auto;
+}
+
+
+.ut {
+    display: inline-block;
+}
+
+.a {
+    display: inline-block;
+}
+
+.yu {
+    display: inline-block;
+}
+
+.gen3 {
+    display: inline-block;
 }
