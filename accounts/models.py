@@ -128,7 +128,7 @@ class Profile(models.Model):
 
     def group_image_url(self):
         if self.group_image:
-            group_image_url = self.image.url
+            group_image_url = self.group_image.url
         else:
             group_image_url = '/static/img/default_profile_image.jpg'
         return group_image_url

@@ -3,7 +3,7 @@
 {% block search %}
 
 <div class ="poster_img"style="text-align:left;">
-  <img src="{{ play.poster }}" style="width: 100%; height: 120%">
+  <img src="{{ play.poster }}" style="width: 350px; height: 400px;">
 </div>
 <div class="play_infor" style="text-align:left">
  <div class="row">
@@ -144,7 +144,7 @@ function winOpen2()
     </script>
     </div>
 
-    <div id="test2" class="col s12" style="text-align:center">
+    <div id="test2" class="col s12" >
       {% if review.count %}
 
     <div class="review_create_button">
@@ -160,18 +160,9 @@ function winOpen2()
       </div>  -->
       <div class="card-stacked">
         <div class="card-content">
-          <p><a href="{% url 'accounts:profile_detail' a.author.username %}">{{ a.author.username }}</a></p>
+          <span><a href="{% url 'accounts:profile_detail' a.author.username %}">{{ a.author.username }}</a></span>
           <!--별점 추가하기 줄바꿈이 아니니까 p 태그 또는 br 태그 사용금지 -->
-          <a href="{% url 'search:review_detail' a.pk %}"><p><h3>{{ a.title|safe }}</h3></p></a>
-          <!--
-            <p>a.review의 또 tag여기가 그 태그가 들어갈 부분 -->
-              <p style="font-color:black">
-                내가 태그임 {{ a.tag }}
-              </p>
-
-        </div>
-        <div class="card-action">
-          <div class="star_box">
+          <span class="star_box">
                 <i class="material-icons first star {{ a.title }}">star_border</i>
                 <i class="material-icons star {{ a.title }}">star_border</i>
                 <i class="material-icons star {{ a.title }}">star_border</i>
@@ -185,7 +176,44 @@ function winOpen2()
                 star[i].innerHTML = "star";
               }
             </script>
+          </span>
+          <a href="{% url 'search:review_detail' a.pk %}"><p>{{ a.content }}</p></a>
+          <!--
+            <p>a.review의 또 tag여기가 그 태그가 들어갈 부분 -->
+        {% for i in a.tag.all %}
+              <div class="chip" style="font-color:black">
+                {{ i.name }}
+              </div>
+              {% empty %}
+              <p>붙은 태그가 없습니다.</p>
+              {% endfor %}
+        </div>
+        <div class="card-action">
+          <div>
+            {% if a.img1 %}
+            <a href="#modal1" class="modal-trigger" alt="{% url 'search:review_detail' a.pk %}">
+            <img src="{{ a.img1.url }}" class="review_img" alt="1">
+            </a>
+            {% endif %}
+            {% if a.img2 %}
+            <a href="#modal1" class="modal-trigger" alt="{% url 'search:review_detail' a.pk %}">
+            <img src="{{ a.img2.url }}" class="
+            review_img" alt="2">
+            </a>
+            {% endif %}
+            {% if a.img3 %}
+            <a href="#modal1" class="modal-trigger" alt="{% url 'search:review_detail' a.pk %}">
+            <img src="{{ a.img3.url }}" class="review_img" alt="3">
+            </a>
+            {% endif %}
+            {% if a.img4 %}
+            <a href="#modal1" class="modal-trigger" alt="{% url 'search:review_detail' a.pk %}">
+            <img src="{{ a.img4.url }}" class="review_img" alt="4">
+            </a>
+            {% endif %}
           </div>
+
+
         </div>
       </div>
     </div>
@@ -194,6 +222,27 @@ function winOpen2()
 
 
 {% endfor %}
+<div id="modal1" class="modal">
+    <div class="modal-content">
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+    <script type="text/javascript">
+      $('.modal-trigger').click(function() {
+        var url = $(this).attr('alt');
+        var img = $(this).children('img').attr('src');
+        console.log(img);
+        $.post(url, {img:img}).done(function(r){
+          $('.modal .modal-content').html(r);
+          $('.modal .reviewimg').find('img').attr('src', img);
+        });
+        console.log(url);
+        // $.post()
+      });
+    </script>
 {% else %}
 <p>작성된 리뷰가 없습니다.</p>
  <div>

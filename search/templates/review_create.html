@@ -2,9 +2,9 @@
 
 {% block search %}
 <div class="create" style="text-align:center;">
-<form method="POST" id="review_form">
+<form method="POST" id="review_form" enctype="multipart/form-data">
 {% csrf_token %}
-{{ form }}
+{{ form.as_p }}
   <br>
   <div class="star_box">
     <i class="material-icons first star">star_border</i>
@@ -19,22 +19,31 @@
 
 <script type="text/javascript">
 
-  $('#review_form').submit(function(e) {
-    e.preventDefault();
-    var title = $('#id_title').val();
-    var content = $('#id_content').val();
-    var tag = $('#id_tag').val();
+  // $('#review_form').submit(function(e) {
+  //   e.preventDefault();
+  //   var title = $('#id_title').val();
+  //   var content = $('#id_content').val();
+  //   var tag = $('#id_tag').val();
+  //   var img1 = $('#id_img1').val();
+  //   var img2 = $('#id_img2').val();
+  //   var img3 = $('#id_img3').val();
+  //   var img4 = $('#id_img4').val();
 
-    $.post('{% url "search:review_create" play.playid %}', {
-      title: title,
-      content: content,
-      tag: tag,
-      rate: parseInt($('.rate').html())
-    }).done(function(){
-    console.log('ok');
-    location.href = '{% url "search:review" play.playid %}';
-  });
-  });
+
+  //   $.post('{% url "search:review_create" play.playid %}', {
+  //     title: title,
+  //     content: content,
+  //     img1: img1,
+  //     img2: img2,
+  //     img3: img3,
+  //     img4: img4,
+  //     tag: tag,
+  //     rate: parseInt($('.rate').html())
+  //   }).done(function(){
+  //   console.log('ok');
+  //   // location.href = '{% url "search:review" play.playid %}';
+  // });
+  // });
   $('.star').mouseover(function(){
     var star = $('.first');
     $(this).html('star');
@@ -54,7 +63,7 @@
       $(this).prevAll().html('star');
       $(this).nextAll().html('star_border');
       var rate = $(this).prevAll().length+1;
-      $('.rate').html(rate);
+      $('#id_rate').val(rate);
       $(this).removeClass('star');
       $(this).prevAll().removeClass('star');
     }else {
@@ -62,7 +71,7 @@
       $(this).prevAll().html('star');
       $(this).nextAll().html('star_border');
       var rate = $(this).prevAll().length+1;
-      $('.rate').html(rate);
+      $('#id_rate').val(rate);
       $(this).nextAll().addClass('star');
     }
   });

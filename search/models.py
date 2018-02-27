@@ -139,6 +139,13 @@ class Play(models.Model):
         verbose_name='극장'
         )
 
+    author = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        null=True,
+        blank=True,
+        on_delete=models.CASCADE
+        )
+
     poster_self = models.ImageField(
         upload_to='poster/%Y/%m/%d',
         blank=True,
@@ -223,6 +230,30 @@ class Review(models.Model):
         related_name='tag_comment',
         )
 
+    img1 = models.ImageField(
+        upload_to='reviewimg/{0}/'.format(play.name),
+        null=True,
+        blank=True,
+        verbose_name='이미지1'
+        )
+    img2 = models.ImageField(
+        upload_to='reviewimg/{0}/'.format(play.name),
+        null=True,
+        blank=True,
+        verbose_name='이미지2'
+        )
+    img3 = models.ImageField(
+        upload_to='reviewimg/{0}/'.format(play.name),
+        null=True,
+        blank=True,
+        verbose_name='이미지3'
+        )
+    img4 = models.ImageField(
+        upload_to='reviewimg/{0}/'.format(play.name),
+        null=True,
+        blank=True,
+        verbose_name='이미지4'
+        )
 
 class Theater(models.Model):
     placeid = models.CharField(
