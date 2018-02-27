@@ -42,6 +42,7 @@
         </script>
       {% endif %}
     </div>
+
 <div class="row" style="width:1000px; background: #EDEDED;">
     <div class="col s12">
       <ul class="tabs" style="background: white;">
@@ -62,24 +63,74 @@
       {% endfor %}
         </div>
 
-      {% for t in review_profile %}
+      {% for a in review_profile %}
       <div class="card horizontal">
       <div class="card-stacked" style="background:white;">
         <div class="card-content" style="color:black;">
-          <p style="text-align: left;">{{ t.play }}</p>
-          <p><h3>{{ t.title|safe }}</h3></p>
-          <p>{{t.content|safe}}</p>
-          {%for i in t.tag.all%}
+          <!--카드뉴스 내용 -->
+          <a href="{% url 'search:detail' a.play.playid %}">
+          <p style="text-align: left;">{{ a.play }}
+          <img style= "width:100px; height:150px;" src="{{ a.play.poster }}"alt=""/></p></a>
+
+          <p><h3>{{ a.title|safe }}</h3></p>
+          <p><h4>{{ a.content|safe}}</h4></p>
+
+          {%for i in a.tag.all%}
           <div class="chip">
             {{ i.name }}
           </div>
-          {% endfor%}
+          {% endfor %}
+
+          <div class="card-action">
+          <div>
+            {% if a.img1 %}
+            <a href="#modal1" class="modal-trigger" alt="{% url 'search:review_detail' a.pk %}">
+            <img src="{{ a.img1.url }}" class="review_img" alt="1">
+            </a>
+            {% endif %}
+            {% if a.img2 %}
+            <a href="#modal1" class="modal-trigger" alt="{% url 'search:review_detail' a.pk %}">
+            <img src="{{ a.img2.url }}" class="
+            review_img" alt="2">
+            </a>
+            {% endif %}
+            {% if a.img3 %}
+            <a href="#modal1" class="modal-trigger" alt="{% url 'search:review_detail' a.pk %}">
+            <img src="{{ a.img3.url }}" class="review_img" alt="3">
+            </a>
+            {% endif %}
+            {% if a.img4 %}
+            <a href="#modal1" class="modal-trigger" alt="{% url 'search:review_detail' a.pk %}">
+            <img src="{{ a.img4.url }}" class="review_img" alt="4">
+            </a>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
-    {% endfor%}
-
+  </div>
+{% endfor %}
 </div>
+<div id="modal1" class="modal">
+    <div class="modal-content"></div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">닫기</a>
+    </div>
+  </div>
+
+    <script type="text/javascript">
+      $('.modal-trigger').click(function() {
+        var url = $(this).attr('alt');
+        var img = $(this).children('img').attr('src');
+        console.log(img);
+        $.post(url, {img:img}).done(function(r){
+          $('.modal .modal-content').html(r);
+          $('.modal .reviewimg').find('img').attr('src', img);
+        });
+        console.log(url);
+        // $.post()
+      });
+    </script>
 
   <div id="test2" class="col s12" style="display: none; width: 80%; margin: auto 100px;">
       <br>
@@ -116,13 +167,13 @@
             </script>
           </div>
         </div>
-        {% endfor %}
+      {% endfor %}
     </div>
   </div>
 
-     <div id="test3" class="col s12" style="display:none; width: 80%; margin: auto 100px;">
+    <div id="test3" class="col s12" style="display:none; width: 80%; margin: auto 100px;">
       <div class="row">
-      <p>다른 사람은 이런 연극을 보는구나!!
+      <p>다른 사람은 이런 연극을 보는구나!!</p>
      {% for i in follower_review %}
       <div class="to_my" style="display: inline-block;">
           <div class="card">
@@ -154,9 +205,12 @@
             </div>
           </div>
 
-        {% endfor %}
-</div>
         </div>
-{% endif %}
+        {% endfor %}
+      </div>
+      </div>
+    </div>
 
+{% endif %}
+</div>
 {% endblock %}
