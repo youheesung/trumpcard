@@ -1,0 +1,44 @@
+#wrap {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: inline-block;
+}
+
+.img {
+    overflow: auto;
+    position: fixed;
+}
+
+span .card-title {
+    text-align: center;
+}
+
+.card {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.selected {
+    opacity: 0.5;
+}
+
+.value {
+    display:none;
+}
+
+
+.form {
+    width: 60%;
+    margin: 250px auto;
+
+}
