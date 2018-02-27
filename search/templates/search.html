@@ -28,13 +28,7 @@
 </div>
 </div>
 
-<div class="recommend">
-  {% if request.user.is_authenticated %}
-    {% for i in recommend %}
-      <img src="{{ i.poster }}" style="display: inline-block;">
-    {% endfor %}
-  {% endif %}
-</div>
+
 <div class="box">
 <h3>박스오피스</h3>
 {% for a in box %}

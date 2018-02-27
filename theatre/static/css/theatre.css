@@ -121,3 +121,29 @@
     .to_my {
       display: inline-block;
     }
+
+    .review_img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .modal {
+      width: 80%;
+    }
+    .detail {
+      position: relative;
+    }
+    .detail > .reviewimg {
+      float: left;
+      width: 70%;
+      height: 100%;
+      display:inline-block;
+    }
+    .reviewimg img {
+      width: 95%;
+    }
+    .con {
+      width: 20%;
+      display: inline-block;
+    }
+

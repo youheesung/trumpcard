@@ -283,7 +283,7 @@
 
       </div>
 
-      <a href="{% url 'accounts:recommend' %}" class="btn" id="rec_start">제출하기</a>
+      <a href="{% url 'accounts:cardnews' %}" class="btn" id="rec_start">제출하기</a>
     </div>
   </div>
 <script type="text/javascript">
@@ -297,7 +297,14 @@
     $('#test-swipe-2').css('display', 'none');
     $('#test-swipe-3').css('display', 'block');
   });
-
+  $('.tab1').click(function(e) {
+    $('#test-swipe-2').css('display', 'none');
+    $('#test-swipe-3').css('display', 'none');
+  });
+  $('.tab2').click(function(e) {
+    $('#test-swipe-1').css('display', 'none');
+    $('#test-swipe-3').css('display', 'none');
+  });
   var genre = [];
   var character = []
   $('.selection').click(function(e) {
@@ -338,7 +345,7 @@
       genre: genre,
       character: character
     }).done(function() {
-      location.href = '{% url "accounts:recommend_2" %}';
+      location.href = '{% url "accounts:cardnews_2" %}';
     });
     return false;
   });

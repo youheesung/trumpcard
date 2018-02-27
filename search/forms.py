@@ -3,7 +3,6 @@ from .models import (
     Review,
     )
 from django import forms
-from django_summernote.widgets import SummernoteWidget
 
 import sys
 
@@ -64,7 +63,7 @@ class MultiSelectFormField(forms.MultipleChoiceField):
 class CreatePlayForm(forms.ModelForm):
     class Meta:
         model = Play
-        exclude = ['playid', 'placeid', 'minprice', 'grade', 'rate', 'genre_select', 'play_char', 'poster', 'styurl1', 'styurl2', 'styurl3', 'styurl4', 'to_my_heart', 'confirmed', 'user_upload']
+        exclude = ['playid', 'placeid', 'minprice', 'grade', 'rate', 'genre_select', 'play_char', 'poster', 'styurl1', 'styurl2', 'styurl3', 'styurl4', 'to_my_heart', 'confirmed', 'user_upload', 'author']
         widgets = {
             'start_date' : forms.DateInput(attrs={'class':'vDateField'}),
             'end_date' : forms.DateInput()
@@ -74,8 +73,7 @@ class CreatePlayForm(forms.ModelForm):
 class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
-        fields = ['title', 'content','rate','tag']
+        fields = ['title', 'content', 'rate', 'tag', 'img1', 'img2', 'img3', 'img4']
         widgets = {
-            'content': SummernoteWidget(),
             'rate': forms.HiddenInput(),
             }

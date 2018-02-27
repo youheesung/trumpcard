@@ -91,18 +91,15 @@
         {% endfor %}
         </p>
       </div>
-
-
-
-
-     <div id="test3" class="col s12" style="text-align:center">
+</div>
+     <div id="test3" class="col s12" >
       <p>너가 팔로우 한 사람이 본 연극임  ㅋㅋㅋㅋ 참고 하삼
      {% for i in follower_review %}
      <a href="{% url 'search:detail' i.play.playid %}">
-     <img style="width:100; height: 150px;" src="{{ i.play.poster }}" alt=""/></a>{% endfor %}
+     <img style="width:100px; height: 150px;" src="{{ i.play.poster }}" alt=""/></a>{% endfor %}
       </p>
     </div>
 
-
+  </div>
   {% endif %}
 {% endblock %}

@@ -1,13 +1,37 @@
-{% extends 'base.html' %}
 
-{% block search %}
-
-<div class="detail" style="text-align:center;">
+<div class="detail">
+  <div class="reviewimg">
+    <img src="">
+  </div>
+  <div class="con">
   <p><h1>{{ review.title }}</h1></p>
   <p>{{ review.content|safe }}</p>
-  <p> 이글에 달린 태그는 {% for a in review_tag %}{{ a }}{% endfor %}</p>
+  {% for i in review_tag.all %}
+  <div class="chip">
+  {{ i.name }}
+  </div>
+  {% empty %}
+  <p>붙은 태그가 없습니다.</p>
+  {% endfor %}
+            <div>
+            {% if review.img1 %}
+            <img src="{{ review.img1.url }}" class="review_img" alt="1">
+            {% endif %}
+            {% if review.img2 %}
+            <img src="{{ review.img2.url }}" class="
+            review_img" alt="2">
+            {% endif %}
+            {% if review.img3 %}
+            <img src="{{ review.img3.url }}" class="review_img" alt="3">
+            {% endif %}
+            {% if review.img4 %}
+            <img src="{{ review.img4.url }}" class="review_img" alt="4">
+            {% endif %}
+           </div>
+   </div>
+   <script type="text/javascript">
+    $('.review_img').click(function(){
+      $('.reviewimg img').attr('src', $(this).attr('src'));
+    });
+   </script>
 </div>
-
-<a href="{% url 'search:review' review.play.playid %}" class="btn">목록으로 가기</a>
-
-{% endblock %}

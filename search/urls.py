@@ -12,8 +12,9 @@ urlpatterns = [
     path('review_create/<str:playid>/', views.review_create, name="review_create"),
     path('review_detail/<int:pk>/', views.review_detail, name='review_detail'),
 
-    path('play_create/', views.play_create, name='play_create'),
+    path('play_create/<str:username>/', views.play_create, name='play_create'),
 
     path('<str:playid>/like', views.to_my_heart, name='to_my_heart'),
 
+    path('recommend/', views.recommend, name='recommend'),
 ]

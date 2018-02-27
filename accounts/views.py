@@ -66,7 +66,7 @@ def profile_detail(request, username):
     play = Play.objects.all()
     play_to_my_heart = play.filter(to_my_heart__username=username)
 
-    review_user = Review.objects.filter(author_id=request.user.pk)
+    review_user = Review.objects.filter(author_id=my_profile.user.pk)
 
     tag_user = set()
     for a in review_user:
@@ -95,7 +95,7 @@ def login_and_redirect_next(request, user):
 
 def signup(request):
     signup_form = SignupForm(request.POST or None)
-    profile_form = SignupProfileForm(request.POST or None)
+    profile_form = SignupProfileForm(request.POST or None, request.FILES or None)
 
     if request.method == 'GET':
         if request.is_ajax():
@@ -114,7 +114,7 @@ def signup(request):
         elif signup_form.is_valid():
             if request.POST.get('is_groupuser'):
                 print(request.POST.get('is_groupuser'))
-                profile_form = GroupProfileForm(request.POST)
+                profile_form = GroupProfileForm(request.POST, request.FILES or None)
             if profile_form.is_valid():
                 user = signup_form.save()
                 profile = profile_form.save(commit=False)
@@ -144,6 +144,7 @@ def profile_update(request, username):
 
     ctx = {
         'form': form,
+        'profile': Profile.objects.get(user=request.user)
     }
     return render(request, 'accounts/profile_create.html', ctx)
 
@@ -167,7 +168,7 @@ def follow(request, pk):
 
 
 @login_required
-def recommend(request):
+def cardnews(request):
     if request.method == "POST":
         print(request.POST)
         profile = Profile.objects.filter(user=request.user)
@@ -177,16 +178,15 @@ def recommend(request):
         print(genre)
         print(character)
 
-
     return render(request, 'accounts/cardnews.html')
 
 @login_required
-def recommend_2(request):
+def cardnews_2(request):
     if request.method == "POST":
         actor = request.POST.get('actor')
-        theater = request.POST.get('theater')
+        staff = request.POST.get('staff')
         price = int(request.POST.get('price'))
         profile = Profile.objects.filter(user=request.user)
-        profile.update(liebe_t=theater, liebe_a=actor, price=price)
-        return redirect(reverse('search:search'))
+        profile.update(liebe_t=staff, liebe_a=actor, price=price)
+        return redirect(reverse('search:recommend'))
     return render(request, 'accounts/cardnews2.html')
