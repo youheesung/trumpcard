@@ -7,10 +7,10 @@
     <div class="">
     <form method="POST">
       {% csrf_token %}
-      <label for="actor">내가 관심 있는 배우 또는 연출은?</label>
+      <label for="actor">내가 관심 있는 배우는?</label>
       <input type="text" class="input-field" name="actor">
-      <label for="theater">내가 좋아하는 제작사 또는 극단은?</label>
-      <input type="text" class="input-field" name="theater">
+      <label for="theater">내가 관심 있는 연출, 제작진은?</label>
+      <input type="text" class="input-field" name="staff">
       <div class="input-field col s12">
         <select name="price">
           <option value="0" selected>나는 (가격)의 공연이 좋아요!(가격)</option>

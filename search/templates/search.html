@@ -28,14 +28,7 @@
 </div>
 </div>
 
-<div class="recommend">
-  {% if request.user.is_authenticated %}
-    {% for i in recommend %}
-    <a href="{% url 'search:detail' i.playid %}">
-      <img src="{{ i.poster }}" style="width:250px; height:300px;"></a>
-    {% endfor %}
-  {% endif %}
-</div>
+
 <div class="box">
 <h3>박스오피스</h3>
 {% for a in box %}

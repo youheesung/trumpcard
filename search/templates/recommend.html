@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block search %}
+
+<div class="recommend">
+  <h1>취향저격</h1>
+  {% if request.user.is_authenticated %}
+    {% for i in recommend %}
+      <img src="{{ i.poster }}" style="display: inline-block;">
+    {% endfor %}
+  {% endif %}
+</div>
+<div class="actor">
+  <h1>당신이 좋아하는 사람 출연</h1>
+    {% for i in recommend_actor %}
+      <img src="{{ i.poster }}" style="display: inline-block;">
+      {% empty %}
+      <strong>추천할 연극이 없습니다ㅠ</strong>
+    {% endfor %}
+</div>
+<div class="staff">
+  <h1>당신이 좋아하는 사람 제작</h1>
+    {% for i in recommend_staff %}
+      <img src="{{ i.poster }}" style="display: inline-block;">
+      {% empty %}
+      <strong>추천할 연극이 없습니다ㅠ</strong>
+    {% endfor %}
+</div>
+<div class="price">
+  <h1>당신의 주머니사정을 고려한 추천</h1>
+    {% for i in recommend_price %}
+      <img src="{{ i.poster }}" style="display: inline-block;">
+    {% endfor %}
+</div>
+
+
+<a href="{% url 'accounts:cardnews' %}" class="btn">추천 다시받기</a>
+{% endblock %}
