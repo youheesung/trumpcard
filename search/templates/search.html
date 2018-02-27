@@ -91,6 +91,39 @@
 {% endfor %}
 </div>
 </div>
+
+<div>
+<p>연극 별점 순
+
+{% for b in rate %}
+  <a href="{% url 'search:detail' b.playid %}">
+  <img style="width:100px; height: 150px;" src="{{ b.poster }}" alt=""/>
+</a>
+<div class="card-action">
+    <div class="star_box">
+          <i class="material-icons first star1 {{ b.name }}">star_border</i>
+          <i class="material-icons star1 {{ b.name }}">star_border</i>
+          <i class="material-icons star1 {{ b.name }}">star_border</i>
+          <i class="material-icons star1 {{ b.name }}">star_border</i>
+          <i class="material-icons star1 {{ b.name }}">star_border</i>
+          <span>{{ b.rate }}</span>
+        </div>
+</div>
+    <script type="text/javascript">
+        var rate = "{{ b.rate }}";
+        var star = document.getElementsByClassName("star1 {{ b.name }}");
+          console.log(star[0].innerHTML);
+        for(var i=0; i<parseInt(rate); i++) {
+          star[i].innerHTML = "star";
+
+        }
+        if((rate%1) >= 0.5){
+          star[i].innerHTML = "star_half";
+        }
+    </script>
+{% endfor %}
+</p>
+
 </div>
 
 <img id="rate_img " src="{% static 'img/main_rate.png' %}"

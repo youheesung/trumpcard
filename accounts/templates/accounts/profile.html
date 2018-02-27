@@ -2,8 +2,8 @@
 
 {% block accounts %}
 
-  <div class="row" style="width:1000px; margin: 0 auto; background: #DBDBDB; text-align:center;">
-    <h3>{{ profile.user }}님 안녕하세요?</h3>
+  <div class="row" style="width:1000px; margin: auto; background: #DBDBDB; text-align:center;">
+    <h3 style="margin: 0px; padding-top: 20px; padding-bottom: 15px; ">{{ profile.user }}님 안녕하세요?</h3>
 
      {% if profile.is_groupuser %}
      <img src="{{ profile.group_image_url }}" style="width:200px; height: 250px;">
@@ -17,9 +17,10 @@
      {% if request.user.profile == profile %}
        <a href="{% url 'accounts:profile_update' request.user.username %}" class="btn"> 프로필 수정할래요 </a>
      </p>
-
+      <div style="width: 60%; margin: auto 200px;">
        <p> {{ profile.recommand_t|default:"몰라용, 더 알고 싶으세요??"}}</p>
-      <p style="margin: 0; padding: 10px;"> 좋아하는 극은 {{ profile.liebe_t|default:"아직 없어용 "}}</p>
+      <p style="margin: 0; padding-bottom: 20px; "> 좋아하는 극은 {{ profile.liebe_t|default:"아직 없어용 "}}</p>
+      </div>
 
        {% else %}
         <a href="{% url 'accounts:follow' profile.user.pk %}" id="follow_button">
@@ -142,14 +143,14 @@
             <div class="card-image">
                <a href="{% url 'search:detail' i.playid %}"><img style="width:250px; height: 300px;" src="{{ i.poster }}" alt="" class="to_my_heart" /></a>
             </div>
-            <div class="card-content" style="background: #333c4d; width:200px; height:150px;">{{ i.name }}
+            <div class="card-content" style="background: white; width:250px; height:50px; padding: 0px;">
               <div class="card-action">
                 <div class="star_box">
-                <i class="material-icons first star {{ a.name }}">star_border</i>
-                <i class="material-icons star {{ a.name }}">star_border</i>
-                <i class="material-icons star {{ a.name }}">star_border</i>
-                <i class="material-icons star {{ a.name }}">star_border</i>
-                <i class="material-icons star {{ a.name }}">star_border</i>
+                <i class="material-icons first star {{ i.name }}">star_border</i>
+                <i class="material-icons star {{ i.name }}">star_border</i>
+                <i class="material-icons star {{ i.name }}">star_border</i>
+                <i class="material-icons star {{ i.name }}">star_border</i>
+                <i class="material-icons star {{ i.name }}">star_border</i>
                 <span><h5 style="display: inline-block;">{{ i.rate }}</h5></span>
                 </div>
               </div>
@@ -177,20 +178,39 @@
       <div class="to_my" style="display: inline-block;">
           <div class="card">
             <div class="card-image">
-               <a href="{% url 'search:detail' i.play.playid %}"><img style="width:200px; height: 250px;" src="{{ i.play.poster }}" alt="" class="to_my_heart" /></a>
-              <span class="card-title" style="font-color:black">{{i.play.title}}</span>
+               <a href="{% url 'search:detail' i.play.playid %}"><img style="width:250px; height: 300px;" src="{{ i.play.poster }}" alt="" class="to_my_heart"/></a>
             </div>
-            <div class="card-content">{{ i.play.rate }}
+            <div class="card-content" style="width:250px; height:50px; padding: 0px;">
+              <div class="card-action">
+                <div class="star_box">
+                <i class="material-icons first star1 {{ i.play.name }}">star_border</i>
+                <i class="material-icons star1 {{ i.play.name }}">star_border</i>
+                <i class="material-icons star1 {{ i.play.name }}">star_border</i>
+                <i class="material-icons star1 {{ i.play.name }}">star_border</i>
+                <i class="material-icons star1 {{ i.play.name }}">star_border</i>
+                <span><h5 style="display: inline-block;">{{ i.play.rate }}</h5></span>
+                </div>
+              </div>
             </div>
-            <div class="card-action">
-              <a href="#">자세히 보기 </a>
+            <script type="text/javascript">
+                var rate = "{{ i.play.rate }}";
+                var star = document.getElementsByClassName("star1 {{ i.play.name }}");
+                for(var i=0; i<parseInt(rate); i++) {
+                  star[i].innerHTML = "star";
+                }
+                if((rate%1) >= 0.5){
+                  star[i].innerHTML = "star_half";
+                }
+            </script>
             </div>
           </div>
+
         </div>
         {% endfor %}
       </div>
       </div>
     </div>
+
 {% endif %}
 </div>
 {% endblock %}

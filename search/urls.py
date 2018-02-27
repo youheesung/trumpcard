@@ -17,4 +17,5 @@ urlpatterns = [
     path('<str:playid>/like', views.to_my_heart, name='to_my_heart'),
 
     path('recommend/', views.recommend, name='recommend'),
+    path('review/update/<int:pk>/', views.review_update, name='review_update')
 ]

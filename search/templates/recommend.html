@@ -7,13 +7,16 @@
   {% if request.user.is_authenticated %}
     {% for i in recommend %}
       <img src="{{ i.poster }}" style="display: inline-block; width: 250px; height: 300px;">
+
     {% endfor %}
   {% endif %}
 </div>
 <div class="actor">
   <h1>당신이 좋아하는 사람 출연</h1>
     {% for i in recommend_actor %}
+
       <img src="{{ i.poster }}" style="display: inline-block; width: 250px; height: 300px;">
+
       {% empty %}
       <strong>추천할 연극이 없습니다ㅠ</strong>
     {% endfor %}
@@ -21,7 +24,9 @@
 <div class="staff">
   <h1>당신이 좋아하는 사람 제작</h1>
     {% for i in recommend_staff %}
+
       <img src="{{ i.poster }}" style="display: inline-block; width: 250px; height: 300px;">
+
       {% empty %}
       <strong>추천할 연극이 없습니다ㅠ</strong>
     {% endfor %}
@@ -29,7 +34,9 @@
 <div class="price">
   <h1>당신의 주머니사정을 고려한 추천</h1>
     {% for i in recommend_price %}
+
       <img src="{{ i.poster }}" style="display: inline-block; width: 250px; height: 300px;">
+
     {% endfor %}
 </div>
 

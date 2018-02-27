@@ -2,11 +2,12 @@
 {% load static %}
 {% block search %}
 
-<div class ="poster_img"style="text-align:left;">
-  <img src="{{ play.poster }}" style="width: 350px; height: 400px;">
+<div class="row" style="width: 1000px; background: #DBDBDB; margin: 0 auto;">
+<div class ="poster_img" style="text-align:left;">
+  <img src="{{ play.poster }}" style="width: 250px; height: 300px; display: inline-block;">
 </div>
 <div class="play_infor" style="text-align:left">
- <div class="row">
+ <div class="row" style="margin-bottom: 0px">
       <h1 id="play_name">{{ play.name }}</h1>
         <span class="flow-text">
             <div class="star_box">
@@ -36,8 +37,8 @@
     }
   </script>
   <div class="heart_button">
-  <p>
-    <a id= "to_my_heart_button" href="{% url 'search:to_my_heart' play.playid %}" >
+  <p style="margin-bottom: 40px; margin-top: 0px;">
+    <a id= "to_my_heart_button" style="text-align:center;"href="{% url 'search:to_my_heart' play.playid %}" >
 
       {% include 'to_my_heart_button.html'%}
     </a>
@@ -60,7 +61,13 @@
             });
 
           </script>
+<<<<<<< HEAD
+
+          </div>
+  <div class="row" style="width: 1000px; background: #EDEDED;">
+=======
   <div class="row" style=" width:1000px">
+>>>>>>> 99f2b96041e470460e4747c82cc4dad1c9749df5
     <div class="col s12">
       <ul class="tabs">
         <li class="tab col s6 l6"><a href="#test1">상세정보</a></li>
@@ -144,16 +151,24 @@ function winOpen2()
     </script>
     </div>
 
+<<<<<<< HEAD
+    <div id="test2" class="col s12" style=" width: 80%; margin: auto 100px;">
+      {% if review.count %}
+
+    <div class="review_create_button" style="text-align: center; margin: 25px auto;">
+      <a href="{% url 'search:review_create' play.playid %}" class="btn">리뷰 작성하기</a>
+=======
     <div id="test2" class="col s12" style="width:80%; margin: auto 100px;">
       {% if review.count %}
     <div class="review_create_button" style="text-align: center">
       <a href="{% url 'search:review_create' play.playid %}" class="btn" style="border-radius: 10px;">리뷰 작성하기</a>
+>>>>>>> 99f2b96041e470460e4747c82cc4dad1c9749df5
     </div>
 
   {% for a in review %}
 
   <div class="review_show">
-    <div class="card horizontal" style="position:relative;">
+    <div class="card horizontal" style="position:relative; background: white;">
  <!--     <div class="card-image">
         <img src="https://lorempixel.com/100/190/nature/6">
       </div>  -->
@@ -211,7 +226,9 @@ function winOpen2()
             </a>
             {% endif %}
           </div>
-
+   {% if request.user == a.author %}
+      <a href="{% url 'search:review_update' a.pk %}" class="btn" style="float:right;">리뷰 수정하기</a>
+      {% endif %}
 
         </div>
       </div>
@@ -226,7 +243,12 @@ function winOpen2()
 
     </div>
     <div class="modal-footer">
+<<<<<<< HEAD
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+
+=======
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">닫기</a>
+>>>>>>> 99f2b96041e470460e4747c82cc4dad1c9749df5
     </div>
   </div>
     <script type="text/javascript">
