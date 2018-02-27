@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>야!극장고?</title>
   <script
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -18,28 +18,21 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/theatre.css' %}">
   <script type="text/javascript" src="{% static 'js/ajax_settings.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/event.js' %}"></script>
+
+  {% block js %}{% endblock %}
+
   <style type="text/css">
-    body {
-      background-image: url("{% static 'body.png' %}");
+   body {
+      background-image: url("{% static 'img/body.png' %}");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: top;
       background-size: cover;
+      background-color: gray;
     }
-
-    i {
-      color: yellow;
-    }
-
-    .card {
-      background-color: #eeeeee;
-      display: inline-block;
-
-    }
-
-
-  </style>
+</style>
 </head>
+
 <body>
   <div class="navbar-fixed">
   <nav>
