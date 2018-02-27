@@ -29,6 +29,9 @@
             {% endif %}
            </div>
    </div>
+   {% if request.user == review.author %}
+      <a href="{% url 'search:review_update' review.pk %}" class="btn">리뷰 수정하기</a>
+      {% endif %}
    <script type="text/javascript">
     $('.review_img').click(function(){
       $('.reviewimg img').attr('src', $(this).attr('src'));
