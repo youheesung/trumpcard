@@ -18,35 +18,25 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/theatre.css' %}">
   <script type="text/javascript" src="{% static 'js/ajax_settings.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/event.js' %}"></script>
-  <style type="text/css">
-    body {
-      background-image: url("{% static 'body.png' %}");
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: top;
-      background-size: cover;
-    }
 
-    i {
-      color: yellow;
-    }
-
-    .card {
-      background-color: #eeeeee;
-      display: inline-block;
-
-    }
-
-
-  </style>
+  {% block js %}{% endblock %}
 </head>
 <body>
   <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
       <a href="{% url 'search:search' %}" class="brand-logo" style="margin-left: 160px;">야!극장고?<i class="material-icons">star</i></a>
-      <a href="{% url 'accounts:recommend' %}">추천서비스</a>
-
+      {% if request.user.is_authenticated %}
+        {% if request.user.profile.is_groupuser %}
+        <a href="{% url 'search:play_create' request.user.username %}" class="btn">공연 올리기</a>
+        {% else %}
+        {% if request.user.profile.genre_select or request.user.profile.play_char %}
+        <a href="{% url 'search:recommend' %}" class="btn">추천서비스</a>
+        {% else %}
+      <a href="{% url 'accounts:cardnews' %}" class="btn">추천서비스</a>
+        {% endif %}
+      {% endif %}
+      {% endif %}
       <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 160px;">
         {% if request.user.is_authenticated %}
         <li><a href="{% url 'accounts:profile_detail' request.user.username %}">{{ request.user }}</a></li>

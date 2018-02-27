@@ -1,104 +1,81 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block js %}
+<script type="text/javascript" src="{% static 'js/search.js' %}"></script>
+{% endblock %}
 
 {% block search %}
-<div class="card horizontal">
-<div class="search_input row">
-  <form method="POST" action="{% url 'search:result' %}" class="col s12 l12">
-    {% csrf_token %}
-    <div class="input-field col s2" >
-        <input type="text" name="name" placeholder="작품명">
-    </div>
-    <div class="input-field col s2" >
-        <input type="text" name="actor" placeholder="배우">
-        </div>
-    <div class="input-field col s2" >
-        <input type="text" name="staff" placeholder="연출">
-        </div>
-    <div class="input-field col s2" >
-        <input type="text" name="place" placeholder="장소">
-        </div>
-    <div class="input-field col s2" >
-        <input type="text" name="minprice" placeholder="가격(원)">
-        </div>
-    <div class="input-field col s2" >
-        <input type="date" name="date" placeholder="날짜">
-        </div>
-        <button type="submit" class="waves-effect waves-light btn" >검색</button>
-  </form>
-</div>
+<link rel="stylesheet" type="text/css" href="{% static 'css/search.css' %}">
+<div class="search">
+
+  <div class="search_input row">
+    <form method="POST" action="{% url 'search:result' %}" class="col s12 l12">
+      {% csrf_token %}
+          <div class="input-field col s2" >
+              <input type="text" name="name" placeholder="작품명">
+          </div>
+          <div class="input-field col s2" >
+              <input type="text" name="actor" placeholder="배우">
+              </div>
+          <div class="input-field col s2" >
+              <input type="text" name="staff" placeholder="연출">
+              </div>
+          <div class="input-field col s2" >
+              <input type="text" name="place" placeholder="장소">
+              </div>
+          <div class="input-field col s2" >
+              <input type="text" name="minprice" placeholder="가격(원)">
+              </div>
+          <div class="input-field col s2" >
+              <input type="date" name="date" placeholder="날짜">
+              </div>
+          <button type="submit" class="waves-effect waves-light btn">
+          원하는 연극 정보를 검색해보세요.
+          <img class="search_btn" src="{% static 'img/search_btn.png' %}">
+          </button>
+    </form>
+  </div>
+
 </div>
 
-<div class="recommend">
-  {% if request.user.is_authenticated %}
-    {% for i in recommend %}
-    <a href="{% url 'search:detail' i.playid %}">
-      <img src="{{ i.poster }}" style="width:250px; height:300px;"></a>
-    {% endfor %}
-  {% endif %}
-</div>
+<!-- @@@@@@@@@@@박스오피스@@@@@@@@@@@ -->
+
+
+<img id="box_office_img" src="{% static 'img/box_office.png'%}">
+<div class="wrapper carousel">
 <div class="box">
-<h3>박스오피스</h3>
+
 {% for a in box %}
 {% if a.grade > 0 and a.grade < 6 %}
 
-{% if a.grade == 1 %}
-<div class="row" style="display: inline-block; float:left; margin: 0 auto;">
-    <div class="col" >
-    <div class="col s2 m7" >
-      <div class="card large" style="width:500px; height:625px;">
 
-        <div class="card-image">
-          <img src="{{ a.poster }}" >
-          <span class="card-title"><h1>{{ a.grade }}위</h1></span>
-        </div>
-        <div class="card-content">
-          <a href="{% url 'search:detail' a.playid %}"><p><h3>{{ a.name }}</h3></p></a>
-          <p>{{ a.actor }}</p>
-        </div>
-        <div class="card-action">
-                <div class="star_box">
-                <i class="material-icons first star {{ a.name }}">star_border</i>
-                <i class="material-icons star {{ a.name }}">star_border</i>
-                <i class="material-icons star {{ a.name }}">star_border</i>
-                <i class="material-icons star {{ a.name }}">star_border</i>
-                <i class="material-icons star {{ a.name }}">star_border</i>
-                <span><h5 style="display: inline-block;">{{ a.rate }}</h5></span>
+<div class="card_wrap_{{ a.grade }} carousel-item">
+    <div class="card_image_{{ a.grade }}"
+         style="background:url({{a.poster}}) no-repeat;
+         width:300px; height:420px;">
+      <span class="card-title"><h3>{{ a.grade }}위</h3></span>
+    </div>
+    <div class="card_info_{{ a.grade }}">
+    <div class="card-content">
+      <a href="{% url 'search:detail' a.playid %}"><p><h5>{{ a.name }}</h5></p></a><p class="actor">{{ a.actor }}</p>
 
-          </div>
-        </div>
+    <div class="card-action">
+      <div class="star_box">
+          <i class="material-icons first star {{ a.name }}">star_border</i>
+          <i class="material-icons star {{ a.name }}">star_border</i>
+          <i class="material-icons star {{ a.name }}">star_border</i>
+          <i class="material-icons star {{ a.name }}">star_border</i>
+          <i class="material-icons star {{ a.name }}">star_border</i>
+          <span>{{ a.rate }}</span>
       </div>
     </div>
-</div>
-</div>
-
-{% else %}
-<div class="row" style="display: inline-block;">
-    <div class="col">
-    <div class="col s2 m7" style="width:250px; height:300px;">
-      <div class="card small">
-        <div class="card-image" class="poster">
-          <img src="{{ a.poster }}" >
-          <span class="card-title">{{ a.grade }}위</span>
-        </div>
-        <div class="card-content">
-          <a href="{% url 'search:detail' a.playid %}"><p><h5 style="margin-top:0;">{{ a.name }}</h5></p></a>
-
-        </div>
-        <div class="card-action">
-          <div class="star_box">
-                <i class="material-icons first star {{ a.name }}">star_border</i>
-                <i class="material-icons star {{ a.name }}">star_border</i>
-                <i class="material-icons star {{ a.name }}">star_border</i>
-                <i class="material-icons star {{ a.name }}">star_border</i>
-                <i class="material-icons star {{ a.name }}">star_border</i>
-                <span>{{ a.rate }}</span>
-          </div>
-        </div>
-      </div>
+    </div>
     </div>
 </div>
-</div>
-{% endif %}
+
+
+
 {% endif %}
   <script type="text/javascript">
     var rate = "{{ a.rate }}";
@@ -112,20 +89,50 @@
   </script>
 {% endfor %}
 </div>
+</div>
+</div>
 
-  별점 순
-  {% for a in rate %}
-  <a href="{% url 'search:detail' a.playid %}">
-  <img style="width:100px; height: 150px;" src="{{ a.poster }}" alt=""/>
-  </a>
-  {% endfor %}
+<img id="rate_img " src="{% static 'img/main_rate.png' %}"
+       style="display:block; width:150px; margin-left: auto; margin-right: auto; margin-top: -370px; margin-bottom: 30px;">
 
-<p>
-  리뷰 갯수 순 곁치는게 ... 많네 ㅠㅠ
- {% for t in review_count %}
- <a href="{% url 'search:detail' t.playid %}">
-  <img style="width:100px; height: 150px;" src="{{ t.poster }}" alt=""/></a>
- {% endfor %}
-</p>
+<div class="wrapper_bottom">
+  <div class="rate_wrap carousel">
+    {% for a in rate %}
+    <a class="carousel-item" href="{% url 'search:detail' a.playid %}">
+    <img style="width:200px; height: 280px;" src="{{ a.poster }}" alt=""/>
+    <div class="star_box">
+          <i class="material-icons first star {{ a.name }}">star_border</i>
+          <i class="material-icons star {{ a.name }}">star_border</i>
+          <i class="material-icons star {{ a.name }}">star_border</i>
+          <i class="material-icons star {{ a.name }}">star_border</i>
+          <i class="material-icons star {{ a.name }}">star_border</i>
+          <span>{{ a.rate }}</span>
+      </div>
+    <span class="rate_title"><h5>{{ a.grade }}위</h5></span>
+    </a>
+    {% endfor %}
+    </div>
 
+
+<img id="review_img" src="{% static 'img/main_review.png' %}"
+       style="display:block; width:150px; margin-left: auto; margin-right: auto; margin-top: -150px; margin-bottom: 30px;">
+
+  <div class="review_wrap carousel">
+   {% for t in review_count %}
+   <a class="carousel-item" href="{% url 'search:detail' t.playid %}">
+    <img style="width:200px; height: 280px;" src="{{ t.poster }}" alt=""/>
+    <div class="star_box">
+          <i class="material-icons first star {{ a.name }}">star_border</i>
+          <i class="material-icons star {{ a.name }}">star_border</i>
+          <i class="material-icons star {{ a.name }}">star_border</i>
+          <i class="material-icons star {{ a.name }}">star_border</i>
+          <i class="material-icons star {{ a.name }}">star_border</i>
+          <span>{{ a.rate }}</span>
+      </div>
+    <span class="review_title"><h5>{{ a.grade }}위</h5></span>
+    </a>
+   {% endfor %}
+   </div>
+
+</div>
 {% endblock %}
