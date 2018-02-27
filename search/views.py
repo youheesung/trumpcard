@@ -168,7 +168,7 @@ def review_create(request, playid):
             new_review.author = request.user
             new_review.play = play.get(playid=playid)
             new_review.save()
-
+            new_review.tag.set(request.POST.getlist('tag'))
             review = Review.objects.filter(play__playid=playid)
             review_count = review.count()
             rateSum = 0

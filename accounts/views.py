@@ -74,7 +74,8 @@ def profile_detail(request, username):
         tag_user |= set(a.tag.all())
 
     # review_follower = review.filter(author_id=follower.user_id)
-
+    print(play_to_my_heart.all())
+    print(review)
     ctx = {
         'review_profile':review_user,
         'review_user':tag_user,
