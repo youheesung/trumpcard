@@ -3,7 +3,7 @@
 {% block search %}
 
 <div class ="poster_img"style="text-align:left;">
-  <img src="{{ play.poster }}" style="width: 100%; height: 120%">
+  <img src="{{ play.poster }}" style="width: 350px; height: 400px;">
 </div>
 <div class="play_infor" style="text-align:left">
  <div class="row">
@@ -74,8 +74,10 @@
 
   {% if play.styurl1_self|length > 4 %}
   <img src="{{ play.styurl1_self.url }}">
+  {% else %}
+  <p> i'm sorry but 상세정보가 없습니다 </p>
+
   {% endif %}
-  <br>
   {% if play.styurl2_self|length > 4 %}
   <img src="{{ play.styurl2_self.url }}">
   {% endif %}
@@ -92,6 +94,9 @@
 
   {% if play.styurl1|length > 4 %}
   <img src="{{ play.styurl1 }}">
+  {% else %}
+  <p> i'm sorry but 상세정보가 없습니다. 하지만 때론 운에 맡겨보는것도!! 좋아요  </p>
+
   {% endif %}
   <br>
   {% if play.styurl2|length > 4 %}
