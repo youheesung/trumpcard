@@ -9,8 +9,12 @@ h3 {
     margin-top: 70px;
     margin-bottom: 40px;
 }
-
 .row {
+    margin-top: 100px;
+    justify-content: center;
+}
+.card {
+
     display: inline-block;
 }
 
@@ -21,11 +25,6 @@ h3 {
 
 span .card-title {
     text-align: center;
-}
-
-.card {
-    margin-left: 5px;
-    margin-top: 5px;
 }
 
 .selected {
@@ -40,5 +39,4 @@ span .card-title {
 .form {
     width: 60%;
     margin: 250px auto;
-
 }

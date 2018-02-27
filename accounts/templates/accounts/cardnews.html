@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block search %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/cardnews.css' %}">
 
   <ul id="tabs-swipe-demo" class="tabs center-align">
     <li class="tab col s3 l4"><a class="tab1" href="#test-swipe-1">장르취향 1</a></li>
@@ -10,99 +11,74 @@
   </ul>
 
   <div id="test-swipe-1" class="col s12 blue">
-<div id="genre1">
-  <div class="row">
-        <h3>당신의 극 장르 취향1</h3>
+  <div id="genre1">
+  <h3>당신의 극 장르 취향1</h3>
+  <div class="row center-align">
        <div class="col s10 m4 l2">
             <div class="card selection">
-                <div class="card-image">
-                  <img class="img" src="{% static 'img/test.png'%}">
-                  <span class="card-title">비극</span>
+                <div class="bi">
+                  <img class="img" src="{% static 'img/bi.png'%}" style="width:270px;">
                   <div class="value">1</div>
                 </div>
-                <div class="card-content" style="height: 170px; overflow:visible;">
-                  <p>심각하거나 비참한 주인공의 이야기로  카타르시스를 느끼게 하는 슬픈 연극입니다.  가장 대표적인 예로 셰익스피어의 4대 비극이 있지요.</p>
                 </div>
 
               </div>
-            </div>
+
 
           <div class="col s10 m4 l2">
           <div class="card selection">
-              <div class="card-image">
-                <img class="img" src="{% static 'img/test.png'%}">
-                <span class="card-title">희극</span>
+              <div class="hui">
+                <img class="img" src="{% static 'img/hui.png'%}" style="width:270px;">
                 <div class="value">2</div>
               </div>
-              <div class="card-content" style="height: 170px; overflow:visible;">
-                <p>해학과 풍자가 가득해 웃음을 자아내지만 철학적 사색이나 사회적 비판이 가미되어서 교훈을 느낄 수 있는 연극입니다.</p>
               </div>
-
             </div>
-          </div>
 
           <div class="col s10 m4 l2">
               <div class="card selection">
-              <div class="card-image">
-                <img class="img" src="{% static 'img/test.png'%}">
-                <span class="card-title">희비극</span>
+              <div class="hee">
+                <img class="img" src="{% static 'img/hee.png'%}" style="width:270px;">
                 <div class="value">3</div>
               </div>
-              <div class="card-content" style="height: 170px; overflow:visible;">
-                <p>이건 말 그대로, 희극과 비극이 혼합된 형태로 비극으로 시작하지만 상황이 전화되어서 행복한 상황으로 끝나는 연극입니다!! 대표적으로 연극 ‚올드위키드송‘ 이 있죠!</p>
-              </div>
-
             </div>
           </div>
 
            <div class="col s10 m4 l2">
               <div class="card selection">
-              <div class="card-image">
-                <img class="img" src="{% static 'img/test.png'%}">
-                <span class="card-title">소극</span>
+              <div class="so">
+                <img class="img" src="{% static 'img/so.png'%}" style="width:270px;">
                 <div class="value">4</div>
               </div>
-              <div class="card-content" style="height: 170px; overflow:visible;">
-                <p>그냥 관객을 익살스럽고 우스꽝스러운 사건을 다루며, 관객을 웃기기 위한 목적으로 만든 극이예요!!!
-                예로 택시 드리벌이 있지요!!</p>
               </div>
 
             </div>
-          </div>
 
            <div class="col s10 m4 l2">
               <div class="card selection">
-              <div class="card-image">
-                <img class="img" src="{% static 'img/test.png'%}">
-                <span class="card-title">통속극</span>
+              <div class="tong">
+                <img class="img" src="{% static 'img/tong.png'%}" style="width:270px;">
                 <div class="value">5</div>
               </div>
-              <div class="card-content" style="height: 170px; overflow:visible;">
-                <p>사건의 전개와 인물의 감정에 치중하는 이야기로 멜로 드라마라고도 불리는 연극입니다. 하지만 통속극은 좀더 무게감 있게 그 인물의 감정을 다루고 있지요!!
-                가장 대표적으로 영화로도 만들어진 연극 클로저가 있어요!!</p>
+
               </div>
 
             </div>
-          </div>
+  </div>
   </div>
 <button class="btn 1_next">다음</button>
   </div>
-  </div>
+
+
   <div id="test-swipe-2" class="col s12 red">
 <div id="genre2">
     <div class="row">
               <h3>당신의 극 장르 취향2</h3>
              <div class="col s10 m4 l3">
             <div class="card selection">
-                <div class="card-image">
-                  <img class="img" src="{% static 'img/test.png'%}">
-                  <span class="card-title">공포</span>
+                <div class="gong">
+                  <img class="img" src="{% static 'img/gong.png'%}">
                   <div class="value">6</div>
                 </div>
-                <div class="card-content" style="height: 170px; overflow:visible;">
-                  <p>공포라는 장르가 연극에도 있어요! 각종 두려움을 다른 매체 보다 더 생생하게 느낄 수 있는 장르의 연극입니다!!</p>
-                </div>
-
               </div>
             </div>
 
@@ -350,7 +326,5 @@
     return false;
   });
 </script>
-
-<link rel="stylesheet" type="text/css" href="{% static 'css/cardnews.css' %}">
 
 {% endblock %}

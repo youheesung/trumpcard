@@ -1,12 +1,28 @@
+    body {
+      background-image: url("{% static 'img/body.png' %}");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: top;
+      background-size: cover;
+      background-color: gray;
+    }
+    i {
+      color: yellow;
+    }
+
+    .card {
+      background-color: #eeeeee;
+      display: inline-block;
+
+    }
     main {
       position: relative;
-      color: white;
     }
 
 
     .poster {
       display: inline-block;
-      float: left;
+      /*float: left;*/
       width: 200px;
       height: 250px;
     }
@@ -14,6 +30,7 @@
     .nav {
       display: inline-block;
       float:right;
+
     }
 
     .search_input {
@@ -30,7 +47,10 @@
     }
 
     nav {
-      background-color: cyan;
+      background-color: pink;
+    }
+    nav a {
+      opacity: 1;
     }
 
     .box {
@@ -64,6 +84,11 @@
         margin: 10px auto;
        }
 
+<<<<<<< HEAD
+    .followed {
+      color: red;
+    }
+=======
 
   .btn.followed, .btn.followed:hover, .btn.followed:focus {
       font-weight: bold;
@@ -158,3 +183,4 @@
       text-align: center;
     }
 
+>>>>>>> 8a898f9cb8fc374959695f79c1ce43fe6b76a68c

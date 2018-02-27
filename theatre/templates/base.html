@@ -18,27 +18,8 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/theatre.css' %}">
   <script type="text/javascript" src="{% static 'js/ajax_settings.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/event.js' %}"></script>
-  <style type="text/css">
-    body {
-      background-image: url("{% static 'body.png' %}");
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: top;
-      background-size: cover;
-    }
 
-    i {
-      color: yellow;
-    }
-
-    .card {
-      background-color: #eeeeee;
-      display: inline-block;
-
-    }
-
-
-  </style>
+  {% block js %}{% endblock %}
 </head>
 <body>
   <div class="navbar-fixed">
