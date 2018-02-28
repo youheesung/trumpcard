@@ -180,7 +180,7 @@
             <div class="card-image">
                <a href="{% url 'search:detail' i.play.playid %}"><img style="width:250px; height: 300px;" src="{{ i.play.poster }}" alt="" class="to_my_heart"/></a>
             </div>
-            <div class="card-content" style="width:250px; height:50px; padding: 0px;">
+            <div class="card-content" style="width:250px; height:80px; padding: 0px;">
               <div class="card-action">
                 <div class="star_box">
                 <i class="material-icons first star1 {{ i.play.name }}">star_border</i>
@@ -202,10 +202,10 @@
                   star[i].innerHTML = "star_half";
                 }
             </script>
-            </div>
           </div>
-
         </div>
+
+
         {% endfor %}
       </div>
       </div>

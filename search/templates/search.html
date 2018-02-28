@@ -92,39 +92,6 @@
 </div>
 </div>
 
-<div>
-<p>연극 별점 순
-
-{% for b in rate %}
-  <a href="{% url 'search:detail' b.playid %}">
-  <img style="width:100px; height: 150px;" src="{{ b.poster }}" alt=""/>
-</a>
-<div class="card-action">
-    <div class="star_box">
-          <i class="material-icons first star1 {{ b.name }}">star_border</i>
-          <i class="material-icons star1 {{ b.name }}">star_border</i>
-          <i class="material-icons star1 {{ b.name }}">star_border</i>
-          <i class="material-icons star1 {{ b.name }}">star_border</i>
-          <i class="material-icons star1 {{ b.name }}">star_border</i>
-          <span>{{ b.rate }}</span>
-        </div>
-</div>
-    <script type="text/javascript">
-        var rate = "{{ b.rate }}";
-        var star = document.getElementsByClassName("star1 {{ b.name }}");
-          console.log(star[0].innerHTML);
-        for(var i=0; i<parseInt(rate); i++) {
-          star[i].innerHTML = "star";
-
-        }
-        if((rate%1) >= 0.5){
-          star[i].innerHTML = "star_half";
-        }
-    </script>
-{% endfor %}
-</p>
-
-</div>
 
 <img id="rate_img " src="{% static 'img/main_rate.png' %}"
        style="display:block; width:150px; margin-left: auto; margin-right: auto; margin-top: -370px; margin-bottom: 30px;">
@@ -132,18 +99,30 @@
 <div class="wrapper_bottom">
   <div class="rate_wrap carousel">
     {% for a in rate %}
+    {% if a.rate %}
     <a class="carousel-item" href="{% url 'search:detail' a.playid %}">
     <img style="width:200px; height: 280px;" src="{{ a.poster }}" alt=""/>
     <div class="star_box">
-          <i class="material-icons first star {{ a.name }}">star_border</i>
-          <i class="material-icons star {{ a.name }}">star_border</i>
-          <i class="material-icons star {{ a.name }}">star_border</i>
-          <i class="material-icons star {{ a.name }}">star_border</i>
-          <i class="material-icons star {{ a.name }}">star_border</i>
+          <i class="material-icons first star1 {{ a.name }}">star_border</i>
+          <i class="material-icons star1 {{ a.name }}">star_border</i>
+          <i class="material-icons star1 {{ a.name }}">star_border</i>
+          <i class="material-icons star1 {{ a.name }}">star_border</i>
+          <i class="material-icons star1 {{ a.name }}">star_border</i>
           <span>{{ a.rate }}</span>
       </div>
     <span class="rate_title"><h5>{{ a.grade }}위</h5></span>
     </a>
+    <script type="text/javascript">
+    var rate = "{{ a.rate }}";
+    var star = document.getElementsByClassName("star1 {{ a.name }}");
+    for(var i=0; i<parseInt(rate); i++) {
+      star[i].innerHTML = "star";
+    }
+    if((rate%1) >= 0.5){
+      star[i].innerHTML = "star_half";
+    }
+</script>
+{% endif %}
     {% endfor %}
     </div>
 
@@ -153,18 +132,30 @@
 
   <div class="review_wrap carousel">
    {% for t in review_count %}
+   {% if t.review_set.count %}
    <a class="carousel-item" href="{% url 'search:detail' t.playid %}">
     <img style="width:200px; height: 280px;" src="{{ t.poster }}" alt=""/>
     <div class="star_box">
-          <i class="material-icons first star {{ a.name }}">star_border</i>
-          <i class="material-icons star {{ a.name }}">star_border</i>
-          <i class="material-icons star {{ a.name }}">star_border</i>
-          <i class="material-icons star {{ a.name }}">star_border</i>
-          <i class="material-icons star {{ a.name }}">star_border</i>
-          <span>{{ a.rate }}</span>
+          <i class="material-icons first star2 {{ t.name }}">star_border</i>
+          <i class="material-icons star2 {{ t.name }}">star_border</i>
+          <i class="material-icons star2 {{ t.name }}">star_border</i>
+          <i class="material-icons star2 {{ t.name }}">star_border</i>
+          <i class="material-icons star2 {{ t.name }}">star_border</i>
+          <span>{{ t.rate }}</span>
       </div>
-    <span class="review_title"><h5>{{ a.grade }}위</h5></span>
+    <span class="review_title"><h5>{{ t.review_set.count }}개의 리뷰</h5></span>
     </a>
+        <script type="text/javascript">
+    var rate = "{{ t.rate }}";
+    var star = document.getElementsByClassName("star2 {{ t.name }}");
+    for(var i=0; i<parseInt(rate); i++) {
+      star[i].innerHTML = "star";
+    }
+    if((rate%1) >= 0.5){
+      star[i].innerHTML = "star_half";
+    }
+</script>
+{% endif %}
    {% endfor %}
    </div>
 

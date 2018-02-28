@@ -61,13 +61,9 @@
             });
 
           </script>
-<<<<<<< HEAD
 
           </div>
   <div class="row" style="width: 1000px; background: #EDEDED;">
-=======
-  <div class="row" style=" width:1000px">
->>>>>>> 99f2b96041e470460e4747c82cc4dad1c9749df5
     <div class="col s12">
       <ul class="tabs">
         <li class="tab col s6 l6"><a href="#test1">상세정보</a></li>
@@ -151,18 +147,11 @@ function winOpen2()
     </script>
     </div>
 
-<<<<<<< HEAD
-    <div id="test2" class="col s12" style=" width: 80%; margin: auto 100px;">
+    <div id="test2" class="col s12" style=" width: 80%; margin: auto 100px; text-align: center;">
       {% if review.count %}
 
-    <div class="review_create_button" style="text-align: center; margin: 25px auto;">
+    <div class="review_create_button" style="text-align: center; display: inline-block; margin: 15px auto;">
       <a href="{% url 'search:review_create' play.playid %}" class="btn">리뷰 작성하기</a>
-=======
-    <div id="test2" class="col s12" style="width:80%; margin: auto 100px;">
-      {% if review.count %}
-    <div class="review_create_button" style="text-align: center">
-      <a href="{% url 'search:review_create' play.playid %}" class="btn" style="border-radius: 10px;">리뷰 작성하기</a>
->>>>>>> 99f2b96041e470460e4747c82cc4dad1c9749df5
     </div>
 
   {% for a in review %}
@@ -224,7 +213,7 @@ function winOpen2()
             <a href="#modal1" class="modal-trigger" alt="{% url 'search:review_detail' a.pk %}">
             <img src="{{ a.img4.url }}" class="review_img" alt="4">
             </a>
-            {% endif %}
+    {% endif %}
           </div>
    {% if request.user == a.author %}
       <a href="{% url 'search:review_update' a.pk %}" class="btn" style="float:right;">리뷰 수정하기</a>
@@ -235,20 +224,14 @@ function winOpen2()
     </div>
   </div>
 
-
-
 {% endfor %}
+
 <div id="modal1" class="modal">
     <div class="modal-content">
 
     </div>
     <div class="modal-footer">
-<<<<<<< HEAD
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-
-=======
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">닫기</a>
->>>>>>> 99f2b96041e470460e4747c82cc4dad1c9749df5
     </div>
   </div>
     <script type="text/javascript">
